@@ -25,9 +25,9 @@ const App = () => {
         <Route path='/sign-up/:id'>
           <FormScreen mode='edit' />
         </Route>
-        <Route path='/confirmation'>
+        {/* <Route path='/confirmation'>
           <Confirmation />
-        </Route>
+        </Route> */}
       </Switch>
       <Footer />
     </div>

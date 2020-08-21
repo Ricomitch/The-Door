@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Redirect, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { createVolunteer, getVolunteer } from '../../services/formServices.js'
 const db = require
 
@@ -13,7 +13,7 @@ function Form({ mode, setFormStatus }) {
     programs: { volunteer: true },
     roles: { mentor: true }
   })
-  const [isCreated, setIsCreated] = useState(false)
+  //const [isCreated, setIsCreated] = useState(false)
 
   const { id } = useParams()
 
