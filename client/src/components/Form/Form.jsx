@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { createVolunteer, getVolunteer } from '../../services/formServices.js'
-const db = require
 
 function Form({ mode, setFormStatus }) {
   const [volunteerGet, setVolunteerGet] = useState({})
