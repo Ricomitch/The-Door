@@ -5,7 +5,7 @@ import { createVolunteer, getVolunteer } from '../../services/formServices.js'
 function Form({ mode, setFormStatus }) {
   const [volunteerGet, setVolunteerGet] = useState({})
   const [volunteerCreate, setVolunteerCreate] = useState({
-    firstName: 'k',
+    firstName: 'd',
     lastName: 'l',
     phone: 'm',
     email: 'n',
@@ -61,7 +61,7 @@ function Form({ mode, setFormStatus }) {
               id='first-name-input'
               name='firstName'
               type='text'
-              value={volunteerGet.firstName && volunteerGet.firstName}
+              value={volunteerGet.firstName ? volunteerGet.firstName : 'd'}
               onChange={(e) => handleChange(e)}
             />
           </div>
