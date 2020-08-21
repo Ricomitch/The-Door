@@ -5,7 +5,7 @@ const db = require
 
 function Form({ mode }) {
 
-  const [volunteer, updateVolunteer] = useState('')
+  const [volunteer, updateVolunteer] = useState({})
  
   const { id } = useParams()
   
@@ -17,22 +17,7 @@ function Form({ mode }) {
         updateVolunteer(volunteer)
       }
       fetchVolunteer()
-    } else if (mode === 'sign-up') {
-      const volunteer = {
-          "firstName": "",
-          "lastName": "",
-          "phone": "",
-          "email": "",
-          "programs": {
-              
-          },
-          "roles": {
-              
-          },
-      }
-      updateVolunteer(volunteer)
     }
-    console.log(volunteer)
   }, [id])
 
  
