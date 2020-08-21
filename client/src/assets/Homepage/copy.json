@@ -9,12 +9,33 @@
   "HomepageHeroBanner": {
     "content": "The Door's mission is to empower young people to reach their potential by providing comprehensive youth development services in a diverse and caring environment."
   },
+  
+  "NewsItem1": {
+    "header": "LGBTQ Youth Use their Voice For Change!",
+    "content": "We are part of a community that is determined to be there for the young people that need us everyday..",
+    "button-value": "Read More  >"
+  },
+  
+  "NewsItem2": {
+    "header": "What’s Cooking at The Door for Culinary Arts Month?",
+    "content": "Come join our graduating culinary intern, Brian Torres, as he teaches ..",
+    "button-value": "Read More  >"
+  },
+  
+  "NewsItem3": {
+    "header": "Join BSA’s Student Body!",
+    "content": "The Door has a High School- Broome Street Academy, a SUNY-authorized charter HS located in Soho NYC..",
+    "button-value": "Read More  >"
+  },
 
   "HomepageImpactRectangle143": {
     "header": "See Your Impact ",
     "subheader": "Career and Education - The Tools to Learn, Earn, and Lead",
     "content": "The arts are a big and important part of The Door and an effective way to foster community. Help ensure our young people continue to have the safe spaces they need to express themselves and their individuality",
     "button-value": "Read More   > "
-  }
+  },
   
+  "HomepageFacesRectangle": {
+    "content": "Helping nearly 11,000 young people from all over New York City discover and achieve his or her greatest potential."
+  }
 }
