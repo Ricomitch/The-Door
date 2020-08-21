@@ -1,6 +1,20 @@
 {
-  "header": "COVID-19: How The Door Is Responding ",
-  "subheader": null,
-  "content": "The COVID-19 public health crisis and while The Door’s physical spaces are mostly closed, we are virtually open! The health and wellbeing of our community is our top priority, and we are working hard to stay connected and to continue to support our members.",
-  "button-value": "Learn More > "
+  "HomepageHeroRectangle143": {
+    "header": "COVID-19: How The Door Is Responding ",
+    "subheader": null,
+    "content": "The COVID-19 public health crisis and while The Door’s physical spaces are mostly closed, we are virtually open! The health and wellbeing of our community is our top priority, and we are working hard to stay connected and to continue to support our members.",
+    "button-value": "Learn More   > "
+  },
+  
+  "HomepageHeroBanner": {
+    "content": "The Door's mission is to empower young people to reach their potential by providing comprehensive youth development services in a diverse and caring environment."
+  },
+
+  "HomepageImpactRectangle143": {
+    "header": "See Your Impact ",
+    "subheader": "Career and Education - The Tools to Learn, Earn, and Lead",
+    "content": "The arts are a big and important part of The Door and an effective way to foster community. Help ensure our young people continue to have the safe spaces they need to express themselves and their individuality",
+    "button-value": "Read More   > "
+  }
+  
 }
