@@ -3,9 +3,8 @@ import { useParams } from 'react-router-dom'
 import { createVolunteer, getVolunteer } from '../../services/formServices.js'
 
 function Form({ mode, setFormStatus }) {
-  const [volunteerGet, setVolunteerGet] = useState({})
-  const [volunteerCreate, setVolunteerCreate] = useState({
-    firstName: 'd',
+  const [volunteer, setVolunteer] = useState({
+    firstName: '',
     lastName: 'l',
     phone: 'm',
     email: 'n',
@@ -20,7 +19,7 @@ function Form({ mode, setFormStatus }) {
     if (mode === 'edit') {
       async function fetchVolunteer() {
         const volunteer = await getVolunteer(id)
-        setVolunteerGet(volunteer)
+        setVolunteer(volunteer)
       }
       fetchVolunteer()
     }
@@ -28,16 +27,16 @@ function Form({ mode, setFormStatus }) {
 
   function handleChange(event) {
     const { name, value } = event.target
-    setVolunteerCreate({
-      ...volunteerCreate,
+    setVolunteer({
+      ...volunteer,
       [name]: value,
     })
   }
 
   async function handleSubmit(event) {
     event.preventDefault()
-    console.log(volunteerCreate)
-    const created = await createVolunteer(volunteerCreate)
+    console.log('handle submit ', volunteer)
+    const created = await createVolunteer(volunteer)
     //setIsCreated({created})
     setFormStatus('submitted')
   }
@@ -61,7 +60,7 @@ function Form({ mode, setFormStatus }) {
               id='first-name-input'
               name='firstName'
               type='text'
-              value={volunteerGet.firstName ? volunteerGet.firstName : 'd'}
+              value={volunteer.firstName && volunteer.firstName}
               onChange={(e) => handleChange(e)}
             />
           </div>
