@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import Confirmation from './screens/Confirmation/Confirmation.jsx'
+import Confirmation from './components/Form/Confirmation.jsx'
 import GetInvolved from './screens/GetInvolved/GetInvolved.jsx'
 import Homepage from './screens/Homepage/Homepage.jsx'
 import FormScreen from './screens/FormScreen/FormScreen.jsx'

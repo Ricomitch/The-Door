@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Form from '../../components/Form/Form.jsx'
-import Confirmation from '../../screens/Confirmation/Confirmation.jsx'
+import Confirmation from '../../components/Form/Confirmation.jsx'
 
 function FormScreen({ mode }) {
 
