@@ -45,4 +45,13 @@ const Volunteer = new Schema(
   },
   { timestamps: true }
 )
+
+{
+  firstName: '',
+  lastName: '',
+  phone: '',
+  email: '',
+  programs: {},
+  roles: {}
+}
 ```

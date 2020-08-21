@@ -1,12 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Form from '../../components/Form/Form.jsx'
+import Confirmation from '../../screens/Confirmation/Confirmation.jsx'
 
 function FormScreen({ mode }) {
-  return (
-    <div>
-      <Form mode={mode}/>
-    </div>
-  )
+
+  const [formStatus, setFormStatus] = useState('')
+
+  if (!formStatus) {
+    return (
+      <div>
+        <Form mode={mode} setFormStatus={setFormStatus} />
+      </div>
+    )
+  } else if (formStatus === 'submitted') {
+    return (
+      <div>
+        <Confirmation />
+      </div>
+    )
+  }
 }
 
 export default FormScreen
