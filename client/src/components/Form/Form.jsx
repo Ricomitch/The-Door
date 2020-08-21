@@ -6,12 +6,12 @@ const db = require
 function Form({ mode, setFormStatus }) {
   const [volunteerGet, setVolunteerGet] = useState({})
   const [volunteerCreate, setVolunteerCreate] = useState({
-    firstName: '',
-    lastName: '',
-    phone: '',
-    email: '',
-    programs: {},
-    roles: {}
+    firstName: 'k',
+    lastName: 'l',
+    phone: 'm',
+    email: 'n',
+    programs: { volunteer: true },
+    roles: { mentor: true }
   })
   const [isCreated, setIsCreated] = useState(false)
 
@@ -37,8 +37,9 @@ function Form({ mode, setFormStatus }) {
 
   async function handleSubmit(event) {
     event.preventDefault()
+    console.log(volunteerCreate)
     const created = await createVolunteer(volunteerCreate)
-    // setIsCreated({created})
+    //setIsCreated({created})
     setFormStatus('submitted')
   }
 
@@ -51,8 +52,8 @@ function Form({ mode, setFormStatus }) {
       <h2>{mode} form</h2>
       <h1 className='sign-up-main-heading'>Sign up to Volunteer</h1>
       <div className='upper-form-container'>
-        <form onSubmit={handleSubmit}>
-          {/* <div className='upper-form-item'> */}
+        <form onSubmit={(e)=>handleSubmit(e)}>
+          <div className='upper-form-item'>
             <label className='sign-up-headings' htmlFor='first-name-input'>
               First Name
             </label>
@@ -64,7 +65,7 @@ function Form({ mode, setFormStatus }) {
               value={volunteerGet.firstName && volunteerGet.firstName}
               onChange={(e) => handleChange(e)}
             />
-          {/* </div> */}
+          </div>
           <input type='submit' value='Submit' />
         </form>
       </div>
