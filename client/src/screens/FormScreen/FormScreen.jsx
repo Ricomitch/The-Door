@@ -1,15 +1,17 @@
 import React, { useState } from 'react'
-import Form from '../../components/Form/Form.jsx'
+import VolunteerForm from '../../components/Form/VolunteerForm.jsx'
 import Confirmation from '../../components/Form/Confirmation.jsx'
 
 function FormScreen({ mode }) {
   const [formStatus, setFormStatus] = useState('')
+  const [volunteerId, setVolunteerId] = useState('')
   console.log('formStatus', formStatus)
 
+  
   if (!formStatus) {
     return (
       <div>
-        <Form mode={mode} setFormStatus={setFormStatus} />
+        <VolunteerForm mode={mode} setFormStatus={setFormStatus} />
       </div>
     )
   } else if (formStatus === 'submitted') {
@@ -21,7 +23,7 @@ function FormScreen({ mode }) {
   } else if (formStatus === 'confirmed') {
     return (
       <div>
-        <Form mode={mode} setFormStatus={setFormStatus} />
+        <VolunteerForm mode={mode} setFormStatus={setFormStatus} />
       </div>
     )
   }
