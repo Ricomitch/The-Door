@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import VolunteerForm from '../../components/Form/VolunteerForm.jsx'
 import Confirmation from '../../components/Form/Confirmation.jsx'
 
-function FormScreen({ mode }) {
+function FormScreen() {
   const [formStatus, setFormStatus] = useState('')
   const [volunteerId, setVolunteerId] = useState('')
   console.log('formStatus', formStatus)
@@ -11,7 +11,7 @@ function FormScreen({ mode }) {
   if (!formStatus) {
     return (
       <div>
-        <VolunteerForm mode={mode} setFormStatus={setFormStatus} setVolunteerId={setVolunteerId} />
+        <VolunteerForm setFormStatus={setFormStatus} setVolunteerId={setVolunteerId} />
       </div>
     )
   } else if (formStatus === 'submitted') {
@@ -23,10 +23,10 @@ function FormScreen({ mode }) {
         />
       </div>
     )
-  } else if (formStatus === 'confirmed') {
+  } else if (formStatus === 'edit') {
     return (
       <div>
-        <VolunteerForm mode={mode} setFormStatus={setFormStatus} />
+        <VolunteerForm formStatus={formStatus} setFormStatus={setFormStatus} volunteerId={volunteerId} setVolunteerId={setVolunteerId}/>
       </div>
     )
   }

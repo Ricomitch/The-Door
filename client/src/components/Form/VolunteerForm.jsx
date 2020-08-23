@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { createVolunteer, getVolunteer } from '../../services/formServices.js'
 import { Formik, Field, Form } from 'formik'
 
-function VolunteerForm({ mode, setFormStatus, setVolunteerId }) {
+function VolunteerForm({ formStatus, setFormStatus, setVolunteerId, volunteerId }) {
   const [volunteer, setVolunteer] = useState({
     firstName: '',
     lastName: '',
@@ -12,17 +12,16 @@ function VolunteerForm({ mode, setFormStatus, setVolunteerId }) {
     programs: [],
     roles: [],
   })
-  const { id } = useParams()
 
   useEffect(() => {
-    if (mode === 'edit') {
+    if (formStatus === 'edit') {
       async function fetchVolunteer() {
-        const volunteer = await getVolunteer(id)
+        const volunteer = await getVolunteer(volunteerId)
         setVolunteer(volunteer)
       }
       fetchVolunteer()
     }
-  }, [id])
+  }, [volunteerId])
 
   return (
     <>
@@ -32,13 +31,13 @@ function VolunteerForm({ mode, setFormStatus, setVolunteerId }) {
         onSubmit={async (value) => {
           console.log(value)
           const volunteer = await createVolunteer(value)
+          await setVolunteerId(volunteer._id)
           setFormStatus('submitted')
-          setVolunteerId(volunteer._id)
         }}
       >
         <Form>
           <label htmlFor='firstName'>First Name</label>
-          <Field id='firstName' name='firstName' placeholder='First Name' />
+          <Field id='firstName' name='firstName' placeholder='First Name'/>
 
           <label htmlFor='lastName'>Last Name</label>
           <Field id='lastName' name='lastName' placeholder='Last Name' />

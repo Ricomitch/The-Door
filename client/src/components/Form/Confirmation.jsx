@@ -9,11 +9,11 @@ function Confirmation({ setFormStatus, volunteerId }) {
   useEffect(() => {
   async function fetchVolunteer(volunteerId) {
     const volunteerGotten = await getVolunteer(volunteerId)
-    console.log(volunteerGotten.programs)
+    console.log('volunteerGotten.programs', volunteerGotten.programs)
     setVolunteer(volunteerGotten)
   }
     fetchVolunteer(volunteerId)
-  }, [volunteerId])
+  }, [])
 
   let programs = volunteer.programs
 
@@ -26,9 +26,9 @@ function Confirmation({ setFormStatus, volunteerId }) {
         <h4>{volunteer.email}</h4>
         <h4>Programs</h4>
         {console.log('programs = ', programs)}
-        {programs.map((program) => <h4>{program}</h4>)}
+        {programs.map((program, index) => <h4 key={index}>{program}</h4>)}
         <Link to={`/sign-up/${volunteerId}`}>
-          <button onClick={() => setFormStatus('confirmed')}>Edit</button>
+          <button onClick={() => setFormStatus('edit')}>Edit</button>
         </Link>
       </div>
     )
