@@ -11,13 +11,16 @@ function FormScreen({ mode }) {
   if (!formStatus) {
     return (
       <div>
-        <VolunteerForm mode={mode} setFormStatus={setFormStatus} />
+        <VolunteerForm mode={mode} setFormStatus={setFormStatus} setVolunteerId={setVolunteerId} />
       </div>
     )
   } else if (formStatus === 'submitted') {
     return (
       <div>
-        <Confirmation setFormStatus={setFormStatus} />
+        <Confirmation
+          volunteerId={volunteerId}
+          setFormStatus={setFormStatus}
+        />
       </div>
     )
   } else if (formStatus === 'confirmed') {

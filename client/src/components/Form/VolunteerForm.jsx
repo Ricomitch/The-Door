@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { createVolunteer, getVolunteer } from '../../services/formServices.js'
 import { Formik, Field, Form } from 'formik'
 
-function VolunteerForm({ mode, setFormStatus }) {
+function VolunteerForm({ mode, setFormStatus, setVolunteerId }) {
   const [volunteer, setVolunteer] = useState({
     firstName: '',
     lastName: '',
@@ -33,6 +33,7 @@ function VolunteerForm({ mode, setFormStatus }) {
           console.log(value)
           const volunteer = await createVolunteer(value)
           setFormStatus('submitted')
+          setVolunteerId(volunteer._id)
         }}
       >
         <Form>
