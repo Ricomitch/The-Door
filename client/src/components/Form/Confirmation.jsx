@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import { getVolunteer } from '../../services/formServices.js'
 
 function Confirmation({ setFormStatus, volunteerId }) {
@@ -27,9 +26,9 @@ function Confirmation({ setFormStatus, volunteerId }) {
         <h4>Programs</h4>
         {console.log('programs = ', programs)}
         {programs.map((program, index) => <h4 key={index}>{program}</h4>)}
-        <Link to={`/sign-up/${volunteerId}`}>
+        
           <button onClick={() => setFormStatus('edit')}>Edit</button>
-        </Link>
+        
       </div>
     )
   } else {
