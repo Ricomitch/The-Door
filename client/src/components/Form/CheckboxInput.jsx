@@ -1,14 +1,14 @@
 import React from 'react'
 
-function CheckboxInput({ props, type, value }) {
+function CheckboxInput({ props, name, value }) {
   return (
     <div>
       <label>
         <input
           type='checkbox'
-          name={type}
+          name={name}
           value={value}
-          checked={props.values.programs.includes(value)}
+          checked={props.values[name].includes(value)}
           onChange={props.handleChange}
         />
         {value}

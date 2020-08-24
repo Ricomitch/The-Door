@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { createVolunteer, getVolunteer } from '../../services/formServices.js'
+import {
+  createVolunteer,
+  updateVolunteer,
+  getVolunteer,
+} from '../../services/formServices.js'
 import { Formik } from 'formik'
 import CheckboxInput from './CheckboxInput'
 
@@ -32,14 +36,19 @@ function VolunteerForm({
     <>
       <h1>{volunteer._id}</h1>
       <h1>Sign up to Volunteer</h1>
-      
+
       <Formik
         initialValues={volunteer}
         enableReinitialize
         onSubmit={async (value) => {
           console.log(value)
-          const volunteer = await createVolunteer(value)
-          await setVolunteerId(volunteer._id)
+          let response
+          if (formStatus === 'edit') {
+            response = await updateVolunteer(volunteerId, value)
+          } else {
+            response = await createVolunteer(value)
+          }
+          await setVolunteerId(response._id)
           setFormStatus('submitted')
         }}
       >
@@ -63,7 +72,7 @@ function VolunteerForm({
               placeholder='Last Name'
               onChange={props.handleChange}
               value={props.values.lastName}
-              />
+            />
 
             <label htmlFor='phone'>Phone</label>
             <input
@@ -71,9 +80,9 @@ function VolunteerForm({
               id='phone'
               name='phone'
               placeholder='(123) 456-7890'
-              onChange={props.handleChange} 
+              onChange={props.handleChange}
               value={props.values.phone}
-              />
+            />
 
             <label htmlFor='email'>Email</label>
             <input
@@ -83,7 +92,7 @@ function VolunteerForm({
               placeholder='youremail@domain.xyz'
               onChange={props.handleChange}
               value={props.values.email}
-              />
+            />
 
             <div className='checkbox-group' id='program-selection'>
               Which programs would you like to assist with?
@@ -94,17 +103,57 @@ function VolunteerForm({
               aria-labelledby='checkbox-group'
               id='program-input-group'
             >
-              <CheckboxInput props={props} type='programs' value='Health Services' />
-              <CheckboxInput props={props} type='programs' value='College and Academic Supports' />
-              <CheckboxInput props={props} type='programs' value='Creative Arts' /> 
-              <CheckboxInput props={props} type='programs' value={'Broome Street Academy (The Door\'s charter high school)'} />
-              <CheckboxInput props={props} type='programs' value='Career Services' />
-              <CheckboxInput props={props} type='programs' value='Runaway and Homeless Youth' />
-              <CheckboxInput props={props} type='programs' value='High School Equivalency (or GED)' />
-              <CheckboxInput props={props} type='programs' value='Mental Health' />
-              <CheckboxInput props={props} type='programs' value='LGBTQ' />
-              <CheckboxInput props={props} type='programs' value='Legal Services' />
-              <CheckboxInput props={props} type='programs' value={'Hmmm I\'m not sure yet..'} />
+              <CheckboxInput
+                props={props}
+                name='programs'
+                value='Health Services'
+              />
+              <CheckboxInput
+                props={props}
+                name='programs'
+                value='College and Academic Supports'
+              />
+              <CheckboxInput
+                props={props}
+                name='programs'
+                value='Creative Arts'
+              />
+              <CheckboxInput
+                props={props}
+                name='programs'
+                value={"Broome Street Academy (The Door's charter high school)"}
+              />
+              <CheckboxInput
+                props={props}
+                name='programs'
+                value='Career Services'
+              />
+              <CheckboxInput
+                props={props}
+                name='programs'
+                value='Runaway and Homeless Youth'
+              />
+              <CheckboxInput
+                props={props}
+                name='programs'
+                value='High School Equivalency (or GED)'
+              />
+              <CheckboxInput
+                props={props}
+                name='programs'
+                value='Mental Health'
+              />
+              <CheckboxInput props={props} name='programs' value='LGBTQ' />
+              <CheckboxInput
+                props={props}
+                name='programs'
+                value='Legal Services'
+              />
+              <CheckboxInput
+                props={props}
+                name='programs'
+                value={"Hmmm I'm not sure yet.."}
+              />
             </div>
 
             <div className='checkbox-group' id='role-selection'>
@@ -116,16 +165,20 @@ function VolunteerForm({
               aria-labelledby='checkbox-group'
               id='role-input-group'
             >
-              <CheckboxInput props={props} type='roles' value='Volunteer' />
-              <CheckboxInput props={props} type='roles' value='Advocate' />
-              <CheckboxInput props={props} type='roles' value='Mentor' />
-              <CheckboxInput props={props} type='roles' value='Fundraiser' />
-              <CheckboxInput props={props} type='roles' value='Teach Class' />
-              <CheckboxInput props={props} type='roles' value={'Hmmm I\'m not sure yet..'} />
+              <CheckboxInput props={props} name='roles' value='Volunteer' />
+              <CheckboxInput props={props} name='roles' value='Advocate' />
+              <CheckboxInput props={props} name='roles' value='Mentor' />
+              <CheckboxInput props={props} name='roles' value='Fundraiser' />
+              <CheckboxInput props={props} name='roles' value='Teach Class' />
+              <CheckboxInput
+                props={props}
+                name='roles'
+                value={"Hmmm I'm not sure yet.."}
+              />
             </div>
 
             <button className='submit-button' type='submit'>
-              Submit
+              {formStatus === 'edit' ? 'Update' : 'Submit'}
             </button>
           </form>
         )}

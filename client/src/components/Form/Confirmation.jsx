@@ -14,6 +14,7 @@ function Confirmation({ setFormStatus, volunteerId }) {
   }, [])
 
   let programs = volunteer.programs
+  let roles = volunteer.roles
 
   if (programs) {
     return (
@@ -24,9 +25,10 @@ function Confirmation({ setFormStatus, volunteerId }) {
         <h4>{volunteer.email}</h4>
         <h4>Programs</h4>
         {programs.map((program, index) => <h4 key={index}>{program}</h4>)}
+        <h4>Roles</h4>
+        {roles.map((role, index) => <h4 key={index}>{role}</h4>)}
         
           <button onClick={() => setFormStatus('edit')}>Edit</button>
-        
       </div>
     )
   } else {
