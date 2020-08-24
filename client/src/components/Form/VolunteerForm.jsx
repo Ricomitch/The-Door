@@ -97,13 +97,14 @@ function VolunteerForm({
               <CheckboxInput props={props} type='programs' value='Health Services' />
               <CheckboxInput props={props} type='programs' value='College and Academic Supports' />
               <CheckboxInput props={props} type='programs' value='Creative Arts' /> 
+              <CheckboxInput props={props} type='programs' value={'Broome Street Academy (The Door\'s charter high school)'} />
               <CheckboxInput props={props} type='programs' value='Career Services' />
+              <CheckboxInput props={props} type='programs' value='Runaway and Homeless Youth' />
               <CheckboxInput props={props} type='programs' value='High School Equivalency (or GED)' />
+              <CheckboxInput props={props} type='programs' value='Mental Health' />
               <CheckboxInput props={props} type='programs' value='LGBTQ' />
-
-           
-
-  
+              <CheckboxInput props={props} type='programs' value='Legal Services' />
+              <CheckboxInput props={props} type='programs' value={'Hmmm I\'m not sure yet..'} />
             </div>
 
             <div className='checkbox-group' id='role-selection'>
