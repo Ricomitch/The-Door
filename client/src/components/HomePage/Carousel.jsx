@@ -8,6 +8,10 @@ import Writing from '../../assets/Homepage/photo-1529390079861-591de354faf5.jpeg
 import Friends from '../../assets/Homepage/photo-1517486808906-6ca8b3f04846.jpeg'
 import Art from '../../assets/Homepage/Screen Shot 2020-08-24 at 9.13.26 AM.png'
 
+import Rectangle143 from '../shared/Rectangle143/Rectangle143.jsx'
+import copyJSON from '../../assets/Homepage/copy.json'
+
+
 function CarouselSlide() {
   return (
     <div className='container'>
@@ -46,6 +50,13 @@ function CarouselSlide() {
           width='300px'
         />
       </Carousel>
+
+      <Rectangle143 copy={copyJSON.HomepageHeroRectangle143p1} />
+      <Rectangle143 copy={copyJSON.HomepageHeroRectangle143p2} />
+      <Rectangle143 copy={copyJSON.HomepageHeroRectangle143p3} />
+      <Rectangle143 copy={copyJSON.HomepageHeroRectangle143p4} />
+
+
     </div>
   )
 }
