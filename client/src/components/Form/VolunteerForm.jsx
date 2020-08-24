@@ -116,20 +116,12 @@ function VolunteerForm({
               aria-labelledby='checkbox-group'
               id='role-input-group'
             >
-              <label>
-                <input type='checkbox' name='roles' value='volunteer' />
-                Volunteer
-              </label>
-
-              <label>
-                <input type='checkbox' name='roles' value='mentor' />
-                Mentor
-              </label>
-
-              <label>
-                <input type='checkbox' name='roles' value='teach-class' />
-                Teach Class
-              </label>
+              <CheckboxInput props={props} type='roles' value='Volunteer' />
+              <CheckboxInput props={props} type='roles' value='Advocate' />
+              <CheckboxInput props={props} type='roles' value='Mentor' />
+              <CheckboxInput props={props} type='roles' value='Fundraiser' />
+              <CheckboxInput props={props} type='roles' value='Teach Class' />
+              <CheckboxInput props={props} type='roles' value={'Hmmm I\'m not sure yet..'} />
             </div>
 
             <button className='submit-button' type='submit'>
