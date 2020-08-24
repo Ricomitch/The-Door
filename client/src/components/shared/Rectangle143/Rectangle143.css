@@ -1,0 +1,15 @@
+.rectangle143 {
+  background-color: #436389;
+  opacity: 95%;
+  width: 526px;
+  height: 365px;
+  border-radius: 12px;;
+}
+.rectangle-header {
+  color: #f3b143;
+}
+.rectangle-content {
+  color: white;
+  font-size: 16px;
+  font-family: Montserrat;
+}
