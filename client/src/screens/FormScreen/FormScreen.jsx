@@ -5,7 +5,7 @@ import Confirmation from '../../components/Form/Confirmation.jsx'
 function FormScreen() {
   const [formStatus, setFormStatus] = useState('')
   const [volunteerId, setVolunteerId] = useState('')
-  console.log('formStatus', formStatus)
+  
 
   
   if (!formStatus) {
