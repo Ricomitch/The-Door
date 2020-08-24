@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 
 // import Carousel from 'react-elastic-carousel'
-import Studying from '../../assets/Homepage/eliott-reyna-iO2d-KYp5JU-unsplash.jpg'
+import Studying from '../../assets/Homepage/photo-1571868200845-4fe0659ffd61.jpeg'
 import Writing from '../../assets/Homepage/photo-1529390079861-591de354faf5.jpeg'
 import Friends from '../../assets/Homepage/photo-1517486808906-6ca8b3f04846.jpeg'
 
