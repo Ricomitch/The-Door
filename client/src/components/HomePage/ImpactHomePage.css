@@ -1,0 +1,19 @@
+
+ div.impact-home-div {
+   width: 100%;
+   height: 807px;
+   padding: 50px;
+ }
+ 
+ div.see-your-impact {
+   
+ }
+div.gradient-block{
+  position: relative;
+  top: 3rem;
+  left: 3rem;
+  width: 1153px;
+  height: 617px;
+  background: radial-gradient(56.9% 198.68% at 10.67% 69.04%, #F5CE8C 0%, rgba(237, 178, 124, 0.822917) 38.02%, rgba(197, 49, 49, 0) 100%);
+}
+
