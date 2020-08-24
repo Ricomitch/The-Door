@@ -4,7 +4,7 @@ import { getVolunteer } from '../../services/formServices.js'
 
 function Confirmation({ setFormStatus, volunteerId }) {
   const [volunteer, setVolunteer] = useState({})
-  const [modalOpen, setModalOpen] = useState(false)
+  const [modalOpen, setModalOpen] = useState(true)
 
   useEffect(() => {
     async function fetchVolunteer(volunteerId) {
