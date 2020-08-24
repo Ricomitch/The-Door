@@ -1,9 +1,27 @@
 {
-  "HomepageHeroRectangle143": {
+  "HomepageHeroRectangle143p1": {
     "header": "COVID-19: How The Door Is Responding ",
     "subheader": null,
     "content": "The COVID-19 public health crisis and while The Door’s physical spaces are mostly closed, we are virtually open! The health and wellbeing of our community is our top priority, and we are working hard to stay connected and to continue to support our members.",
-    "buttonValue": "Learn More   > "
+    "buttonValue": "Learn More   >"
+  },
+
+  "HomepageHeroRectangle143p2": {
+    "header": "Committed to Empoweing & Inspiring Young Minds",
+    "content": "The Door is also focused on impacting the lives of young people throughout the city – and the world – and, as such, has served as a model for other, similar organizations locally, nationally and internationally.",
+    "buttonValue": "Learn More   >"
+  },
+
+  "HomepageHeroRectangle143p3": {
+    "header": "Help be the Difference!\nHelp be the Impact",
+    "content": "The Door is always looking for support from great people eager to help the future leaders of this country reach their greatest potential.  You could be an inspiration! You could be a difference maker! #STANDWITHTHEDOOR ",
+    "buttonValue": "Volunteer Today    >"
+  },
+
+  "HomepageHeroRectangle143p4": {
+    "header": "Creating Creative Spaces",
+    "content": "We inspire all young people to reach their full artistic potential through an array of creative and professional opportunities. It’s important that our Youth develop an understanding of the critical role art plays in self expression and personal creativity.",
+    "buttonValue": "Learn More   >"
   },
   
   "HomepageHeroBanner": {

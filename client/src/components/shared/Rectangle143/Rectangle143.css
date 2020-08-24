@@ -4,12 +4,42 @@
   width: 526px;
   height: 365px;
   border-radius: 12px;;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  padding-right: 40px;
 }
 .rectangle-header {
+  width: 503px;
+  height: 41px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: bold;
   color: #f3b143;
+  display: flex;
+  flex-wrap: wrap;
 }
 .rectangle-content {
-  color: white;
-  font-size: 16px;
+  width: 456px;
+  height: 201px;
   font-family: Montserrat;
+  font-size: 16px;
+  line-height: 1.75;
+  color: white;
+}
+.rectangle-button {
+  width: 198px;
+  height: 37px;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.8);
+  align-self: flex-end;
+  padding: 6px;
+}
+.button-words {
+  width: 107px;
+  height: 20px;
+  font-family: Cabin;
+  font-size: 18px;
+  color: #4a688d;
+  /* line-height: 37px; */
 }
