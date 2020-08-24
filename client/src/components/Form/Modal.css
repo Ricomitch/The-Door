@@ -1,0 +1,59 @@
+.backdrop {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 50;
+}
+
+.modal {
+  position: absolute;
+  left: 375px;
+  top: 415px;
+  background-color: white;
+  width: 690px;
+  height: 305px;
+  border: solid 5px #f3b143;
+}
+
+.modal-content {
+  color: #1c4d73;
+  padding: 10px 60px;
+  font-family: 'Cabin', 'Georgia';
+}
+
+h1.submission-received {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 20px 0 30px;
+  
+}
+
+button.modal-return-home {
+  position: absolute;
+  right: 5%;
+  background: #93acd9;
+  border-radius: 10px;
+  width: 198px;
+  border-style: unset;
+}
+
+button.modal-return-home:hover {
+  filter: brightness(75%);
+}
+
+.modal-return-home h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: white;
+  font-family: 'Montserrat','Arial';
+  margin: .75em auto;
+}
+
+
