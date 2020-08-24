@@ -4,7 +4,9 @@ import MissionNewsPage from '../../components/HomePage/MissionNewsPage'
 import Rectangle143 from '../../components/shared/Rectangle143/Rectangle143.jsx'
 import copyJSON from '../../assets/Homepage/copy.json'
 
+
 function Homepage() {
+
   return (
     <div>
       <h1>homepage</h1>
