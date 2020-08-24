@@ -6,7 +6,7 @@ function Rectangle143({copy}) {
     <div className='rectangle143'>
       <h2 className='rectangle-header'>{copy.header}</h2>
       <p className='rectangle-content'>{copy.content}</p>
-      <button className='rectangle-button'>{copy.buttonValue}</button>
+      <button className='rectangle-button'><span className='button-words'>{copy.buttonValue}</span></button>
     </div>
   )
 }

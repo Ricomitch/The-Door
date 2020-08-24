@@ -11,7 +11,7 @@ function Homepage() {
     <div>
       <h1>homepage</h1>
       <CarouselSlide />
-      <Rectangle143 copy={copyJSON.HomepageHeroRectangle143} />
+      <Rectangle143 copy={copyJSON.HomepageHeroRectangle143p1} />
 
       <MissionNewsPage />
       
