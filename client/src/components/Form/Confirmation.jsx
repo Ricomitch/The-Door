@@ -20,7 +20,7 @@ function Confirmation({ setFormStatus, volunteerId }) {
     return (
       <div>
         <h2>Confirmation</h2>
-        <h3>{volunteer.firstName}</h3>
+        <h3>{`${volunteer.firstName} ${volunteer.lastName}`}</h3>
         <h4>{volunteer.phone}</h4>
         <h4>{volunteer.email}</h4>
         <h4>Programs</h4>
