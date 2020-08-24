@@ -1,9 +1,12 @@
 import React from 'react'
 
+import CarouselSlide from '../../components/HomePage/Carousel'
 function Homepage() {
   return (
     <div>
-      <h2>homepage</h2>
+      <h1>homepage</h1>
+      <CarouselSlide />
+      
     </div>
   )
 }
