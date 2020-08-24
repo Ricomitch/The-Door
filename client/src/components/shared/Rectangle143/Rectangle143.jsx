@@ -1,4 +1,5 @@
 import React from 'react'
+import './Rectangle143.css'
 
 function Rectangle143({copy}) {
   return (
