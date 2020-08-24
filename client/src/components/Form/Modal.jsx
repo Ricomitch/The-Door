@@ -1,7 +1,10 @@
 import React from 'react'
-import moduleName from 'react-router-dom'
+import { useHistory} from 'react-router-dom'
+import './Modal.css'
 
 function Modal({ show, onClose }) {
+  const history = useHistory()
+  
   if (!show) {
     return null
   }
@@ -20,7 +23,7 @@ function Modal({ show, onClose }) {
           A member of our staff will contact you personally to discuss next
           steps!
         </p>
-        <button id='modal-return-home' onClick={onClose}>Return Home</button>
+        <button id='modal-return-home' onClick={() => history.push('/')}>Return Home</button>
       </div>
     </div>
   )
