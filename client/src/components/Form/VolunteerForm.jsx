@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
+import { useHistory } from 'react-router-dom'
 import {
   createVolunteer,
   updateVolunteer,
   getVolunteer,
+  deleteVolunteer
 } from '../../services/formServices.js'
 import { Formik } from 'formik'
 import CheckboxInput from './CheckboxInput'
@@ -21,7 +23,9 @@ function VolunteerForm({
     programs: [],
     roles: [],
   })
-
+  
+  const history = useHistory()
+  
   useEffect(() => {
     if (formStatus === 'edit') {
       async function fetchVolunteer() {
@@ -183,6 +187,12 @@ function VolunteerForm({
           </form>
         )}
       </Formik>
+      {formStatus === 'edit' && (
+        <button onClick={() => {
+          deleteVolunteer(volunteerId)
+          history.push('/')
+        }}>I changed my mind.</button>
+      )}
     </>
   )
   // <div className='create-form'>
