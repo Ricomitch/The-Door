@@ -1,0 +1,38 @@
+.slides {
+  width: 1442px;
+  height: 625px;
+  padding-right: 50px;
+  position: relative;
+
+}
+
+.slide {
+  width: 400px;
+  height: 625px;
+  /* object-fit: cover;
+  position: relative; */
+}
+
+.studying {
+  display: block;
+  position: absolute;
+  padding-right: 200px;
+  margin-top: 200px;
+  top: 20px;
+  /* position: absolute;
+  top: 25%;
+  left: 25%;
+  margin-top: 130px; */
+
+}
+
+
+.thumbs {
+  /* transform: translate3d(0px, 0px, 0px); */
+  /* transition-duration: 500ms; */
+  display: none;
+}
+
+.carousel-status {
+  display: none;
+}
