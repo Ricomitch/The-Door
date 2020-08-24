@@ -3,11 +3,8 @@ import VolunteerForm from '../../components/Form/VolunteerForm.jsx'
 import Confirmation from '../../components/Form/Confirmation.jsx'
 
 function FormScreen() {
-  const [formStatus, setFormStatus] = useState('submitted')
-  const [volunteerId, setVolunteerId] = useState('5f4413a9fe1df35bc3f8d280')
-  
-  // ATTENTION LINE S6 & 7HARD - CODED FOR DEV PURPOSES
-  // REVERT TO EMPTY STRING ('')
+  const [formStatus, setFormStatus] = useState('')
+  const [volunteerId, setVolunteerId] = useState('')
 
   if (!formStatus) {
     return (

@@ -21,12 +21,14 @@
 .modal-content {
   color: #1c4d73;
   padding: 10px 60px;
+  font-family: 'Cabin', 'Georgia';
 }
 
 h1.submission-received {
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
+  margin: 20px 0 30px;
   
 }
 
@@ -34,8 +36,13 @@ button.modal-return-home {
   position: absolute;
   right: 5%;
   background: #93acd9;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 198px;
+  border-style: unset;
+}
+
+button.modal-return-home:hover {
+  filter: brightness(75%);
 }
 
 .modal-return-home h3 {
@@ -45,4 +52,8 @@ button.modal-return-home {
   font-size: 15px;
   line-height: 18px;
   color: white;
+  font-family: 'Montserrat','Arial';
+  margin: .75em auto;
 }
+
+
