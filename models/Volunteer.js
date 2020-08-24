@@ -7,8 +7,8 @@ const Volunteer = new Schema(
     lastName: { type: String, required: true },
     phone: { type: String, required: true },
     email: { type: String, required: true },
-    programs: { type: Object, required: true },
-    roles: { type: Object, required: true },
+    programs: { type: Array, required: true },
+    roles: { type: Array, required: true },
   },
   { timestamps: true }
 )

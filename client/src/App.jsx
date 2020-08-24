@@ -20,18 +20,11 @@ const App = () => {
           <GetInvolved />
         </Route>
         <Route exact path='/sign-up'>
-          <FormScreen mode='sign-up' />
+          <FormScreen />
         </Route>
-        <Route path='/sign-up/:id'>
-          <FormScreen mode='edit' />
-        </Route>
-        {/* <Route path='/confirmation'>
-          <Confirmation />
-        </Route> */}
       </Switch>
       <Footer />
     </div>
-    
   )
 }
 
