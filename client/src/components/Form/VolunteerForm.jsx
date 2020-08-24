@@ -4,7 +4,7 @@ import {
   createVolunteer,
   updateVolunteer,
   getVolunteer,
-  deleteVolunteer
+  deleteVolunteer,
 } from '../../services/formServices.js'
 import { Formik } from 'formik'
 import CheckboxInput from './CheckboxInput'
@@ -23,9 +23,9 @@ function VolunteerForm({
     programs: [],
     roles: [],
   })
-  
+
   const history = useHistory()
-  
+
   useEffect(() => {
     if (formStatus === 'edit') {
       async function fetchVolunteer() {
@@ -148,6 +148,7 @@ function VolunteerForm({
                 value='Mental Health'
               />
               <CheckboxInput props={props} name='programs' value='LGBTQ' />
+
               <CheckboxInput
                 props={props}
                 name='programs'
@@ -188,35 +189,17 @@ function VolunteerForm({
         )}
       </Formik>
       {formStatus === 'edit' && (
-        <button onClick={() => {
-          deleteVolunteer(volunteerId)
-          history.push('/')
-        }}>I changed my mind.</button>
+        <button
+          onClick={() => {
+            deleteVolunteer(volunteerId)
+            history.push('/')
+          }}
+        >
+          I changed my mind.
+        </button>
       )}
     </>
   )
-  // <div className='create-form'>
-  //   <h2>{mode} form</h2>
-  //   <h1 className='sign-up-main-heading'>Sign up to Volunteer</h1>
-  //   <div className='upper-form-container'>
-  //     <form onSubmit={(e)=>handleSubmit(e)}>
-  //       <div className='upper-form-item'>
-  //         <label className='sign-up-headings' htmlFor='first-name-input'>
-  //           First Name
-  //         </label>
-  //         <br />
-  //         <input
-  //           id='first-name-input'
-  //           name='firstName'
-  //           type='text'
-  //           value={volunteer.firstName && volunteer.firstName}
-  //           onChange={(e) => handleChange(e)}
-  //         />
-  //       </div>
-  //       <input type='submit' value='Submit' />
-  //     </form>
-  //   </div>
-  // </div>
 }
 
 export default VolunteerForm

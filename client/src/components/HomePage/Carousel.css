@@ -1,38 +1,34 @@
 .slides {
   width: 1442px;
   height: 625px;
-  padding-right: 50px;
-  position: relative;
-
+  padding-right: 150px;
 }
 
 .slide {
-  width: 400px;
+  width: 1442px;
   height: 625px;
-  /* object-fit: cover;
-  position: relative; */
 }
 
-.studying {
-  display: block;
-  position: absolute;
-  padding-right: 200px;
-  margin-top: 200px;
-  top: 20px;
-  /* position: absolute;
-  top: 25%;
-  left: 25%;
-  margin-top: 130px; */
-
+.friends {
+  object-fit: cover;
+  object-position: 0px 75%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.art{
+  object-fit: cover;
+  object-position: 2px 65%;
 }
 
 
 .thumbs {
-  /* transform: translate3d(0px, 0px, 0px); */
-  /* transition-duration: 500ms; */
   display: none;
 }
 
 .carousel-status {
   display: none;
+}
+
+.test{
+  background-color: white;
 }
