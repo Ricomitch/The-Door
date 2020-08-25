@@ -1,20 +1,42 @@
 .news-cards {
-  background-color: #cbcbcb;
+  background-color: #ffffff;
   opacity: 95%;
   width: 424px;
   height: 133px;
-  border-radius: 12px;;
   display: flex;
   flex-direction: row;
-  padding: 30px;
-  padding-right: 40px;
+  padding: 0px;
+  padding-right: 10px;
 }
 
 .card-image {
+  object-fit: cover;
   width: 134px;
   height: 133px;
 }
 
+.card-items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card-header{
+ font-size: 18px;
+ margin: 5px;
+}
+
+.card-content {
+  font-size: 14px;
+  margin: 5px;
+
+}
+
 .card-button {
+  display: flex;
+  justify-content: flex-end;
+  right: 0;
   color: #C53131;
+  font-size: 14px;
+  margin: 0;
 }
