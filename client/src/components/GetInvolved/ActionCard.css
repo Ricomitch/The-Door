@@ -1,0 +1,16 @@
+.action-card {
+  width: 296px;
+  height: 406px;
+  opacity: 0.75;
+  position: relative;
+  overflow: hidden;
+}
+.action-volunteer {
+ object-fit: cover;
+  object-position: -450px -70px;
+  height: 137%;
+  position: absolute;
+}
+.action-text {
+  border: 5px solid red;
+}
