@@ -1,0 +1,19 @@
+.stand-with-box {
+  height: 121px;
+  text-align: center;
+  margin: 0 auto;
+}
+.stand-with-text {
+  font-family: Montserrat;
+  font-size: 40px;
+  color: white;
+  line-height: 121px;
+}
+.sw-involved {
+  width: 1318px;
+  background-color: #c2cbd680;
+}
+.sw-volunteer {
+  width: 1440px;
+  background-color: #f3b143b8;
+}
