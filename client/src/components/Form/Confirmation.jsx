@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react'
 import Modal from './Modal'
 import { getVolunteer } from '../../services/formServices.js'
 
-function Confirmation({ setFormStatus, volunteerId }) {
+function Confirmation({ setFormStatus, volunteerId, setModalOpen }) {
   const [volunteer, setVolunteer] = useState({})
-  const [modalOpen, setModalOpen] = useState(false)
+  
 
   useEffect(() => {
     async function fetchVolunteer(volunteerId) {
@@ -20,9 +20,9 @@ function Confirmation({ setFormStatus, volunteerId }) {
   if (programs) {
     return (
       <div className='confirmation-component'>
-        <Modal show={modalOpen}
+        {/* <Modal show={modalOpen}
         // onClose={() => setModalOpen(prev => !prev)}
-        />
+        /> */}
         
         <h2>Confirmation</h2>
         <h3>{volunteer.firstName}</h3>
