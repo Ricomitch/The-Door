@@ -4,6 +4,7 @@
   position: relative;
   margin-top: 0px;
   right: 0;
+  overflow: hidden;
 }
 
 .news-items{
@@ -45,7 +46,7 @@
 .flower1 {
   position: absolute;
   width: 1040px;
-  height: 905px;
+  height: 945px;
   right: 50;
   background-repeat: no-repeat;
   bottom: 0;
