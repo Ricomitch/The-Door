@@ -8,16 +8,16 @@
   flex-direction: column;
   padding: 30px;
   padding-right: 40px;
+  text-align: left;
 }
 .rectangle-header {
-  width: 503px;
+  width: 475px;
   height: 41px;
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 24px;
   font-weight: bolder;
   color: #f3b143;
-  display: flex;
-  flex-wrap: wrap;
+  word-wrap: break-word;
 }
 .rectangle-subheading {
   font-family: Montserrat-SemiBold;
