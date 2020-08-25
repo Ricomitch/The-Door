@@ -8,7 +8,7 @@
    grid-template-columns: 36px 29px 142px 209px 1fr 36px;
  }
  
- div.rectangle143 {
+ div.homePageImpactRectangle143 {
   grid-row-start: 4;
   grid-column-start: 2;
   z-index: 2;
