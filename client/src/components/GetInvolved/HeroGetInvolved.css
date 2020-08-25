@@ -1,0 +1,10 @@
+div.HeroGet {
+  position: relative;
+}
+
+div.HeroGetRectangle143 {
+  position: absolute;
+  top: 70px;
+  right: 25px;
+  z-index: 1;
+}
