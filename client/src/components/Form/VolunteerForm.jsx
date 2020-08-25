@@ -39,7 +39,6 @@ function VolunteerForm({
     }
   }, [volunteerId])
 
-  
   return (
     <>
       <div className='shim'></div>
@@ -60,6 +59,13 @@ function VolunteerForm({
             <Formik
               initialValues={volunteer}
               enableReinitialize
+              validate={(values) => {
+                let myArr = Object.values(values)
+                const check = myArr.every((x) => {
+                  return typeof x === 'object' ? x.length > 0 : Boolean(x)
+                })
+                if (check) setButtonActive((prev) => !prev)
+              }}
               onSubmit={async (value) => {
                 console.log(value)
                 let response
@@ -235,9 +241,12 @@ function VolunteerForm({
                     </div>
                   </div>
 
-                  <button className='submit-button' {...buttonActive ? 'active' : null}
-                    type='submit'>
-                    <span className='button-text'>
+                  <button className='submit-button' type='submit'>
+                    <span
+                      className={`button-text ${
+                        buttonActive ? 'active' : 'rest'
+                      }`}
+                    >
                       {formStatus === 'edit' ? 'Update' : 'Submit'}
                     </span>
                   </button>

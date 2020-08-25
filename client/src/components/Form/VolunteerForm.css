@@ -78,11 +78,17 @@ form button {
   border-radius: 10px;
   border: solid 2px #e00b00;
   background-color: #fff;
+  cursor: pointer;
 }
+
 
 form span.button-text {
   width: 69px;
   height: 27.4px;
   font-size: 22px;
   color: rgba(224, 11, 0, 0.2);
+}
+
+.active {
+  color: #e00b00 !important;
 }
