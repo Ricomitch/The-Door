@@ -1,0 +1,29 @@
+
+ div.impact-home-div {
+   width: 100%;
+   height: 807px;
+   padding: 20px;
+   display: grid;
+   grid-template-rows: 62px 70px 216px 359px 20px 80px;
+   grid-template-columns: 36px 29px 142px 209px 1fr 36px;
+ }
+ 
+ div.rectangle143 {
+  grid-row-start: 4;
+  grid-column-start: 2;
+  z-index: 2;
+ }
+
+div.gradient-block{
+  grid-row-start: 2;
+  grid-column-start: 3;
+  width: 1153px;
+  height: 617px;
+  background: radial-gradient(56.9% 198.68% at 10.67% 69.04%, #F5CE8C 0%, rgba(237, 178, 124, 0.822917) 38.02%, rgba(197, 49, 49, 0) 100%);
+}
+
+div.img-wrapper {
+  grid-row-start: 3;
+  grid-column-start: 4;
+}
+
