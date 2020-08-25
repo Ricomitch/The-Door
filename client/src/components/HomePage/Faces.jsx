@@ -24,6 +24,9 @@ function Faces() {
         </div>
         <div className='faces-right-side'>
           <div className='faces-back-rectangle'></div>
+          <div className='faces-front-rectangle'>
+            <p>Helping nearly <span className='elevenK'>11,000</span> <span className='young-people'>young people</span> from all over New York City <span className='discover-and-achieve'> discover and achieve</span> his or her <span className='greatest-potential'>greatest potential</span></p>
+          </div>
         </div>
       </main>
     </div>
