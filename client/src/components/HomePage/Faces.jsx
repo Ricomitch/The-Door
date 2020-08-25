@@ -5,10 +5,12 @@ import Flower2 from '../../assets/Homepage/flower2.svg'
 function Faces() {
   return (
     <div className='faces-div'>
-      <div className='flower2' style={{backgroundImage: `url(${Flower2})`}}></div>
+      <div
+        className='flower2'
+        style={{ backgroundImage: `url(${Flower2})` }}>
+      </div>
+      <div className='faces-triangle'></div>
       <main className='faces-main'>
-        <h2>this is Faces start</h2>
-        <div className='Polygon1'></div>
         <div className='faces-left-side'>
           <div className='Rectangle178'>
             <span className='faces-text'>Faces of The Door</span>
@@ -20,7 +22,9 @@ function Faces() {
             src='https://www.youtube.com/embed/5xdstOwJfUk'
             className='video'></iframe>
         </div>
-        <h2>this is Faces end</h2>
+        <div className='faces-right-side'>
+          <div className='faces-back-rectangle'></div>
+        </div>
       </main>
     </div>
   )

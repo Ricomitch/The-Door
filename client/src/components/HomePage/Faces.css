@@ -8,10 +8,11 @@
   /* display: flex; */
   right: 0;
 }
-.main {
-  position: absolute;
+.faces-main {
+  display: flex;
+  flex-direction: row;
 }
-.Polygon1 {
+.faces-triangle {
   width: 0;
   height: 0;
   border-left: 30px solid transparent;
@@ -42,6 +43,8 @@
 }
 .faces-left-side {
   padding: 20px;
+  width: 735px;
+  padding-top: 120px;
 }
 .video {
   margin-top: 20px;
@@ -54,5 +57,17 @@
   right: 0;
   background-repeat: no-repeat;
   bottom: 0;
-  
+}
+.faces-back-rectangle {
+  width: 509px;
+  height: 348px;
+  background-color: rgba(28, 77, 115, 0.57);
+  position: absolute;
+  top: 210px;
+  right: 30px;
+}
+.faces-right-side {
+  padding: 20px;
+  width: 735px;
+  padding-top: 120px;
 }
