@@ -68,3 +68,12 @@ body {
   font-style: italic;
   font-stretch: normal;
 }
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: local(Montserrat-Bold),
+    url(./assets/Montserrat-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}

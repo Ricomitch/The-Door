@@ -1,6 +1,26 @@
+.involved-hero2 {
+  background-color: #1c4d73;
+  padding-top: 40px;
+  position: relative;
+}
 .action-section {
   width: 1318px;
-  /* display: flex; */
+  display: flex;
   margin: 0 auto;
-  border: 1px solid red;
+  padding-top: 66px;
+  height: 635px;
+  justify-content: space-between;
+}
+.action-triangle {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 50px solid white;
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
