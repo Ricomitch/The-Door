@@ -58,16 +58,38 @@
   background-repeat: no-repeat;
   bottom: 0;
 }
-.faces-back-rectangle {
-  width: 509px;
-  height: 348px;
-  background-color: rgba(28, 77, 115, 0.57);
-  position: absolute;
-  top: 210px;
-  right: 30px;
-}
 .faces-right-side {
   padding: 20px;
   width: 735px;
   padding-top: 120px;
+}
+.faces-back-rectangle {
+  width: 509px;
+  height: 348px;
+  background-color: #1c4d7391;
+  position: absolute;
+  top: 210px;
+  right: 30px;
+}
+.faces-front-rectangle {
+  width: 509px;
+  height: 348px;
+  background-color: #1c4d73;
+  position: absolute;
+  top: 260px;
+  right: 70px;
+  font-family: Cabin-Bold;
+  font-size: 36px;
+  color: white;
+  padding: 0 25px;
+  text-align: center;
+  line-height: 55px;
+}
+.elevenK {
+  font-size: 48px;
+  color: #f3b143;
+}
+.young-people {
+  font-size: 44px;
+  color: #f3b143;
 }
