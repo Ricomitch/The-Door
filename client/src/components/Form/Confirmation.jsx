@@ -20,10 +20,6 @@ function Confirmation({ setFormStatus, volunteerId, setModalOpen }) {
   if (programs) {
     return (
       <div className='confirmation-component'>
-        {/* <Modal show={modalOpen}
-        // onClose={() => setModalOpen(prev => !prev)}
-        /> */}
-        
         <h2>Confirmation</h2>
         <h3>{volunteer.firstName}</h3>
         <h4>{volunteer.phone}</h4>

@@ -52,8 +52,8 @@ input.text {
   background-color: #f2f2f2;
 }
 
-input.checkbox {
-  transform: scale(2, 2);
+div.checkbox-group {
+  height: 400px;
 }
 
 div.checkbox-group h2 {
@@ -61,3 +61,12 @@ div.checkbox-group h2 {
   font-size: 24px;
   font-weight: bold;
 }
+
+div.checkbox-input-group {
+  
+display: flex;
+  flex-flow: row wrap;
+height: 100%;
+}
+
+

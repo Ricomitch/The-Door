@@ -54,7 +54,7 @@ function VolunteerForm({
         >
           <div className='form-content'>
             <h1 className='volunteer-title'>Sign up to Volunteer</h1>
-
+            
             <Formik
               initialValues={volunteer}
               enableReinitialize
@@ -124,10 +124,11 @@ function VolunteerForm({
 
                   <div className='checkbox-group' id='program-selection'>
                     <h2>Which programs would you like to assist with?</h2>
-                  </div>
+                  
 
                   <div
                     role='group'
+                    className='checkbox-input-group'
                     aria-labelledby='checkbox-group'
                     id='program-input-group'
                   >
@@ -147,10 +148,10 @@ function VolunteerForm({
                       value='Creative Arts'
                     />
                     <CheckboxInput
-                      props={props}
-                      name='programs'
-                      value={
-                        "Broome Street Academy (The Door's charter high school)"
+                        props={props}
+                        name='programs'
+                        value={
+                          "Broome Street Academy \n (The Door's charter high school)"
                       }
                     />
                     <CheckboxInput
@@ -189,7 +190,8 @@ function VolunteerForm({
                       name='programs'
                       value={"Hmmm I'm not sure yet.."}
                     />
-                  </div>
+                    </div>
+                    </div>
 
                   <div className='checkbox-group' id='role-selection'>
                     <h2>What roles are you interested in?</h2>

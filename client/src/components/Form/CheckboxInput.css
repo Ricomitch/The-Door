@@ -1,0 +1,27 @@
+div.checkbox-input-area {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex: 0 0 383px;
+  font-family: Cabin, Georgia;
+  font-size: 15px;
+  height: 29px;
+  padding-left: 35px;
+}
+
+div.checkbox-input-area input.checkbox {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  cursor: pointer
+}
+
+span.custom-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #f2f2f2;
+}
