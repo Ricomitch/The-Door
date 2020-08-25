@@ -81,6 +81,14 @@ form button {
   cursor: pointer;
 }
 
+form button:hover {
+  background-color: #ea6e69;
+  border: none;
+}
+
+form button:hover span.button-text {
+  color: white;
+}
 
 form span.button-text {
   width: 69px;
