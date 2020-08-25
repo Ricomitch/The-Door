@@ -11,7 +11,6 @@ import Art from '../../assets/Homepage/Screen Shot 2020-08-24 at 9.13.26 AM.png'
 import Rectangle143 from '../shared/Rectangle143/Rectangle143.jsx'
 import copyJSON from '../../assets/Homepage/copy.json'
 
-
 function CarouselSlide() {
   return (
     <div className='container'>
@@ -22,8 +21,10 @@ function CarouselSlide() {
         infiniteLoop
         showArrows={false}
       >
-        <div>
-          <h1 className='test'>image1</h1>
+        <div className='slide1'>
+          <div className='rectangle1'>
+            <Rectangle143 copy={copyJSON.HomepageHeroRectangle143p1} />
+          </div>
           <img
             className='slide studying'
             src={Studying}
@@ -31,32 +32,35 @@ function CarouselSlide() {
             width='300px'
           />
         </div>
-        <img
-          className='slide writing'
-          src={Writing}
-          alt='boy writing'
-          width='300px'
-        />
-        <img
-          className='slide friends'
-          src={Friends}
-          alt='friends hanging '
-          width='300px'
-        />
-         <img
-          className='slide art'
-          src={Art}
-          alt='art '
-          width='300px'
-        />
+        <div className='slide2'>
+          <div className='rectangle2'>
+            <Rectangle143 copy={copyJSON.HomepageHeroRectangle143p2} />
+          </div>
+          <img
+            className='slide writing'
+            src={Writing}
+            alt='boy writing'
+            width='300px'
+          />
+        </div>
+        <div className='slide3'>
+          <div className='rectangle3'>
+            <Rectangle143 copy={copyJSON.HomepageHeroRectangle143p3} />
+          </div>
+          <img
+            className='slide friends'
+            src={Friends}
+            alt='friends hanging '
+            width='300px'
+          />
+        </div>
+        <div className='slide4'>
+          <div className='rectangle4'>
+            <Rectangle143 copy={copyJSON.HomepageHeroRectangle143p4} />
+          </div>
+          <img className='slide art' src={Art} alt='art ' width='300px' />
+        </div>
       </Carousel>
-
-      <Rectangle143 copy={copyJSON.HomepageHeroRectangle143p1} />
-      <Rectangle143 copy={copyJSON.HomepageHeroRectangle143p2} />
-      <Rectangle143 copy={copyJSON.HomepageHeroRectangle143p3} />
-      <Rectangle143 copy={copyJSON.HomepageHeroRectangle143p4} />
-
-
     </div>
   )
 }
