@@ -1,0 +1,63 @@
+div.form-body {
+  height: 1078px;
+  width: 100%;
+  background-color: #1C4D73;
+  color: white;
+}
+div.shim {
+  display: block;
+  min-height: 30px;
+  background-color:  #1C4D73;
+}
+h1.volunteer-title {
+    margin-top: unset;
+    width: 432px;
+    height: 41.1px;
+    font-family: Cabin;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+
+div.form-content {
+  width: 947px;
+  height: 1078px;
+  padding: 0 60px 0;
+  
+}
+
+div.primary-data-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+div.primary-data-field {
+  display: flex;
+  flex-flow: column;
+}
+
+div.primary-data-field label {
+  font-family: Cabin, Georgia;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input.text {
+  width: 395px;
+  height: 32.3px;
+  border: solid 1px rgba(0, 0, 0, 0.28);
+  background-color: #f2f2f2;
+}
+
+input.checkbox {
+  transform: scale(2, 2);
+}
+
+div.checkbox-group h2 {
+  font-family: Cabin, Georgia;
+  font-size: 24px;
+  font-weight: bold;
+}

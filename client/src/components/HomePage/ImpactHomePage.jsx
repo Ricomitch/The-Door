@@ -8,7 +8,9 @@ function ImpactHomePage() {
   return (
     <div className='impact-home-div'>
       
-        <Rectangle143 copy={copyJSON.HomepageImpactRectangle143} />
+        <div className="homePageImpactRectangle143">
+          <Rectangle143 copy={copyJSON.HomepageImpactRectangle143} />
+        </div>
         
         <div className='gradient-block'>
         </div> 

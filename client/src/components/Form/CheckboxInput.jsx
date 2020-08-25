@@ -6,6 +6,7 @@ function CheckboxInput({ props, name, value }) {
       <label>
         <input
           type='checkbox'
+          className='checkbox'
           name={name}
           value={value}
           checked={props.values[name].includes(value)}
