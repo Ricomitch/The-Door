@@ -10,7 +10,7 @@ function Homepage() {
     <div>
       <h1>homepage</h1>
       <CarouselSlide />
-      {/* <MissionNewsPage /> */}
+      <MissionNewsPage />
       <Faces />
     </div>
   )
