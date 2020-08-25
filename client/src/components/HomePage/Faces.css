@@ -1,9 +1,15 @@
 .faces-div {
-  background-image: url('../../assets/Homepage/Flower 2.svg');
-  background-position-y: -90px;
+  /* background-image: url('../../assets/Homepage/Flower 2.svg'); */
+
   background-color: #c2cbd6;
   height: 830px;
   position: relative;
+  margin-top: 20px;
+  /* display: flex; */
+  right: 0;
+}
+.main {
+  position: absolute;
 }
 .Polygon1 {
   width: 0;
@@ -27,8 +33,26 @@
 .faces-text {
   width: 333px;
   height: 45px;
-  font-family: Montserrat;
+  font-family: Montserrat-ExtraBold;
   font-size: 34px;
   font-weight: 800;
+  line-height: 65px;
   color: #f3b143;
+  padding: 10px;
+}
+.faces-left-side {
+  padding: 20px;
+}
+.video {
+  margin-top: 20px;
+  position: relative;
+}
+.flower2 {
+  position: absolute;
+  width: 1040px;
+  height: 925px;
+  right: 0;
+  background-repeat: no-repeat;
+  bottom: 0;
+  
 }
