@@ -124,8 +124,6 @@ function VolunteerForm({
 
                   <div className='checkbox-group' id='program-selection'>
                     <h2>Which programs would you like to assist with?</h2>
-                  
-
                   <div
                     role='group'
                     className='checkbox-input-group'
