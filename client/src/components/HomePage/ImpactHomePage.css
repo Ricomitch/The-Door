@@ -19,7 +19,8 @@ div.gradient-block{
   grid-column-start: 3;
   width: 1153px;
   height: 617px;
-  background: radial-gradient(56.9% 198.68% at 10.67% 69.04%, #F5CE8C 0%, rgba(237, 178, 124, 0.822917) 38.02%, rgba(197, 49, 49, 0) 100%);
+  background: rgb(241,195,144);
+  background: linear-gradient(90deg, rgba(241,195,144,1) 0%, rgba(240,199,189,1) 60%, rgba(255,255,255,1) 100%); ;
 }
 
 div.img-wrapper {
