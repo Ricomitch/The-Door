@@ -1,11 +1,10 @@
 .slides {
   width: 1442px;
   height: 625px;
-  padding-right: 150px;
+  position: relative;
 }
 
 .slide {
-  width: 1442px;
   height: 625px;
 }
 
@@ -14,8 +13,10 @@
   object-position: 0px 75%;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+
 }
-.art{
+
+.art {
   object-fit: cover;
   object-position: -1px 65%;
 }
@@ -29,6 +30,37 @@
   display: none;
 }
 
-.test{
+.slide {
+  padding-right: 75px;
+  background-color: white !important;
+}
+
+.slide1 {
+  position: relative;
+}
+
+.rectangle1,
+.rectangle2,
+.rectangle3,
+.rectangle4 {
+  position: absolute;
+  left: 62.46%;
+  right: 12.92%;
+  top: 11.68%;
+  bottom: 29.92%;
+  z-index: 2;
+}
+
+.rectangle1 {
+  left: 65.96%;
+}
+
+
+.slide3 {
+  margin-left: -75px;
+  margin-right: 75px;
+}
+
+.container {
   background-color: white;
 }
