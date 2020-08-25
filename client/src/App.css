@@ -32,3 +32,12 @@ body {
   font-style: normal;
   font-stretch: normal;
 }
+
+@font-face {
+  font-family: Cabin-Bold;
+  src: local(Cabin-Bold),
+    url(./assets/Cabin-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
