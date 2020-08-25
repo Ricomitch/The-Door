@@ -19,6 +19,11 @@
   display: flex;
   flex-wrap: wrap;
 }
+.rectangle-subheading {
+  font-family: Montserrat-SemiBold;
+  font-size: 22px;
+  color: white;
+}
 .rectangle-content {
   width: 456px;
   height: 201px;
@@ -42,4 +47,7 @@
   font-size: 18px;
   color: #4a688d;
   /* line-height: 37px; */
+}
+.subheader {
+  height: 400px;
 }
