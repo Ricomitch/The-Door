@@ -17,7 +17,7 @@
 }
 .art{
   object-fit: cover;
-  object-position: 2px 65%;
+  object-position: -1px 65%;
 }
 
 
