@@ -1,0 +1,53 @@
+.confirmation-body {
+  height: 1078px;
+  width: 100%;
+  background-color: #1C4D73;
+  color: white;
+}
+.shim {
+  display: block;
+  min-height: 30px;
+  background-color:  #1C4D73;
+}
+.confirmation-title {
+  margin-top: unset;
+  width: 432px;
+  height: 41.1px;
+  font-family: Cabin;
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+}
+.confirmation-content {
+  width: 947px;
+  height: 1078px;
+  padding: 0 60px 0;
+}
+.your-info {
+  padding-left: 40px;
+  font-weight: 500;
+  line-height: 5px;
+  margin-top: 30px;
+}
+.answers {
+  padding-left: 60px;
+  margin-top: 30px;
+}
+.volunteer-li {
+  margin: 6px;
+}
+.conf-screen-button {
+  margin: 0 15px;
+  width: 129.8px;
+  height: 53.8px;
+  border-radius: 10px;
+  border: solid 2px #e00b00;
+  color: #e00b00;
+  background-color: white;
+}
+.confirmation-section {
+  margin: 60px 40px;
+}
+.conf-page-buttons {
+  padding-left: 20px;
+}
