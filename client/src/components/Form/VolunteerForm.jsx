@@ -149,7 +149,7 @@ function VolunteerForm({
                         props={props}
                         name='programs'
                         value={
-                          "Broome Street Academy \n (The Door's charter high school)"
+                          "Broome Street Academy \n(The Door's charter high school)"
                       }
                     />
                     <CheckboxInput
