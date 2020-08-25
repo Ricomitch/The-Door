@@ -7,17 +7,17 @@ import './HeroForm.css'
 function HeroForm() {
   return (
     <div className="HeroForm">
-       <div className="heroFormRectangle143">
-        <Rectangle143 copy={copyJSON.FormHeroRectangle143}/>
-      </div>
+      <div className="heroFormRectangle143">
+        <Rectangle143 copy={copyJSON.FormHeroRectangle143} />
+        </div>
       <div
             className='img-wrapper'
             style={{
               backgroundImage: `url(${HeroFormPhoto})`,
               backgroundSize: 'cover',
               width: '1201px',
-              height: '583px',
-              zIndex: '1',
+              height: '470px',
+              zIndex: '0',
               backgroundPositionY: '50%'
             }}
       ></div>
