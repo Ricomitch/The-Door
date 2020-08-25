@@ -1,16 +1,15 @@
 import React from 'react'
-import Pride from '../../assets/Homepage/photo-1573225063823-21ec7ba08e64.jpeg'
-import Cook from '../../assets/Homepage/ND5_0344_cropped.jpg'
-import Grad from '../../assets/Homepage/Graduate.jpg'
+import './NewsItem.css'
  
 
-function NewsItem() {
+function NewsItem({card, image}) {
   return (
-    <div>
+    <div className='news-cards'>
 
-        <img className='card1' src={Pride} alt='pride parade'  />
-        <img className='card2' src={Cook} alt='cooking'  />
-        <img className='card3' src={Grad} alt='graduation'  />
+      <img className='card-image' src={image} /> 
+      <h2 className='card-header'>{card.header}</h2>
+      <p className='card-content'>{card.content}</p>
+      <h3 className='card-button'>{card.buttonValue}</h3>
       
     </div>
   )

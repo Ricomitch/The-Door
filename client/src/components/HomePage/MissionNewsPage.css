@@ -1,0 +1,22 @@
+.news-div {
+ 
+}
+
+
+
+
+
+.Rectangle1 {
+  width: 300px;
+  height: 65px;
+  border-radius: 15px;
+  background-color: #4b688a;
+}
+.news-text {
+  width: 333px;
+  height: 45px;
+  font-family: Montserrat;
+  font-size: 34px;
+  font-weight: 800;
+  color: #f3b143;
+}

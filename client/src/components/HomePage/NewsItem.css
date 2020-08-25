@@ -1,0 +1,20 @@
+.news-cards {
+  background-color: #cbcbcb;
+  opacity: 95%;
+  width: 424px;
+  height: 133px;
+  border-radius: 12px;;
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  padding-right: 40px;
+}
+
+.card-image {
+  width: 134px;
+  height: 133px;
+}
+
+.card-button {
+  color: #C53131;
+}
