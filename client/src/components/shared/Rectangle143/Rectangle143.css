@@ -14,7 +14,7 @@
   height: 41px;
   font-family: Montserrat;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: bolder;
   color: #f3b143;
   display: flex;
   flex-wrap: wrap;
@@ -48,6 +48,23 @@
   color: #4a688d;
   /* line-height: 37px; */
 }
-.subheader {
+.subheader-class {
   height: 400px;
+}
+.subheader-button {
+  border-radius: 25px;
+  width: 205.9px;
+  height: 38.5px;
+}
+.subheader-heading {
+  width: 277.7px;
+  height: 42.6px;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bolder;
+  color: #f3b143;
+  margin: 5px 0;
+}
+.no-button {
+  display: none;
 }
