@@ -26,7 +26,6 @@ function VolunteerForm({
     programs: [],
     roles: [],
   })
-  const [buttonActive, setButtonActive] = useState(false)
 
   const history = useHistory()
 
@@ -60,6 +59,7 @@ function VolunteerForm({
             <Formik
               initialValues={volunteer}
               enableReinitialize
+              isValid
               validate={(values) => {
                 const errors = {}
                 if (!values.firstName) errors.firstName = 'Required'
@@ -74,12 +74,13 @@ function VolunteerForm({
                 ) {
                   errors.email = 'Please enter a valid e-mail address'
                 }
-                if (values.programs.length === 0) errors.programs = 'Please select a program choice.'
-                if (values.roles.length === 0) errors.roles = 'Please select a roles choice.'
-                
-                // return errors
+                if (values.programs.length === 0)
+                  errors.programs = 'Please select a program choice.'
+                if (values.roles.length === 0)
+                  errors.roles = 'Please select a roles choice.'
+
+                return errors
               }}
-              
               onSubmit={async (value) => {
                 let response
                 if (formStatus === 'edit') {
@@ -255,21 +256,14 @@ function VolunteerForm({
                     </div>
                   </div>
 
-                  <button className='submit-button form' type='submit'>
-                    <span
-                      className={`button-text ${
-                        buttonActive ? 'active' : 'rest'
-                      }`}
-                    >
+                  <button
+                    className={`form ${props.isValid && props.dirty ? 'active-submit' : null}`}
+                    type='submit'
+                  >
+                    <span className='button-text'>
                       {formStatus === 'edit' ? 'Update' : 'Submit'}
                     </span>
                   </button>
-                  <pre>{JSON.stringify(props.values, null, 2)} </pre>
-                  <pre>{JSON.stringify(props.errors, null, 2)}</pre>
-                  {console.log(JSON.stringify(props.errors, null, 2))}
-                  <pre>
-                    Submitting: {JSON.stringify(props.isSubmitting, null, 1)}
-                  </pre>
                 </form>
               )}
             </Formik>

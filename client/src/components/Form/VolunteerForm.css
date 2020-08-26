@@ -5,11 +5,11 @@ div.form-body {
 }
 div.shim {
   display: block;
-  height: 50px;
+  height: 35px;
   background-color: #1c4d73;
 }
 h1.volunteer-title {
-  margin: 0px 0 1.5rem;
+  margin: 0 0 1.5rem;
   width: 432px;
   height: 41.1px;
   font-family: Cabin;
@@ -20,7 +20,7 @@ h1.volunteer-title {
 
 div.form-content {
   width: 947px;
-  height: 1200px;
+  height: 1050px;
   padding: 0 60px 0;
 }
 
@@ -84,26 +84,27 @@ div.checkbox-input-group {
   margin-top: 10px;
 }
 
-button.form:hover {
-  background-color: #ea6e69;
-  border: none;
-}
-
-button.form:hover span.button-text {
-  color: white;
-}
-
-span.button-text {
+button.form span.button-text {
   width: 69px;
   height: 27.4px;
   font-size: 22px;
   color: rgba(224, 11, 0, 0.5);
 }
 
-span.active {
+button.form.active-submit:hover {
+  background-color: #ea6e69;
+  border: none;
+}
+
+button.form.active-submit span {
   color: #e00b00 ;
 }
 
-span.active:hover {
+button.form.active-submit:hover span {
   color: white ;
 }
+
+
+
+
+
