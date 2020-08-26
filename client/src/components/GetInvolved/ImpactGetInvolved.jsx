@@ -1,9 +1,11 @@
 import React from 'react'
+import './ImpactGetInvolved.css'
+import ImpactCard from './ImpactCard.jsx'
 
 function ImpactGetInvolved() {
   return (
-    <div>
-      <h1>Impact Section</h1>
+    <div className='impact-get-involved-div'>
+      <ImpactCard />
     </div>
   )
 }

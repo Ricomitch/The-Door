@@ -1,8 +1,9 @@
 import React from 'react'
+import './ImpactCard.css'
 
 function ImpactCard() {
   return (
-    <div>
+    <div className='impact-card'>
       
     </div>
   )
