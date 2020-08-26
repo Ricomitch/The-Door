@@ -4,16 +4,24 @@
   height: 50px;
   padding: 5px;
 }
-.social-img {
+.nav-icons {
+  margin-top: 5px;
   margin-right: 50px;
+
+}
+.twitter-icon{
+  margin-bottom: 3px;
 }
 .main-nav {
   background-color: #1c4d73;
   height: 86px;
   text-align: right;
-  padding: 35px;
+  padding: 0 90px 0 35px;
   position: relative;
-  padding-right: 85px;
+  display: flex;
+  /* padding-right: 85px; */
+  text-align: right;
+  justify-content: flex-end;
 }
 .about-the-door-nav,
 .programs-services-nav,
@@ -22,20 +30,30 @@
 .get-involved-nav,
 .contact-nav,
 .donate-nav {
-  margin: 20px;
+  margin: 0 20px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 86px;
   text-decoration: none;
   color: #ffffff;
-  margin-bottom: 20%;
+}
+.about-the-door-nav {
+  margin: 0;
+}
+.nav-donate-link {
+  align-self: center;
+  text-decoration: none;
 }
 .donate-nav {
-  background: #ff0000;
-  border-radius: 15px;
-  padding: 5px 25px;
+  width: 98px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #ff0000;
+  align-self: center;
+  position: relative;
+  
 }
 #door-logo {
   width: 126px;
@@ -45,20 +63,7 @@
   left: 30px;
   bottom: 2px;
 }
-.get-involved-drop-down {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  left: 955px;
-  top: 85px;
-  width: 139px;
-  height: 180px;
-  background: #ffffff;
-  z-index: 2;
-  text-align: center;
-  box-sizing: border-box;
-  display: none;
-}
+
 .volunteer-option,
 .ways-to-give-option,
 .events-option,
@@ -87,49 +92,96 @@
 .ways-to-give-option {
   border-bottom: 1px solid rgba(147, 172, 217, 0.35);
 }
-.get-involved-nav-div {
-  height: 86px;
-  display: inline-block;
-}
-.get-involved-nav-div:hover .get-involved-drop-down {
-  display: inline;
-}
-.get-involved-drop-down:hover {
-  display: inline;
-}
-.programs-services-nav-div {
-  height: 86px;
-  display: inline-block;
-}
-.programs-services-nav-div:hover .programs-services-drop-down {
-  display: inline;
-}
-.programs-services-drop-down:hover {
-  display: inline;
-}
+
+
 .about-the-door-nav-div {
-  height: 86px;
   display: inline-block;
+  height: 86px;
+  text-align: center;
 }
-.about-the-door-nav-div:hover .about-the-door-drop-down {
-  display: inline;
-}
-.about-the-door-drop-down:hover {
-  display: inline;
-}
+
 .about-the-door-drop-down {
   display: flex;
   flex-direction: column;
-  position: absolute;
+  /* position: absolute;
   left: 350px;
-  top: 85px;
+  top: 85px; */
+  position: relative;
   width: 183px;
   height: 380px;
   background: #ffffff;
   z-index: 2;
   text-align: center;
-  display: none;
+  /* display: none; */
+  visibility: hidden;
 }
+.about-the-door-nav-div:hover .about-the-door-drop-down {
+  /* display: inline; */
+  visibility: visible;
+}
+.about-the-door-drop-down:hover {
+  /* display: inline; */
+  visibility: visible;
+}
+
+
+.programs-services-drop-down {
+  display: flex;
+  flex-direction: column;
+  /* position: absolute;
+  left: 525px;
+  top: 85px; */
+  position: relative;
+  width: 213px;
+  height: 574px;
+  background: #ffffff;
+  z-index: 2;
+  text-align: center;
+  /* display: none; */
+  visibility: hidden;
+}
+
+.programs-services-nav-div {
+  height: 86px;
+  display: inline-block;
+}
+.programs-services-nav-div:hover .programs-services-drop-down {
+  visibility: visible;
+}
+.programs-services-drop-down:hover {
+  visibility: visible;
+}
+
+.get-involved-drop-down {
+  display: flex;
+  flex-direction: column;
+  /* position: absolute;
+  left: 955px;
+  top: 85px; */
+  position: relative;
+  width: 139px;
+  height: 180px;
+  background: #ffffff;
+  z-index: 2;
+  text-align: center;
+  box-sizing: border-box;
+  /* display: none; */
+  visibility: hidden;
+}
+
+.get-involved-nav-div {
+  height: 86px;
+  display: inline-block;
+}
+.get-involved-nav-div:hover .get-involved-drop-down {
+  visibility: visible;
+}
+.get-involved-drop-down:hover {
+  visibility: visible;
+}
+
+
+
 .option1,
 .option1-1 {
   display: flex;
@@ -150,19 +202,7 @@
 .option1-1 {
   border-top: 4px solid #f3b143;
 }
-.programs-services-drop-down {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  left: 525px;
-  top: 85px;
-  width: 213px;
-  height: 574px;
-  background: #ffffff;
-  z-index: 2;
-  text-align: center;
-  display: none;
-}
+
 .option11,
 .option11-11 {
   display: flex;
@@ -182,4 +222,12 @@
 }
 .option11-11 {
   border-top: 4px solid #f3b143;
+}
+.nav-donate-button-text {
+  position: relative;
+  color: white;
+  display: inline;
+  top: -27px;
+  left: -19px;
+  
 }

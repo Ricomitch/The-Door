@@ -1,15 +1,33 @@
 import React from 'react'
-
-import SocialImg from '../Nav/Screen Shot 2020-07-30 at 1.59 1.jpg'
+import InstaIcon from '../../../assets/Nav/insta-nav.jpeg'
+import FacebookIcon from '../../../assets/Nav/fb-nav.jpg'
+import TwitterIcon from '../../../assets/Nav/twitter-nav.jpeg'
+import YoutubeIcon from '../../../assets/Nav/youtube-nav.jpeg'
 import { Link } from 'react-router-dom'
 import './Nav.css'
 
 function Nav() {
   return (
     <div className='nav'>
-      <nav className='top-nav'>
-        <img className='social-img' src={SocialImg} />
-      </nav>
+      <div className='top-nav'>
+        <div className='nav-icons'>
+          <a href='https://www.instagram.com/door_nyc/' target='_blank'>
+            <img className='insta-icon' src={InstaIcon} alt='' />
+          </a>
+          <a href='https://www.facebook.com/TheDoorNYC/' target='_blank'>
+            <img className='fb-icon' src={FacebookIcon} alt='' />
+          </a>
+          <a href='https://twitter.com/Door_NYC' target='_blank'>
+            <img className='twitter-icon' src={TwitterIcon} alt='' />
+          </a>
+          <a
+            href='https://www.youtube.com/channel/UCTI_X7wHcmfmb4_Fec0WYvQ'
+            target='_blank'
+          >
+            <img className='youtube-icon' src={YoutubeIcon} alt='' />
+          </a>
+        </div>
+      </div>
 
       <nav className='main-nav'>
         <Link to='/'>
@@ -19,8 +37,7 @@ function Nav() {
           />
         </Link>
         <div className='about-the-door-nav-div'>
-          <Link className='about-the-door-nav' to='/'>
-            About the Door
+          <Link className='about-the-door-nav' to='/'>About the Door
           </Link>
           <div className='about-the-door-drop-down'>
             <Link className='option1-1'>COVID-19 Updates</Link>
@@ -85,8 +102,11 @@ function Nav() {
         <Link className='contact-nav' to='/'>
           Contact
         </Link>
-        <Link className='donate-nav' to='/'>
-          Donate
+
+        <Link className='nav-donate-link' to='/'>
+          <div className='donate-nav'>
+            <span className='nav-donate-button-text'>Donate</span>
+          </div>
         </Link>
       </nav>
     </div>
