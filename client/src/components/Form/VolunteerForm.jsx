@@ -241,7 +241,7 @@ function VolunteerForm({
                     </div>
                   </div>
 
-                  <button className='submit-button' type='submit'>
+                  <button className='submit-button form' type='submit'>
                     <span
                       className={`button-text ${
                         buttonActive ? 'active' : 'rest'
@@ -255,12 +255,13 @@ function VolunteerForm({
             </Formik>
             {formStatus === 'edit' && (
               <button
+                className='delete-button form'
                 onClick={() => {
                   deleteVolunteer(volunteerId)
                   history.push('/')
                 }}
               >
-                I changed my mind.
+                <span className='button-text'>Nevermind.</span>
               </button>
             )}
           </div>

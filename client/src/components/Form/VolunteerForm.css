@@ -72,31 +72,36 @@ div.checkbox-input-group {
   height: 150px;
 }
 
-form button {
+  button.form {
   width: 130px;
   height: 54px;
   border-radius: 10px;
   border: solid 2px #e00b00;
   background-color: #fff;
   cursor: pointer;
+  margin-bottom: 30px;
 }
 
-form button:hover {
+button.form:hover {
   background-color: #ea6e69;
   border: none;
 }
 
-form button:hover span.button-text {
+button.form:hover span.button-text {
   color: white;
 }
 
-form span.button-text {
+span.button-text {
   width: 69px;
   height: 27.4px;
   font-size: 22px;
-  color: rgba(224, 11, 0, 0.2);
+  color: rgba(224, 11, 0, 0.5);
 }
 
-.active {
-  color: #e00b00 !important;
+span.active {
+  color: #e00b00 ;
+}
+
+span.active:hover {
+  color: white ;
 }
