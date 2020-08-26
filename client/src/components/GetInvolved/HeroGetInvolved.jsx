@@ -10,6 +10,7 @@ function HeroGetInvolved() {
     <div className="HeroGet">
       <div className="HeroGetRectangle143">
         <Rectangle143 copy={copyJSON.GetInvolvedRectangle143} />
+        
         </div>
       <div
             className='img-wrapper'
