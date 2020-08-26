@@ -7,6 +7,10 @@ import Grad from '../../assets/Homepage/Graduate.jpg'
 import './MissionNewsPage.css'
 import Flower1 from '../../assets/Homepage/flower1.svg'
 
+
+
+
+
 const MissionNewsPage = (card) => {
   return (
     <div className='news-div'>
@@ -17,10 +21,10 @@ const MissionNewsPage = (card) => {
       <div className='mission-triangle'></div>
       <main className='mission-main'></main>
       <p className='home-mission'>The Door's mission is to <span className='empower'>empower young people<br></br></span> to reach their potential by providing<br></br> <span className= 'youth' >comprehensive youth development services<br></br></span> in a diverse and caring environment.</p>
-      <hr className='line'/>
+      <hr className='line' />
       <div className='Rectangle1'><span className='news-text'>News Corner</span></div>
       <div className='news-items'>
-      <NewsItem image={Pride} card={copyJSON.NewsItem1} />
+      <NewsItem image = { Pride } card = {copyJSON.NewsItem1} />
       <NewsItem card={copyJSON.NewsItem2} image={Cook} />
         <NewsItem card={copyJSON.NewsItem3} image={Grad} />
         </div>

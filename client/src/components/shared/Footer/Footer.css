@@ -1,9 +1,7 @@
 .footer {
-  position: absolute;
+  position: relative;
   width: 1439px;
   height: 226px;
-  left: 0px;
-  top: 3016px;
   background-color: #1c4d73;
 }
 .address {
