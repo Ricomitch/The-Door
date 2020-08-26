@@ -257,19 +257,20 @@ function VolunteerForm({
                   </div>
 
                   <button
-                    className={`form ${props.isValid && props.dirty ? 'active-submit' : null}`}
+                    className={`form submit-button ${
+                      props.isValid && (props.dirty || formStatus === 'edit')
+                        ? 'active'
+                        : null
+                    }`}
                     type='submit'
                   >
                     <span className='button-text'>
                       {formStatus === 'edit' ? 'Update' : 'Submit'}
                     </span>
                   </button>
-                </form>
-              )}
-            </Formik>
-            {formStatus === 'edit' && (
+                  {formStatus === 'edit' && (
               <button
-                className='delete-button form'
+                className={'form delete-button active'}
                 onClick={() => {
                   deleteVolunteer(volunteerId)
                   history.push('/')
@@ -278,6 +279,10 @@ function VolunteerForm({
                 <span className='button-text'>Nevermind</span>
               </button>
             )}
+                </form>
+              )}
+            </Formik>
+           
           </div>
         </div>
         <StandWith />

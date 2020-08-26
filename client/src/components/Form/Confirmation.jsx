@@ -64,14 +64,14 @@ function Confirmation({ setFormStatus, volunteerId, setModalOpen }) {
               </div>
               <div className='conf-page-buttons'>
                 <button
-                  className='conf-screen-button form'
+                  className='conf-screen-button form active'
                   onClick={() => setModalOpen((prev) => !prev)}>
-                  <span className="button-text active">Confirm</span>
+                  <span className="button-text">Confirm</span>
                 </button>
                 <button
-                  className='conf-screen-button form'
+                  className='conf-screen-button form active'
                   onClick={() => setFormStatus('edit')}>
-                  <span className="button-text active">Edit</span>
+                  <span className="button-text">Edit</span>
                 </button>
               </div>
             </div>

@@ -91,18 +91,19 @@ button.form span.button-text {
   color: rgba(224, 11, 0, 0.5);
 }
 
-button.form.active-submit:hover {
+button.form.active:hover {
   background-color: #ea6e69;
   border: none;
 }
 
-button.form.active-submit span {
+button.form.active span {
   color: #e00b00 ;
 }
 
-button.form.active-submit:hover span {
+button.form.active:hover span {
   color: white ;
 }
+
 
 
 
