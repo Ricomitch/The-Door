@@ -7,9 +7,8 @@
 .nav-icons {
   margin-top: 5px;
   margin-right: 50px;
-
 }
-.twitter-icon{
+.twitter-icon {
   margin-bottom: 3px;
 }
 .main-nav {
@@ -38,23 +37,13 @@
   line-height: 86px;
   text-decoration: none;
   color: #ffffff;
+  text-align: center;
 }
-.about-the-door-nav {
+.about-the-door-nav,
+.programs-services-nav {
   margin: 0;
 }
-.nav-donate-link {
-  align-self: center;
-  text-decoration: none;
-}
-.donate-nav {
-  width: 98px;
-  height: 30px;
-  border-radius: 5px;
-  background-color: #ff0000;
-  align-self: center;
-  position: relative;
-  
-}
+
 #door-logo {
   width: 126px;
   height: 71px;
@@ -93,8 +82,9 @@
   border-bottom: 1px solid rgba(147, 172, 217, 0.35);
 }
 
-
-.about-the-door-nav-div {
+.about-the-door-nav-div,
+.programs-services-nav-div,
+.get0involved-nav {
   display: inline-block;
   height: 86px;
   text-align: center;
@@ -123,7 +113,6 @@
   /* display: inline; */
   visibility: visible;
 }
-
 
 .programs-services-drop-down {
   display: flex;
@@ -180,8 +169,6 @@
   visibility: visible;
 }
 
-
-
 .option1,
 .option1-1 {
   display: flex;
@@ -223,11 +210,23 @@
 .option11-11 {
   border-top: 4px solid #f3b143;
 }
-.nav-donate-button-text {
+.nav-donate-link {
+  align-self: center;
+  text-decoration: none;
+}
+.donate-nav {
+  width: 98px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #ff0000;
+  align-self: center;
+  /* position: relative; */
   position: relative;
   color: white;
-  display: inline;
-  top: -27px;
-  left: -19px;
-  
+  line-height: 30px;
 }
+
+/* .nav-donate-button-text {
+  position: relative;
+  color: white;
+} */
