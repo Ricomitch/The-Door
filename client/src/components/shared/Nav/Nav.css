@@ -4,11 +4,9 @@
   height: 50px;
   padding: 5px;
 }
-
 .social-img {
   margin-right: 50px;
 }
-
 .main-nav {
   background-color: #1c4d73;
   height: 86px;
@@ -17,7 +15,6 @@
   position: relative;
   padding-right: 85px;
 }
-
 .about-the-door-nav,
 .programs-services-nav,
 .membership-nav,
@@ -34,18 +31,12 @@
   text-decoration: none;
   color: #ffffff;
   margin-bottom: 20%;
-  /* padding-bottom: 90%; */
 }
-/* .get-involved-nav{
-  line-height: 86px;
-} */
-
 .donate-nav {
   background: #ff0000;
   border-radius: 15px;
   padding: 5px 25px;
 }
-
 #door-logo {
   width: 126px;
   height: 71px;
@@ -72,14 +63,11 @@
 .ways-to-give-option,
 .events-option,
 .email-newsletter-option {
-  /* position: relative; */
-  /* position: absolute; */
-  /* margin-top: 0px; */
+  display: flex;
+  flex-direction: column;
   padding-top: 10px;
   width: 139px;
-  height: 50px;
-  /* left: 59px;
-  top: 315px; */
+  height: 45px;
   text-decoration: none;
   font-family: Montserrat;
   font-style: normal;
@@ -87,14 +75,12 @@
   font-size: 12px;
   line-height: 20px;
   text-align: center;
-
   color: #1c4d73;
 }
 .volunteer-option {
   border-top: 4px solid #f3b143;
   border-bottom: 1px solid rgba(147, 172, 217, 0.35);
 }
-
 .events-option {
   border-bottom: 1px solid rgba(147, 172, 217, 0.35);
 }
@@ -104,7 +90,6 @@
 .get-involved-nav-div {
   height: 86px;
   display: inline-block;
-  /* display: inline; */
 }
 .get-involved-nav-div:hover .get-involved-drop-down {
   display: inline;
@@ -112,23 +97,79 @@
 .get-involved-drop-down:hover {
   display: inline;
 }
+.programs-services-nav-div {
+  height: 86px;
+  display: inline-block;
+}
+.programs-services-nav-div:hover .programs-services-drop-down {
+  display: inline;
+}
+.programs-services-drop-down:hover {
+  display: inline;
+}
+.about-the-door-nav-div {
+  height: 86px;
+  display: inline-block;
+}
+.about-the-door-nav-div:hover .about-the-door-drop-down {
+  display: inline;
+}
+.about-the-door-drop-down:hover {
+  display: inline;
+}
 .about-the-door-drop-down {
   display: flex;
   flex-direction: column;
   position: absolute;
-  left: 955px;
+  left: 350px;
   top: 85px;
-  width: 139px;
+  width: 183px;
   height: 380px;
   background: #ffffff;
   z-index: 2;
   text-align: center;
+  display: none;
 }
-.option1 {
+.option1,
+.option1-1 {
+  display: flex;
+  flex-direction: column;
   padding-top: 10px;
-  width: 139px;
-  height: 50px;
-
+  width: 183px;
+  height: 38px;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 20px;
+  text-align: center;
+  color: #1c4d73;
+  border-bottom: 1px solid rgba(147, 172, 217, 0.35);
+}
+.option1-1 {
+  border-top: 4px solid #f3b143;
+}
+.programs-services-drop-down {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 540px;
+  top: 85px;
+  width: 183px;
+  height: 574px;
+  background: #ffffff;
+  z-index: 2;
+  text-align: center;
+  display: none;
+}
+.option11,
+.option11-11 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  width: 183px;
+  height: 41px;
   text-decoration: none;
   font-family: Montserrat;
   font-style: normal;
@@ -136,6 +177,9 @@
   font-size: 12px;
   line-height: 20px;
   text-align: center;
-
   color: #1c4d73;
+  border-bottom: 1px solid rgba(147, 172, 217, 0.35);
+}
+.option11-11 {
+  border-top: 4px solid #f3b143;
 }

@@ -13,14 +13,17 @@
   object-position: 0px 75%;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-
+}
+.writing,
+.studying {
+  object-fit: cover;
+  object-position: 0px 5%;
 }
 
 .art {
   object-fit: cover;
   object-position: -1px 65%;
 }
-
 
 .thumbs {
   display: none;
@@ -54,7 +57,6 @@
 .rectangle1 {
   left: 65.96%;
 }
-
 
 .slide3 {
   margin-left: -75px;
