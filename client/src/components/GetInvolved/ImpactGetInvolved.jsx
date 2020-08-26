@@ -10,6 +10,7 @@ function ImpactGetInvolved() {
   return (
     <div className='impact-get-involved-div'>
       <ImpactCard image={impactCardImage1} text={impactTexts.ImpactCard1} />
+      <ImpactCard image={impactCardImage2} text={impactTexts.ImpactCard2} />
     </div>
   )
 }
