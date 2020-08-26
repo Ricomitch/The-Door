@@ -105,7 +105,8 @@ function Nav() {
 
         <Link className='nav-donate-link' to='/'>
           <div className='donate-nav'>
-            <span className='nav-donate-button-text'>Donate</span>
+            {/* <span className='nav-donate-button-text'>Donate</span> */}
+            Donate
           </div>
         </Link>
       </nav>
