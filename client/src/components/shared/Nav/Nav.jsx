@@ -3,8 +3,10 @@ import InstaIcon from '../../../assets/Nav/insta-nav.jpeg'
 import FacebookIcon from '../../../assets/Nav/fb-nav.jpg'
 import TwitterIcon from '../../../assets/Nav/twitter-nav.jpeg'
 import YoutubeIcon from '../../../assets/Nav/youtube-nav.jpeg'
+import HamburgerMenu from '../../../assets/Nav/hamburger-menu.png'
 import { Link } from 'react-router-dom'
 import './Nav.css'
+
 
 function Nav() {
   return (
@@ -30,6 +32,7 @@ function Nav() {
       </div>
 
       <nav className='main-nav'>
+        <div className='nav-burger' style={{backgroundImage: `url(${HamburgerMenu})`}}></div>
         <Link to='/'>
           <img
             id='door-logo'
