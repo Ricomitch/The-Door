@@ -9,7 +9,7 @@ body {
 @font-face {
   font-family: Montserrat;
   src: local(Montserrat-Regular),
-    url(./assets/Montserrat-Regular.ttf) format("truetype");
+    url(./assets/Montserrat-Regular.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -17,8 +17,7 @@ body {
 
 @font-face {
   font-family: Cabin;
-  src: local(Cabin-Regular),
-    url(./assets/Cabin-Regular.ttf) format("truetype");
+  src: local(Cabin-Regular), url(./assets/Cabin-Regular.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -27,7 +26,7 @@ body {
 @font-face {
   font-family: Montserrat-ExtraBold;
   src: local(Montserrat-ExtraBold),
-    url(./assets/Montserrat-ExtraBold.ttf) format("truetype");
+    url(./assets/Montserrat-ExtraBold.ttf) format('truetype');
   font-weight: 800;
   font-style: normal;
   font-stretch: normal;
@@ -35,8 +34,7 @@ body {
 
 @font-face {
   font-family: Cabin-Bold;
-  src: local(Cabin-Bold),
-    url(./assets/Cabin-Bold.ttf) format("truetype");
+  src: local(Cabin-Bold), url(./assets/Cabin-Bold.ttf) format('truetype');
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -45,7 +43,7 @@ body {
 @font-face {
   font-family: Montserrat-SemiBold;
   src: local(Montserrat-SemiBold),
-    url(./assets/Montserrat-SemiBold.ttf) format("truetype");
+    url(./assets/Montserrat-SemiBold.ttf) format('truetype');
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -54,7 +52,7 @@ body {
 @font-face {
   font-family: Cabin-MediumItalic;
   src: local(Cabin-MediumItalic),
-    url(./assets/Cabin-MediumItalic.ttf) format("truetype");
+    url(./assets/Cabin-MediumItalic.ttf) format('truetype');
   font-weight: 500;
   font-style: italic;
   font-stretch: normal;
@@ -63,7 +61,7 @@ body {
 @font-face {
   font-family: Cabin-BoldItalic;
   src: local(Cabin-BoldItalic),
-    url(./assets/Cabin-BoldItalic.ttf) format("truetype");
+    url(./assets/Cabin-BoldItalic.ttf) format('truetype');
   font-weight: bold;
   font-style: italic;
   font-stretch: normal;
@@ -72,8 +70,28 @@ body {
 @font-face {
   font-family: Montserrat-Bold;
   src: local(Montserrat-Bold),
-    url(./assets/Montserrat-Bold.ttf) format("truetype");
+    url(./assets/Montserrat-Bold.ttf) format('truetype');
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Varela';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Varela'),
+    url(./assets/Varela-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Allerta';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Allerta Regular'), local('Allerta-Regular'), url(./assets/Allerta-Regular.ttf) format('truetype');
 }
