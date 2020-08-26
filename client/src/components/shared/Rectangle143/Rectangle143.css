@@ -2,7 +2,7 @@
   background-color: #436389;
   opacity: .95;
   width: 526px;
-  height: 365px;
+  height: 367px;
   border-radius: 12px;;
   display: flex;
   flex-direction: column;
@@ -39,6 +39,11 @@
   background-color: rgba(255, 255, 255, 0.8);
   align-self: flex-end;
   padding: 6px;
+}
+.rectangle-link {
+  width: 198px;
+  height: 37px;
+  align-self: flex-end;
 }
 .button-words {
   width: 107px;

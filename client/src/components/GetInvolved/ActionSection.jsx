@@ -8,6 +8,7 @@ import flowerHands from '../../assets/GetInvolved/photo-1505455184862-554165e5f6
 import calendar from '../../assets/GetInvolved/photo-1506784365847-bbad939e9335.jpeg'
 import newsletter from '../../assets/GetInvolved/photo-1579332190845-76263130d826.jpeg'
 
+import actionText from '../../assets/GetInvolved/actionCardCopy.json'
 
 
 function ActionSection() {
@@ -18,22 +19,22 @@ function ActionSection() {
         <ActionCard
           image={actionVolunteer}
           card='action-volunteer'
-          text='Volunteer'
+          text={actionText.volunteer}
         />
         <ActionCard
           image={flowerHands}
-          card='ways-to-give'
-          text='Ways to Give'
+          card='way-to-give'
+          text={actionText.wayToGive}
         />
         <ActionCard
           image={calendar}
           card='events'
-          text='Events'
+          text={actionText.events}
         />
         <ActionCard
           image={newsletter}
           card='newsletter'
-          text='Newsletter'
+          text={actionText.newsletter}
         />
       </div>
       <div className='action-triangle'></div>
