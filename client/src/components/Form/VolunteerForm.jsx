@@ -9,6 +9,7 @@ import {
 import { Formik } from 'formik'
 import CheckboxInput from './CheckboxInput'
 import flower4 from '../../assets/Form/flower4.svg'
+import StandWith from '../../components/shared/StandWith/StandWith'
 import './VolunteerForm.css'
 
 function VolunteerForm({
@@ -261,11 +262,14 @@ function VolunteerForm({
                   history.push('/')
                 }}
               >
-                <span className='button-text'>Nevermind.</span>
+                <span className='button-text'>Nevermind</span>
               </button>
             )}
+            
           </div>
+          
         </div>
+        <StandWith />
       </div>
     </>
   )
