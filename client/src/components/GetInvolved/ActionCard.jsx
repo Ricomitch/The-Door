@@ -6,9 +6,10 @@ function ActionCard({image, card, text}) {
     <div className='action-card'>
       <img src={image} alt={card} className={`action-image ${card}`}/>
       <div className='action-card-banner'>
-        <h2 className='action-text'>{text}</h2>
+        <h2 className='action-text'>{text.title}</h2>
+        <p className='action-hover-text'>{text.content}</p>
       </div>
-    </div>
+    </div> 
   )
 }
 
