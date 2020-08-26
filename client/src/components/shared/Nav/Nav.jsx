@@ -1,20 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import SocialImg from '../Nav/Screen Shot 2020-07-30 at 1.59 1.jpg'
 import { Link } from 'react-router-dom'
 import './Nav.css'
 
 function Nav() {
-  // const [hidden, updateHidden] = useState('hidden')
-  // const menuClick = () => {
-  //   updateHidden('')
-  // }
-  // const optionClick = () => {
-  //   updateHidden('hidden')
-  // }
-
   return (
-    <>
+    <div className='nav'>
       <nav className='top-nav'>
         <img className='social-img' src={SocialImg} />
       </nav>
@@ -54,7 +46,7 @@ function Nav() {
             <Link className='option11'>Counseling</Link>
             <Link className='option11'>Food & Nutrition Services</Link>
             <Link className='option11'>Foster Care</Link>
-            <Link className='option11'>HSE(High School Equivalency)</Link>
+            <Link className='option11'>HSE (High School Equivalency)</Link>
             <Link className='option11'>Health Services</Link>
             <Link className='option11'>Jobs & Internships</Link>
             <Link className='option11'>Leadership</Link>
@@ -91,13 +83,13 @@ function Nav() {
         </div>
 
         <Link className='contact-nav' to='/'>
-          Contact{' '}
+          Contact
         </Link>
         <Link className='donate-nav' to='/'>
-          Donate{' '}
+          Donate
         </Link>
       </nav>
-    </>
+    </div>
   )
 }
 
