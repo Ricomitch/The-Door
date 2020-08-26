@@ -6,7 +6,7 @@ import {
   getVolunteer,
   deleteVolunteer,
 } from '../../services/formServices.js'
-import { Formik } from 'formik'
+import { Formik, Field } from 'formik'
 import CheckboxInput from './CheckboxInput'
 import flower4 from '../../assets/Form/flower4.svg'
 import StandWith from '../../components/shared/StandWith/StandWith'
@@ -85,14 +85,7 @@ function VolunteerForm({
                   <div className='primary-data-section'>
                     <div className='primary-data-field'>
                       <label htmlFor='firstName'>First Name</label>
-                      <input
-                        type='text'
-                        className='text'
-                        id='firstName'
-                        name='firstName'
-                        onChange={props.handleChange}
-                        value={props.values.firstName}
-                      />
+                      <Field name="firstName" type='text'/>
                     </div>
 
                     <div className='primary-data-field'>
