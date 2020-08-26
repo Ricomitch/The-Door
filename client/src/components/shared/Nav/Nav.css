@@ -1,5 +1,5 @@
 .top-nav {
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
   text-align: right;
   height: 50px;
   padding: 5px;
@@ -16,8 +16,6 @@
   padding: 35px;
   position: relative;
   padding-right: 85px;
-
-
 }
 
 .about-the-door-nav,
@@ -30,18 +28,20 @@
   margin: 20px;
   font-family: Montserrat;
   font-style: normal;
-  font-weight: 550;
+  font-weight: 600;
   font-size: 16px;
   line-height: 18px;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 20%;
   /* padding-bottom: 90%; */
- 
 }
+/* .get-involved-nav{
+  line-height: 86px;
+} */
 
 .donate-nav {
-  background: #FF0000;
+  background: #ff0000;
   border-radius: 15px;
   padding: 5px 25px;
 }
@@ -53,5 +53,89 @@
   top: 6px;
   left: 30px;
   bottom: 2px;
+}
+.get-involved-drop-down {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 955px;
+  top: 85px;
+  width: 139px;
+  height: 180px;
+  background: #ffffff;
+  z-index: 2;
+  text-align: center;
+  box-sizing: border-box;
+  display: none;
+}
+.volunteer-option,
+.ways-to-give-option,
+.events-option,
+.email-newsletter-option {
+  /* position: relative; */
+  /* position: absolute; */
+  /* margin-top: 0px; */
+  padding-top: 10px;
+  width: 139px;
+  height: 50px;
+  /* left: 59px;
+  top: 315px; */
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
 
+  color: #1c4d73;
+}
+.volunteer-option {
+  border-top: 4px solid #f3b143;
+  border-bottom: 1px solid rgba(147, 172, 217, 0.35);
+}
+
+.events-option {
+  border-bottom: 1px solid rgba(147, 172, 217, 0.35);
+}
+.ways-to-give-option {
+  border-bottom: 1px solid rgba(147, 172, 217, 0.35);
+}
+.get-involved-nav-div {
+  height: 86px;
+  display: inline-block;
+  /* display: inline; */
+}
+.get-involved-nav-div:hover .get-involved-drop-down {
+  display: inline;
+}
+.get-involved-drop-down:hover {
+  display: inline;
+}
+.about-the-door-drop-down {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 955px;
+  top: 85px;
+  width: 139px;
+  height: 380px;
+  background: #ffffff;
+  z-index: 2;
+  text-align: center;
+}
+.option1 {
+  padding-top: 10px;
+  width: 139px;
+  height: 50px;
+
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #1c4d73;
 }
