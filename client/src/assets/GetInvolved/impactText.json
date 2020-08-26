@@ -1,9 +1,12 @@
 {
-  "ImpactRectangle1": {
-    "header": "Get Involved",
-    "subheader": null,
-    "content": "The COVID-19 public health crisis and while The Door’s physical spaces are mostly closed, we are virtually open! The health and wellbeing of our community is our top priority, and we are working hard to stay connected and to continue to support our members.",
-    "button-value": null
-  }  
-  
+  "ImpactCard1": {
+    "header": "Emergency Food Pack RoundUp",
+    "content": "This past Saturday The Door hosted its 20th annual Emergency Food Pack Round Up. Our team of staff, members & voluneteers...",
+    "buttonValue": "Read More   >"
+  },
+  "ImpactCard2": {
+    "header": "Meet Elisha",
+    "content": "Back in March Elisha Graham got into the college of his dreams with the help of our College Advisement and tutoring Center. ",
+    "buttonValue": "Read More   >"
+  }
 }
