@@ -39,3 +39,39 @@
   top: 35px;
   right: 180px;
 }
+.numbers {
+  position: absolute;
+  top: 220px;
+  left: 230px;
+}
+.amt-toward {
+  font-size: 50px;
+  color: black;
+}
+.amt-of {
+  font-size: 30px;
+  color: white;
+}
+.goal-line {
+  background-image: linear-gradient(to right, black, white);
+  width: 630px;
+  height: 10px;
+  position: absolute;
+  top: 370px;
+  left: 65px;
+  border-radius: 5px;
+}
+.donate-button {
+  width: 521px;
+  height: 90.2px;
+  background-color: #c53131;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 600;
+  color: white;
+  line-height: 90.2px;
+  text-align: center;
+  position: absolute;
+  right: 120px;
+  bottom: 55px;
+}
