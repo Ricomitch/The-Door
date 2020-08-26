@@ -19,8 +19,7 @@ function Nav() {
           />
         </Link>
         <div className='about-the-door-nav-div'>
-          <Link className='about-the-door-nav' to='/'>
-            About the Door
+          <Link className='about-the-door-nav' to='/'>About the Door
           </Link>
           <div className='about-the-door-drop-down'>
             <Link className='option1-1'>COVID-19 Updates</Link>
@@ -85,8 +84,11 @@ function Nav() {
         <Link className='contact-nav' to='/'>
           Contact
         </Link>
-        <Link className='donate-nav' to='/'>
-          Donate
+
+        <Link className='nav-donate-link' to='/'>
+          <div className='donate-nav'>
+            <span className='nav-donate-button-text'>Donate</span>
+          </div>
         </Link>
       </nav>
     </div>
