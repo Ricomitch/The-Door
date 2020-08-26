@@ -1,11 +1,8 @@
 .faces-div {
-  /* background-image: url('../../assets/Homepage/Flower 2.svg'); */
-
   background-color: #c2cbd6;
-  height: 830px;
+  height: 730px;
   position: relative;
   margin-top: 20px;
-  /* display: flex; */
   right: 0;
 }
 .faces-main {
@@ -42,7 +39,7 @@
   padding: 10px;
 }
 .faces-left-side {
-  padding: 120px 20px 20px 30px;
+  padding: 105px 20px 20px 38px;
   width: 735px;
 }
 .video {
@@ -52,7 +49,7 @@
 .flower2 {
   position: absolute;
   width: 1040px;
-  height: 925px;
+  height: 825px;
   right: 0;
   background-repeat: no-repeat;
   bottom: 0;
@@ -60,23 +57,23 @@
 .faces-right-side {
   padding: 20px;
   width: 735px;
-  padding-top: 120px;
+  padding-top: 80px;
 }
 .faces-back-rectangle {
   width: 509px;
   height: 348px;
   background-color: #1c4d7391;
   position: absolute;
-  top: 210px;
-  right: 30px;
+  top: 205px;
+  right: 45px;
 }
 .faces-front-rectangle {
   width: 509px;
   height: 348px;
   background-color: #1c4d73;
   position: absolute;
-  top: 260px;
-  right: 70px;
+  top: 250px;
+  right: 80px;
   font-family: Cabin-Bold;
   font-size: 36px;
   color: white;
