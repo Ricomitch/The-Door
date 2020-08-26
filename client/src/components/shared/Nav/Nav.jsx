@@ -20,10 +20,12 @@ function Nav() {
       </nav>
 
       <nav className='main-nav'>
-        <img
-          id='door-logo'
-          src='https://door.org/wp-content/uploads/2018/09/img_logo.png'
-        />
+        <Link to='/'>
+          <img
+            id='door-logo'
+            src='https://door.org/wp-content/uploads/2018/09/img_logo.png'
+          />
+        </Link>
         <div className='about-the-door-nav-div'>
           <Link className='about-the-door-nav' to='/'>
             About the Door
