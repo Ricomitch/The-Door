@@ -7,7 +7,6 @@ import Grad from '../../assets/Homepage/Graduate.jpg'
 import './MissionNewsPage.css'
 import Flower1 from '../../assets/Homepage/flower1.svg'
 import DoubleArrowIcon from '@material-ui/icons/DoubleArrow'
-// import DoubleArrowIcon1 from '@material-ui/icons/'
 
 
 
