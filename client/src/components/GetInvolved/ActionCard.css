@@ -1,0 +1,45 @@
+.action-card {
+  width: 296px;
+  height: 406px;
+  position: relative;
+  overflow: hidden;
+}
+.action-card:hover .action-image {
+  opacity: 1;
+}
+.action-card-banner {
+  position: absolute;
+  width: 296px;
+  text-align: center;
+  height: 76px;
+  background-color: #1c4d7399;
+  top: 222px;
+}
+.action-text {
+  font-family: Montserrat-Bold;
+  font-size: 30px;
+  font-weight: bold;
+  color: #f3b344;
+  filter: brightness(1);
+  margin: 0;
+  line-height: 76px;
+}
+.action-image {
+  opacity: 0.55;
+}
+.action-volunteer {
+  object-position: -450px -70px;
+  height: 137%;
+}
+.ways-to-give {
+  object-position: -150px -10px;
+  height: 105%;
+}
+.events {
+  object-position: -35px 0;
+  height: 105%;
+}
+.newsletter {
+  object-position: -160px 0px;
+  height: 100%;
+}

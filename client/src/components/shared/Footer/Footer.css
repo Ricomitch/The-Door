@@ -1,0 +1,50 @@
+.footer {
+  position: relative;
+  width: 1439px;
+  height: 226px;
+  background-color: #1c4d73;
+}
+.address {
+  position: absolute;
+  height: 15px;
+  left: 29.8px;
+  top: 26px;
+  font-family: Cabin;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 10px;
+  color: #b5b5b5;
+}
+.footer-icons {
+  position: absolute;
+  width: 151px;
+  height: 30px;
+  left: 29.8px;
+  top: 129px;
+}
+.copyright {
+  position: absolute;
+  height: 17px;
+  left: 29.8px;
+  top: 149px;
+  font-family: Cabin;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #b5b5b5;
+}
+.ending {
+  position: absolute;
+
+  height: 17px;
+  left: 29.8px;
+  top: 172px;
+  font-family: Cabin;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #b5b5b5;
+}

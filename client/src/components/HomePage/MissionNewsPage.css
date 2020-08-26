@@ -1,0 +1,108 @@
+.news-div {
+  background-color: #1c4d73;
+  height: 750px;
+  position: relative;
+  margin-top: 0px;
+  right: 0;
+  overflow: hidden;
+}
+
+.news-items{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 20px;
+  
+}
+
+.mission-main {
+  display: flex;
+  flex-direction: row;
+    padding-top: 40px;
+
+}
+
+.line {
+  background-color: #4a688d;
+  opacity: .2;
+  width: 1335px;
+  height: 2px;
+}
+
+.mission-triangle {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 50px solid rgb(255, 255, 255);
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.flower1 {
+  position: absolute;
+  width: 1040px;
+  height: 945px;
+  right: 50;
+  background-repeat: no-repeat;
+  bottom: 0;
+}
+
+.home-mission {
+  text-align: center;
+  width: 1360px;
+  height: 267.9px;
+  font-family: Cabin;
+  font-size: 40px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: normal;
+  letter-spacing: normal;
+  color:white;
+  margin-bottom: 5px;
+}
+
+.empower, .youth {
+  font-size: 45px;
+  color:#f3b143;
+  font-family: Cabin-BoldItalic;
+}
+
+
+
+.Rectangle1 {
+  
+
+  width: 260px;
+  height: 65px;
+  border-radius: 15px;
+  background-color: #4b688a;
+  margin-top: 40px;
+  margin-left: 40px;
+
+}
+.news-text {
+  width: 333px;
+  height: 45px;
+  font-family: Montserrat-ExtraBold;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 65px;
+  color: #f3b143;
+  padding: 10px;
+}
+
+.left-arrow {
+  margin-top: 50px;
+
+}
+
+.right-arrow {
+  margin-top: 50px;
+
+}

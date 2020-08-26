@@ -1,0 +1,70 @@
+.rectangle143 {
+  background-color: #436389;
+  opacity: 95%;
+  width: 526px;
+  height: 365px;
+  border-radius: 12px;;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  padding-right: 40px;
+  text-align: left;
+}
+.rectangle-header {
+  width: 475px;
+  height: 41px;
+  font-family: Montserrat-Bold;
+  font-size: 24px;
+  font-weight: bolder;
+  color: #f3b143;
+  word-wrap: break-word;
+}
+.rectangle-subheading {
+  font-family: Montserrat-SemiBold;
+  font-size: 22px;
+  color: white;
+}
+.rectangle-content {
+  width: 456px;
+  height: 201px;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 1.75;
+  color: white;
+}
+.rectangle-button {
+  width: 198px;
+  height: 37px;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.8);
+  align-self: flex-end;
+  padding: 6px;
+}
+.button-words {
+  width: 107px;
+  height: 20px;
+  font-family: Cabin;
+  font-size: 18px;
+  color: #4a688d;
+  /* line-height: 37px; */
+}
+.subheader-class {
+  height: 400px;
+}
+.subheader-button {
+  border-radius: 25px;
+  width: 205.9px;
+  height: 38.5px;
+}
+.subheader-heading {
+  width: 277.7px;
+  height: 42.6px;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bolder;
+  color: #f3b143;
+  margin: 5px 0;
+}
+.no-button {
+  display: none;
+}

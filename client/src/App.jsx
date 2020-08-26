@@ -1,9 +1,9 @@
 import React from 'react'
 import './App.css'
-import Confirmation from './screens/Confirmation/Confirmation.jsx'
+import Confirmation from './components/Form/Confirmation.jsx'
 import GetInvolved from './screens/GetInvolved/GetInvolved.jsx'
 import Homepage from './screens/Homepage/Homepage.jsx'
-import Form from './screens/Form/Form.jsx'
+import FormScreen from './screens/FormScreen/FormScreen.jsx'
 import Footer from './components/shared/Footer/Footer.jsx'
 import Nav from './components/shared/Nav/Nav.jsx'
 import { Route, Switch } from 'react-router-dom'
@@ -20,18 +20,11 @@ const App = () => {
           <GetInvolved />
         </Route>
         <Route exact path='/sign-up'>
-          <Form mode='sign-up' />
-        </Route>
-        <Route path='/sign-up/:id'>
-          <Form mode='edit' />
-        </Route>
-        <Route path='/confirmation'>
-          <Confirmation />
+          <FormScreen />
         </Route>
       </Switch>
       <Footer />
     </div>
-    
   )
 }
 

@@ -1,0 +1,77 @@
+.donate-div {
+  width: 1440px;
+  height: 433px;
+  background-color: #b9c9e0;
+  position: relative;
+  display: flex;
+}
+.donate-triangle {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 50px solid white;
+  position: absolute;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.donate-heading {
+  width: 350px;
+  height: 100px;
+  font-family: Allerta;
+  font-size: 40px;
+  color: #1c4d73;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-left: 100px;
+  margin-top: 60px;
+}
+.apostrophe {
+  font-family: Varela;
+}
+.donate-graphic {
+  width: 358px;
+  height: 207px;
+  position: absolute;
+  top: 35px;
+  right: 180px;
+}
+.numbers {
+  position: absolute;
+  top: 220px;
+  left: 230px;
+}
+.amt-toward {
+  font-size: 50px;
+  color: black;
+}
+.amt-of {
+  font-size: 30px;
+  color: white;
+}
+.goal-line {
+  background-image: linear-gradient(to right, black, white);
+  width: 630px;
+  height: 10px;
+  position: absolute;
+  top: 370px;
+  left: 65px;
+  border-radius: 5px;
+}
+.donate-button {
+  width: 521px;
+  height: 90.2px;
+  background-color: #c53131;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 600;
+  color: white;
+  line-height: 90.2px;
+  text-align: center;
+  position: absolute;
+  right: 120px;
+  bottom: 55px;
+}

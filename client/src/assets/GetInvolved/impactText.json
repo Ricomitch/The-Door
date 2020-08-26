@@ -1,0 +1,14 @@
+{
+  "ImpactCard1": {
+    "header": "Emergency Food Pack RoundUp",
+    "content": "This past Saturday The Door hosted its 20th annual Emergency Food Pack Round Up. Our team of staff, members & voluneteers...",
+    "buttonValue": "Read More   >",
+    "impactClass": "emergency"
+  },
+  "ImpactCard2": {
+    "header": "Meet Elisha",
+    "content": "Back in March Elisha Graham got into the college of his dreams with the help of our College Advisement and tutoring Center. ",
+    "buttonValue": "Read More   >",
+    "impactClass": "elisha"
+  }
+}

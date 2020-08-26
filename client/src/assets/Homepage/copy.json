@@ -1,0 +1,69 @@
+
+
+
+{
+  "HomepageHeroRectangle143p1": {    
+    "header": "COVID-19: How The Door Is Responding ",
+    "content": "The COVID-19 public health crisis and while The Door’s physical spaces are mostly closed, we are virtually open! The health and wellbeing of our community is our top priority, and we are working hard to stay connected and to continue to support our members.",
+    "buttonValue": "Learn More   >"
+  },
+
+  "HomepageHeroRectangle143p2": {
+    "header": "Committed to Empoweing & Inspiring Young Minds",
+    "content": "The Door is also focused on impacting the lives of young people throughout the city – and the world – and, as such, has served as a model for other, similar organizations locally, nationally and internationally.",
+    "buttonValue": "Learn More   >"
+  },
+
+  "HomepageHeroRectangle143p3": {
+    "header": "Help be the Difference!\nHelp be the Impact",
+    "content": "The Door is always looking for support from great people eager to help the future leaders of this country reach their greatest potential.  You could be an inspiration! You could be a difference maker! #STANDWITHTHEDOOR ",
+    "buttonValue": "Volunteer Today    >"
+  },
+
+  "HomepageHeroRectangle143p4": {
+    "header": "Creating Creative Spaces",
+    "content": "We inspire all young people to reach their full artistic potential through an array of creative and professional opportunities. It’s important that our Youth develop an understanding of the critical role art plays in self expression and personal creativity.",
+    "buttonValue": "Learn More   >"
+  },
+  
+  "HomepageHeroBanner": {
+    "content": "The Door's mission is to empower young people to reach their potential by providing comprehensive youth development services in a diverse and caring environment."
+  },
+  
+  "NewsItem1": {
+    "image": "../../assets/Homepage/photo-1573225063823-21ec7ba08e64.jpeg",
+    
+    "header": "LGBTQ Youth Use their Voice For Change!",
+    "content": "We are part of a community that is determined to be there for the young people that need us everyday..",
+    "buttonValue": "Read More  >"
+  },
+  
+  "NewsItem2": {
+    "image": "../../assets/Homepage/ND5_0344_cropped.jpg",
+
+    "header": "What’s Cooking at The Door for Culinary Arts Month?",
+    "content": "Come join our graduating culinary intern, Brian Torres, as he teaches ..",
+    "buttonValue": "Read More  >"
+  },
+  
+  "NewsItem3": {
+    "image": "../../assets/Homepage/Graduate.jpg",
+
+    "header": "Join BSA’s Student Body!",
+    "content": "The Door has a High School- Broome Street Academy, a SUNY-authorized charter HS located in Soho NYC..",
+    "buttonValue": "Read More  >"
+  },
+
+  "HomepageImpactRectangle143": {
+    "header": "See Your Impact ",
+    "subheader": "Career and Education - The Tools to Learn, Earn, and Lead",
+    "content": "The arts are a big and important part of The Door and an effective way to foster community. Help ensure our young people continue to have the safe spaces they need to express themselves and their individuality",
+    "buttonValue": "Read More   > "
+  },
+  
+  "HomepageFacesRectangle": {
+    "content": "Helping nearly 11,000 young people from all over New York City discover and achieve his or her greatest potential."
+  }
+ 
+}
+

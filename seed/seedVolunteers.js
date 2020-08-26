@@ -11,8 +11,8 @@ const main = async () => {
        lastName: "b",
        phone: "c",
        email: "d",
-       programs: {obj : 'key'},
-       roles: { obj : 'key' }
+       programs: ['Health Service', 'Creative Arts'],
+       roles: ['Volunteer', 'Mentor']
     }
   )
   await volunteer.save()

@@ -1,0 +1,68 @@
+.slides {
+  width: 1442px;
+  height: 625px;
+  position: relative;
+}
+
+.slide {
+  height: 625px;
+}
+
+.friends {
+  object-fit: cover;
+  object-position: 0px 75%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.writing,
+.studying {
+  object-fit: cover;
+  object-position: 0px 5%;
+}
+
+.art {
+  object-fit: cover;
+  object-position: -1px 65%;
+}
+
+.thumbs {
+  display: none;
+}
+
+.carousel-status {
+  display: none;
+}
+
+.slide {
+  padding-right: 75px;
+  background-color: white !important;
+}
+
+.slide1 {
+  position: relative;
+}
+
+.rectangle1,
+.rectangle2,
+.rectangle3,
+.rectangle4 {
+  position: absolute;
+  left: 62.46%;
+  right: 12.92%;
+  top: 11.68%;
+  bottom: 29.92%;
+  z-index: 2;
+}
+
+.rectangle1 {
+  left: 65.96%;
+}
+
+.slide3 {
+  margin-left: -75px;
+  margin-right: 75px;
+}
+
+.container {
+  background-color: white;
+}
