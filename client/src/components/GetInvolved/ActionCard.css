@@ -3,16 +3,13 @@
   height: 406px;
   position: relative;
   overflow: hidden;
-}
-.action-card:hover .action-image {
-  opacity: 1;
-}
+} 
 .action-card-banner {
   position: absolute;
   width: 296px;
   text-align: center;
   height: 76px;
-  background-color: #1c4d7399;
+  background-color: hsla(206, 61%, 28%, 0.6);
   top: 222px;
 }
 .action-text {
@@ -20,7 +17,6 @@
   font-size: 30px;
   font-weight: bold;
   color: #f3b344;
-  filter: brightness(1);
   margin: 0;
   line-height: 76px;
 }
@@ -31,7 +27,7 @@
   object-position: -450px -70px;
   height: 137%;
 }
-.ways-to-give {
+.way-to-give {
   object-position: -150px -10px;
   height: 105%;
 }
@@ -42,4 +38,25 @@
 .newsletter {
   object-position: -160px 0px;
   height: 100%;
+}
+.action-hover-text {
+  color: white;
+  background-color: hsla(206, 61%, 28%, 0.75);
+  margin: 0;
+  height: 125px;
+  padding: 15px;
+  padding-left: 20px;
+  font-family: Cabin;
+  font-size: 21px;
+  text-align: left;
+  display: none;
+}
+.action-card:hover .action-image {
+  opacity: 1;
+}
+.action-card:hover .action-card-banner {
+  background-color: hsla(206, 61%, 28%, 1);
+}
+.action-card:hover .action-hover-text {
+  display: inline-block;
 }
