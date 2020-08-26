@@ -203,11 +203,12 @@ function VolunteerForm({
                       aria-labelledby='checkbox-group'
                       id='role-input-group'
                     >
-                      <CheckboxInput
+                      <Field name='roles' type='checkbox' value='Volunteer' props={props} as={CheckboxInput} />
+                      {/* <CheckboxInput
                         props={props}
                         name='roles'
                         value='Volunteer'
-                      />
+                      /> */}
                       <CheckboxInput
                         props={props}
                         name='roles'
