@@ -8,7 +8,7 @@
   position: absolute;
   height: 15px;
   left: 29.8px;
-  top: 26px;
+  top: 22px;
   font-family: Cabin;
   font-style: italic;
   font-weight: 500;
@@ -16,9 +16,19 @@
   line-height: 10px;
   color: #b5b5b5;
 }
+.youtube-icon {
+  position: relative;
+  left: 14px;
+  bottom: 2px;
+}
+
+.fb-icon,
+.twitter-icon {
+  padding-left: 14px;
+}
 .footer-icons {
   position: absolute;
-  width: 151px;
+  width: 290px;
   height: 30px;
   left: 29.8px;
   top: 129px;
