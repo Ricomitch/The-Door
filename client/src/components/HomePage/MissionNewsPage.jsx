@@ -6,6 +6,8 @@ import Cook from '../../assets/Homepage/ND5_0344_cropped.jpg'
 import Grad from '../../assets/Homepage/Graduate.jpg'
 import './MissionNewsPage.css'
 import Flower1 from '../../assets/Homepage/flower1.svg'
+import DoubleArrowIcon from '@material-ui/icons/DoubleArrow'
+// import DoubleArrowIcon1 from '@material-ui/icons/'
 
 
 
@@ -23,11 +25,19 @@ const MissionNewsPage = (card) => {
       <p className='home-mission'>The Door's mission is to <span className='empower'>empower young people<br></br></span> to reach their potential by providing<br></br> <span className= 'youth' >comprehensive youth development services<br></br></span> in a diverse and caring environment.</p>
       <hr className='line' />
       <div className='Rectangle1'><span className='news-text'>News Corner</span></div>
+
+      
+
       <div className='news-items'>
+      <div className='left-arrow'><DoubleArrowIcon style={{ color: "white", transform: "scaleX(-1)" }} /></div>
       <NewsItem image = { Pride } card = {copyJSON.NewsItem1} />
       <NewsItem card={copyJSON.NewsItem2} image={Cook} />
         <NewsItem card={copyJSON.NewsItem3} image={Grad} />
-        </div>
+      <div className='right-arrow'><DoubleArrowIcon style={{ color: "white" }} /></div>
+
+
+      </div>
+      
       <div className='triangle'></div>
       
       </div>
