@@ -4,6 +4,9 @@
   position: relative;
   overflow: hidden;
 }
+.action-card:hover .action-image {
+  opacity: 1;
+}
 .action-card-banner {
   position: absolute;
   width: 296px;
@@ -24,18 +27,13 @@
 .action-image {
   opacity: 0.55;
 }
-.action-image:hover {
-  opacity: 1;
-}
 .action-volunteer {
   object-position: -450px -70px;
   height: 137%;
-  position: absolute;
 }
 .ways-to-give {
   object-position: -150px -10px;
   height: 105%;
-  position: absolute;
 }
 .events {
   object-position: -35px 0;
