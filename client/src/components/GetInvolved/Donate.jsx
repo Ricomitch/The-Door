@@ -6,7 +6,7 @@ function Donate() {
   return (
     <div className='donate-div'>
       <div className='donate-triangle'></div>
-      <h2 className='donate-heading'>LET'S HIT THIS<br />MONTH<span className='apostrophe'>'</span>S GOAL</h2>
+      <h2 className='donate-heading'>LET<span className='apostrophe'>'</span>S HIT THIS<br />MONTH<span className='apostrophe'>'</span>S GOAL</h2>
       <img src={handWorld} className='donate-graphic' alt='a hand holding the world'/>
     </div>
   )
