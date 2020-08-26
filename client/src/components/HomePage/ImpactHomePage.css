@@ -19,7 +19,7 @@ div.gradient-block{
   grid-column-start: 3;
   width: 1153px;
   height: 617px;
-  background: rgb(241,195,144);
+  
   background: linear-gradient(90deg, rgba(241,195,144,1) 0%, rgba(240,199,189,1) 60%, rgba(255,255,255,1) 100%); ;
 }
 
