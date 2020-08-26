@@ -28,7 +28,6 @@ function FormScreen() {
           <HeroForm />
             <Confirmation volunteerId={volunteerId} setFormStatus={setFormStatus} setModalOpen={setModalOpen} />
         </div>
-      
     )
   
   } else if (formStatus === 'edit') {

@@ -1,29 +1,27 @@
 div.form-body {
-  height: 1078px;
   width: 100%;
-  background-color: #1C4D73;
+  background-color: #1c4d73;
   color: white;
 }
 div.shim {
   display: block;
   min-height: 30px;
-  background-color:  #1C4D73;
+  background-color: #1c4d73;
 }
 h1.volunteer-title {
-    margin-top: unset;
-    width: 432px;
-    height: 41.1px;
-    font-family: Cabin;
-    font-size: 48px;
-    font-weight: bold;
-    color: white;
+  margin-top: unset;
+  width: 432px;
+  height: 41.1px;
+  font-family: Cabin;
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
 }
 
 div.form-content {
   width: 947px;
   height: 1078px;
   padding: 0 60px 0;
-  
 }
 
 div.primary-data-section {
@@ -52,12 +50,57 @@ input.text {
   background-color: #f2f2f2;
 }
 
-input.checkbox {
-  transform: scale(2, 2);
+div.checkbox-group {
+  margin: 60px 0;
+  height: 358px;
 }
 
 div.checkbox-group h2 {
   font-family: Cabin, Georgia;
   font-size: 24px;
   font-weight: bold;
+}
+
+div.checkbox-input-group {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+}
+
+#role-selection {
+  height: 150px;
+}
+
+  button.form {
+  width: 130px;
+  height: 54px;
+  border-radius: 10px;
+  border: solid 2px #e00b00;
+  background-color: #fff;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+button.form:hover {
+  background-color: #ea6e69;
+  border: none;
+}
+
+button.form:hover span.button-text {
+  color: white;
+}
+
+span.button-text {
+  width: 69px;
+  height: 27.4px;
+  font-size: 22px;
+  color: rgba(224, 11, 0, 0.5);
+}
+
+span.active {
+  color: #e00b00 ;
+}
+
+span.active:hover {
+  color: white ;
 }

@@ -1,0 +1,56 @@
+/* Following CSS is a personal adaptation,much indebted to 
+w3schools "How TO - Custom Checkbox page" 
+https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+*/
+
+div.checkbox-input-area {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex: 0 0 383px;
+  font-family: Cabin, Georgia;
+  font-size: 15px;
+  height: 29px;
+  padding-left: 55px;
+  cursor: pointer;
+}
+
+div.checkbox-input-area input.checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+div.checkbox-input-area:hover span.custom-checkmark {
+  background-color: #ccc;
+}
+
+span.custom-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #f2f2f2;
+}
+
+span.custom-checkmark:after {
+  content: '\2713';
+  position: absolute;
+  display: none;
+  color: black;
+  left: 15%;
+  bottom: 10%;
+  transform: scale(2, 2);
+  font-weight: bold;
+}
+
+div.checkbox-input-area input.checkbox:checked ~ span.custom-checkmark:after {
+  display: block;
+}
+
