@@ -67,14 +67,15 @@ function VolunteerForm({
                 })
                 if (check) setButtonActive((prev) => !prev)
               }}
-              onSubmit={async (value) => {
-                console.log(value)
+              onSubmit={async(value ) => {
+                
                 let response
                 if (formStatus === 'edit') {
                   response = await updateVolunteer(volunteerId, value)
                 } else {
                   response = await createVolunteer(value)
                 }
+               
                 await setVolunteerId(response._id)
                 setFormStatus('submitted')
               }}
@@ -242,7 +243,8 @@ function VolunteerForm({
                     </div>
                   </div>
 
-                  <button className='submit-button form' type='submit'>
+                  <button className='submit-button form' type='submit'
+                  >
                     <span
                       className={`button-text ${
                         buttonActive ? 'active' : 'rest'
@@ -251,6 +253,8 @@ function VolunteerForm({
                       {formStatus === 'edit' ? 'Update' : 'Submit'}
                     </span>
                   </button>
+                  <pre>{JSON.stringify(props.values, null, 2)} <br/>
+                    Submitting: {JSON.stringify(props.isSubmitting, null, 1)}</pre>
                 </form>
               )}
             </Formik>
@@ -265,9 +269,7 @@ function VolunteerForm({
                 <span className='button-text'>Nevermind</span>
               </button>
             )}
-            
           </div>
-          
         </div>
         <StandWith />
       </div>
