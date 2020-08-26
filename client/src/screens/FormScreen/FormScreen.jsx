@@ -6,8 +6,8 @@ import './FormScreen.css'
 import Modal from '../../components/Form/Modal'
 
 function FormScreen() {
-  const [formStatus, setFormStatus] = useState('')
-  const [volunteerId, setVolunteerId] = useState('')
+  const [formStatus, setFormStatus] = useState('edit')
+  const [volunteerId, setVolunteerId] = useState('5f45a8d938a9feb9cbeb9fe1')
   const [modalOpen, setModalOpen] = useState(false)
 
   if (!formStatus) {
