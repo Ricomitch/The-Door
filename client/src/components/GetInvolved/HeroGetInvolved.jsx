@@ -6,7 +6,7 @@ import './HeroGetInvolved.css'
 
 
 function HeroGetInvolved() {
-  return (
+  return ( 
     <div className="HeroGet">
       <div className="HeroGetRectangle143">
         <Rectangle143 copy={copyJSON.GetInvolvedRectangle143} />
