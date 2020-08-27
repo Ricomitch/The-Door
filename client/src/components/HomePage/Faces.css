@@ -99,3 +99,104 @@
 .faces-front-box-text {
   margin-top: 20px;
 }
+
+@media screen and (max-width: 426px) {
+  .faces-div {
+    height: 730px;
+    margin-top: 20px;
+  }
+  .faces-main {
+    display: flex;
+    flex-direction: row;
+  }
+  .faces-triangle {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 50px solid white;
+    position: absolute;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  .Rectangle178 {
+    width: 353px;
+    height: 65px;
+    border-radius: 15px;
+    background-color: #4b688a;
+  }
+  .faces-text {
+    width: 333px;
+    height: 45px;
+    font-family: Montserrat-ExtraBold;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 65px;
+    color: #f3b143;
+    padding: 10px;
+  }
+  .faces-left-side {
+    padding: 105px 20px 20px 38px;
+    width: 735px;
+  }
+  .video {
+    margin-top: 20px;
+    position: relative;
+  }
+  .flower2 {
+    position: absolute;
+    width: 1040px;
+    height: 825px;
+    right: 0;
+    background-repeat: no-repeat;
+    bottom: 0;
+  }
+  .faces-right-side {
+    padding: 20px;
+    width: 735px;
+    padding-top: 80px;
+  }
+  .faces-back-rectangle {
+    width: 509px;
+    height: 348px;
+    background-color: #1c4d7391;
+    position: absolute;
+    top: 205px;
+    right: 45px;
+  }
+  .faces-front-rectangle {
+    width: 509px;
+    height: 348px;
+    background-color: #1c4d73;
+    position: absolute;
+    top: 250px;
+    right: 80px;
+    font-family: Cabin-Bold;
+    font-size: 36px;
+    color: white;
+    padding: 0 20px;
+    text-align: center;
+    line-height: 55px;
+  }
+  .elevenK {
+    font-size: 48px;
+    color: #f3b143;
+  }
+  .young-people {
+    font-size: 44px;
+    color: #f3b143;
+  }
+  .discover-and-achieve {
+    font-size: 42px;
+  }
+  .greatest-potential {
+    font-size: 42px;
+    color: #f3b143;
+  }
+  .faces-front-box-text {
+    margin-top: 20px;
+  }
+}
