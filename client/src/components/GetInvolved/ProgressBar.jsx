@@ -1,11 +1,13 @@
 import React from 'react'
+import './ProgressBar.css'
 
 const Progressbar = (props) => {
-  const { } = props;
+  const { completed } = props;
+
   return (
-    <div>
-      <div>
-        <span> </span>
+    <div className= 'container'>
+      <div className='filler' style={{ width: `${completed}%`, backgroundColor: "black" }}>
+        <span className= 'labelStyles'>{`${completed}`} </span>
       </div>
       
     </div>

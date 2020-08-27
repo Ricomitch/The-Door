@@ -1,0 +1,21 @@
+.container {
+  height: 10px;
+  width: 655px;
+  position: absolute;
+  bottom: 55px;
+  left: 40px;
+  background-color: #b9c9e0;
+  border-radius: 50px;
+  
+}
+
+.filler {
+  height: 10px;
+  transition: 'width 1s ease-in-out';
+
+}
+
+.labelStyles {
+  color: white;
+}
+
