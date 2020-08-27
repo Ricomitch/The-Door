@@ -1,4 +1,4 @@
-.container {
+.progress-bar-container {
   height: 10px;
   width: 655px;
   position: absolute;
@@ -6,7 +6,6 @@
   left: 40px;
   background-color: #b9c9e0;
   border-radius: 50px;
-  
 }
 
 .filler {

@@ -5,7 +5,7 @@ const Progressbar = (props) => {
   const { completed } = props;
 
   return (
-    <div className= 'container'>
+    <div className= 'progress-bar-container'>
       <div className='filler' style={{ width: `${completed}%`, backgroundColor: "black" }}>
         <span className= 'labelStyles'>{`${completed}`} </span>
       </div>

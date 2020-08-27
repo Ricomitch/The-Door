@@ -10,7 +10,7 @@ import DoubleArrowIcon from '@material-ui/icons/DoubleArrow'
 
 
 
-
+ 
 const MissionNewsPage = (card) => {
   return (
     <div className='news-div'>
