@@ -92,7 +92,6 @@ body {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-
   src: local('Allerta Regular'), local('Allerta-Regular'),
     url(./assets/Allerta-Regular.ttf) format('truetype');
 }
@@ -102,5 +101,4 @@ body {
   .app {
     width: 100vw;
   }
-
 }
