@@ -4,17 +4,12 @@ const checkPreExistingEmail = require('./validatorServices')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
-//Error Handler will form STATUSES and MESSAGES to be bundled and served to browser
-// TODO:
-// Rename to make generic // split routing for the email exists 
 const errorHandler500 = (error, res) => {
-  // original action:
-  // res.status(500).json({ error: error.message })
+  
   console.log('I am inside the error handler func')
-  console.log(error.status)
-  res.status(500).json({type: 'email', error: 'e-mail already exists'})
-  // console.log(error)
-  // console.log('I am inside the error')
+  console.log(error)
+  res.status(500).json({error: error.message })
+ 
 }
 
 const getVolunteers = async (req, res) => {
@@ -50,7 +45,7 @@ const createVolunteer = async (req, res) => {
       throw new Error('email exists')
     }
   } catch (error) {
-    errorHandler500(error, res)
+    res.status(412).json({type: 'email', error: 'e-mail already exists'}) 
   }
 }
 
