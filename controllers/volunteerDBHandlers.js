@@ -4,7 +4,7 @@ const db = require('../db/connection')
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const errorHandler500 = (error, res) => {
-  res.status(500).json({ error: error.message })
+  res.status(500).json({ error: error.message, res: res })
 }
 
 const getVolunteers = async (req, res) => {
@@ -23,7 +23,7 @@ const getVolunteer = async (req, res) => {
     if (volunteer) {
       return res.json(volunteer)
     }
-    res.status(404).send('Volunteer not found!' )
+    res.status(404).send('Volunteer not found!')
   } catch (error) {
     errorHandler500(error, res)
   }
@@ -31,7 +31,8 @@ const getVolunteer = async (req, res) => {
 
 const createVolunteer = async (req, res) => {
   try {
-    const volunteer = await new Volunteer(req.body)
+    const volunteer = new Volunteer(req.body)
+    
     await volunteer.save()
     res.status(201).json(volunteer)
   } catch (error) {
@@ -41,15 +42,20 @@ const createVolunteer = async (req, res) => {
 
 const updateVolunteer = async (req, res) => {
   const { id } = req.params
-  await Volunteer.findByIdAndUpdate(id, req.body, { new: true }, (error, volunteer) => {
-    if (error) {
-      return errorHandler500(error)
+  await Volunteer.findByIdAndUpdate(
+    id,
+    req.body,
+    { new: true },
+    (error, volunteer) => {
+      if (error) {
+        return errorHandler500(error)
+      }
+      if (!volunteer) {
+        return res.status(404).send('Volunteer not found!')
+      }
+      res.status(200).json(volunteer)
     }
-    if (!volunteer) {
-      return res.status(404).send('Volunteer not found!')
-    }
-    res.status(200).json(volunteer)
-  })
+  )
 }
 
 const deleteVolunteer = async (req, res) => {
@@ -57,9 +63,9 @@ const deleteVolunteer = async (req, res) => {
     const { id } = req.params
     const deleted = await Volunteer.findByIdAndDelete(id)
     if (deleted) {
-      return res.status(200).send("Volunteer deleted!")
+      return res.status(200).send('Volunteer deleted!')
     }
-    throw new Error("Volunteer not found!")
+    throw new Error('Volunteer not found!')
   } catch (error) {
     errorHandler500(error, res)
   }
@@ -70,5 +76,5 @@ module.exports = {
   getVolunteer,
   createVolunteer,
   updateVolunteer,
-  deleteVolunteer
+  deleteVolunteer,
 }
