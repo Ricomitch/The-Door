@@ -4,7 +4,7 @@ import ActionSection from '../../components/GetInvolved/ActionSection.jsx'
 import ImpactGetInvolved from '../../components/GetInvolved/ImpactGetInvolved.jsx'
 import Donate from '../../components/GetInvolved/Donate.jsx'
 
-function GetInvolved() {
+function GetInvolved() { 
   return (
     <div>
       <HeroGetInvolved />

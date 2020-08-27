@@ -226,7 +226,7 @@
   line-height: 30px;
 }
 .nav-burger {
-  display: none
+  visibility: hidden;
 }
 .hamburger-drop-down {
   display: none;
@@ -260,7 +260,7 @@
     left: 20px;
   }
   .nav-burger {
-    display: inline-block;
+    visibility: visible;
     position: absolute;
     right: 10px;
     height: 13px;
