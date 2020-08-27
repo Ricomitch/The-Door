@@ -1,9 +1,9 @@
 .rectangle143 {
   background-color: #436389;
-  opacity: .95;
+  opacity: 0.95;
   width: 526px;
   height: 367px;
-  border-radius: 12px;;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
   padding: 30px;
@@ -12,7 +12,7 @@
 }
 .rectangle-header {
   width: 475px;
-  height: 41px;
+  /* height: 41px; */
   font-family: Montserrat-Bold;
   font-size: 24px;
   font-weight: bolder;
@@ -41,7 +41,7 @@
   padding: 6px;
 }
 .rectangle-link {
-  width: 198px;
+  /* width: 198px; */
   height: 37px;
   align-self: flex-end;
 }
@@ -72,4 +72,48 @@
 }
 .no-button {
   display: none;
+}
+
+@media screen and (max-width: 426px) {
+  .rectangle143 {
+    width: 100%;
+    height: 100%;
+    padding-top: 0%;
+  }
+  .rectangle-header {
+    width: 90%;
+    font-size: 18px;
+  }
+  .rectangle-subheading {
+    font-family: Montserrat-SemiBold;
+    font-size: 12px;
+    color: white;
+  }
+  .rectangle-content {
+    /* padding-top: 0%; */
+    width: 100%;
+    height: 100%;
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 1.75;
+    color: white;
+    margin: 0;
+  }
+  .rectangle-button {
+    /* width: 99px; */
+    padding: 6px 9px;
+    width: auto;
+    height: 32px;
+  }
+  .button-words {
+    font-family: Cabin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .rectangle-volunteer-button{
+    margin-top:15px;
+    /* width: 100px; */
+  }
 }
