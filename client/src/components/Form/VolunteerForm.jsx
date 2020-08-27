@@ -26,7 +26,7 @@ function VolunteerForm({
     programs: [],
     roles: [],
   })
-  const [buttonActive, setButtonActive] = useState(false)
+  const [serverErrors, setServerErrors] = useState({})
 
   const history = useHistory()
 
@@ -60,22 +60,40 @@ function VolunteerForm({
             <Formik
               initialValues={volunteer}
               enableReinitialize
+              isValid
               validate={(values) => {
-                let myArr = Object.values(values)
-                const check = myArr.every((x) => {
-                  return typeof x === 'object' ? x.length > 0 : Boolean(x)
-                })
-                if (check) setButtonActive((prev) => !prev)
+                const errors = {}
+                if (!values.firstName) errors.firstName = 'Required'
+                if (!values.lastName) errors.lastName = 'Required'
+                if (!values.phone) errors.phone = 'Required'
+                if (!values.email) {
+                  errors.email = 'Required'
+                } else if (
+                  !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(
+                    values.email
+                  )
+                ) {
+                  errors.email = 'Please enter a valid e-mail address'
+                }
+                if (values.programs.length === 0)
+                  errors.programs = 'Please select a program choice.'
+                if (values.roles.length === 0)
+                  errors.roles = 'Please select a roles choice.'
+                return errors
               }}
-              onSubmit={async(value ) => {
-                
+              
+              onSubmit={async (value) => {
                 let response
                 if (formStatus === 'edit') {
                   response = await updateVolunteer(volunteerId, value)
                 } else {
                   response = await createVolunteer(value)
                 }
-               
+                // if Status is NOT OK
+                if (!(response.status >= 200 && response.status <= 300 )) { 
+                  return setServerErrors(response.data)
+                }
+
                 await setVolunteerId(response._id)
                 setFormStatus('submitted')
               }}
@@ -237,24 +255,21 @@ function VolunteerForm({
                     </div>
                   </div>
 
-                  <button className='submit-button form' type='submit'
+                  <button
+                    className={`form submit-button ${
+                      props.isValid && (props.dirty || formStatus === 'edit')
+                        ? 'active'
+                        : null
+                    }`}
+                    type='submit'
                   >
-                    <span
-                      className={`button-text ${
-                        buttonActive ? 'active' : 'rest'
-                      }`}
-                    >
+                    <span className='button-text'>
                       {formStatus === 'edit' ? 'Update' : 'Submit'}
                     </span>
                   </button>
-                  <pre>{JSON.stringify(props.values, null, 2)} <br/>
-                    Submitting: {JSON.stringify(props.isSubmitting, null, 1)}</pre>
-                </form>
-              )}
-            </Formik>
-            {formStatus === 'edit' && (
+                  {formStatus === 'edit' && (
               <button
-                className='delete-button form'
+                className={'form delete-button active'}
                 onClick={() => {
                   deleteVolunteer(volunteerId)
                   history.push('/')
@@ -263,7 +278,17 @@ function VolunteerForm({
                 <span className='button-text'>Nevermind</span>
               </button>
             )}
+                </form>
+              )}
+            </Formik>
+           
           </div>
+          
+          {Object.keys(serverErrors).length
+            ? <pre>{serverErrors.error}</pre>
+            : null
+          }
+          
         </div>
         <StandWith />
       </div>

@@ -1,21 +1,56 @@
-import React from 'react'
-
-import SocialImg from '../Nav/Screen Shot 2020-07-30 at 1.59 1.jpg'
+import React, { useState } from 'react'
+import InstaIcon from '../../../assets/Nav/insta-nav.jpeg'
+import FacebookIcon from '../../../assets/Nav/fb-nav.jpg'
+import TwitterIcon from '../../../assets/Nav/twitter-nav.jpeg'
+import YoutubeIcon from '../../../assets/Nav/youtube-nav.jpeg'
+import BurgerMenu from '@material-ui/icons/Menu'
 import { Link } from 'react-router-dom'
 import './Nav.css'
 
 function Nav() {
+  const burgerStyles = {
+    height: '40px',
+    width: '35px',
+    'align-self': 'center',
+  }
+
+  const [burgerHidden, updateBurgerClass] = useState(true)
+  function burgerClick() {
+    updateBurgerClass(!burgerHidden)
+  }
+  function burgerByeBye() {
+    updateBurgerClass(true)
+  }
+
+
   return (
     <div className='nav'>
-      <nav className='top-nav'>
-        <img className='social-img' src={SocialImg} />
-      </nav>
+      <div className='top-nav'>
+        <div className='nav-icons'>
+          <a href='https://www.instagram.com/door_nyc/' target='_blank'>
+            <img className='insta-icon' src={InstaIcon} alt='' />
+          </a>
+          <a href='https://www.facebook.com/TheDoorNYC/' target='_blank'>
+            <img className='fb-icon' src={FacebookIcon} alt='' />
+          </a>
+          <a href='https://twitter.com/Door_NYC' target='_blank'>
+            <img className='twitter-icon' src={TwitterIcon} alt='' />
+          </a>
+          <a
+            href='https://www.youtube.com/channel/UCTI_X7wHcmfmb4_Fec0WYvQ'
+            target='_blank'>
+            <img className='youtube-icon' src={YoutubeIcon} alt='' />
+          </a>
+        </div>
+      </div>
 
       <nav className='main-nav'>
-        <Link to='/'>
+        <BurgerMenu className='nav-burger' style={burgerStyles} onClick={burgerClick}/>
+        <Link to='/' onClick={burgerByeBye}>
           <img
             id='door-logo'
             src='https://door.org/wp-content/uploads/2018/09/img_logo.png'
+            alt='The Door logo'
           />
         </Link>
         <div className='about-the-door-nav-div'>
@@ -85,9 +120,23 @@ function Nav() {
         <Link className='contact-nav' to='/'>
           Contact
         </Link>
-        <Link className='donate-nav' to='/'>
-          Donate
+
+        <Link className='nav-donate-link' to='/'>
+          <div className='donate-nav'>
+            {/* <span className='nav-donate-button-text'>Donate</span> */}
+            Donate
+          </div>
         </Link>
+        <div className={burgerHidden ? 'hamburger-drop-down burger-hidden' : 'hamburger-drop-down burger-visible'}>
+          <Link className='option-burger' onClick={burgerByeBye}>About the Door</Link>
+          <Link className='option-burger' onClick={burgerByeBye}>Program & Services</Link>
+          <Link className='option-burger' onClick={burgerByeBye}>Membership</Link>
+          <Link className='option-burger' onClick={burgerByeBye}>News</Link>
+          <Link to='/get-involved' className='option-burger' onClick={burgerByeBye} >Get Involved</Link>
+          <Link to='/sign-up' className='option-burger' onClick={burgerByeBye} >Volunteer</Link>
+          <Link className='option-burger' onClick={burgerByeBye}>Contact</Link>
+          <Link className='option-burger burger-donate' onClick={burgerByeBye}>Donate</Link>
+        </div>
       </nav>
     </div>
   )

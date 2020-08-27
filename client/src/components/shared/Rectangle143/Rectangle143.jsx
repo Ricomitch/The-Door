@@ -22,7 +22,7 @@ function Rectangle143({ copy }) {
       {volunteerButton ? (
         <Link to='/sign-up' className='rectangle-link'>
           <button
-            className={`rectangle-button ${addlButtonClass} ${noButtonClass}`}>
+            className={`rectangle-button rectangle-volunteer-button ${addlButtonClass} ${noButtonClass}`}>
             <span className='button-words'>{copy.buttonValue}</span>
           </button>
         </Link>

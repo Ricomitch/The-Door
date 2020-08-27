@@ -10,15 +10,13 @@ import DoubleArrowIcon from '@material-ui/icons/DoubleArrow'
 
 
 
-
-
+ 
 const MissionNewsPage = (card) => {
   return (
     <div className='news-div'>
       <div
         className='flower1'
         style={{ backgroundImage: `url(${Flower1})` }}></div>
-          
       <div className='mission-triangle'></div>
       <main className='mission-main'></main>
       <p className='home-mission'>The Door's mission is to <span className='empower'>empower young people<br></br></span> to reach their potential by providing<br></br> <span className= 'youth' >comprehensive youth development services<br></br></span> in a diverse and caring environment.</p>
