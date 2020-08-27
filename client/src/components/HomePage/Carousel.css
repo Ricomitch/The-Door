@@ -66,3 +66,43 @@
 .container {
   background-color: white;
 }
+
+/* Mobile */
+@media screen and (max-width: 426px) {
+  .slides {
+    width: 425px;
+    z-index: 3;
+  }
+
+  .rectangle1,
+.rectangle2,
+.rectangle3,
+.rectangle4 {
+  /* position: absolute; */
+  width: 90%;
+  height: 90%;
+  top: 60%;
+  bottom: 90%;
+  z-index: 2;
+}
+
+
+
+.slide {
+  padding-right: 0; 
+}
+
+.slide3 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+  
+ 
+
+}
+
+
+
+/* Tablet */

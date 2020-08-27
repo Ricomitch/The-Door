@@ -40,8 +40,13 @@
   text-align: center;
 }
 .about-the-door-nav,
-.programs-services-nav {
+.programs-services-nav,
+.get-involved-nav {
   margin: 0;
+}
+
+.get-involved-nav {
+
 }
 
 #door-logo {
@@ -84,7 +89,7 @@
 
 .about-the-door-nav-div,
 .programs-services-nav-div,
-.get0involved-nav {
+.get-involved-nav {
   display: inline-block;
   height: 86px;
   text-align: center;
@@ -161,6 +166,7 @@
 .get-involved-nav-div {
   height: 86px;
   display: inline-block;
+  text-align: center;
 }
 .get-involved-nav-div:hover .get-involved-drop-down {
   visibility: visible;
@@ -228,6 +234,9 @@
 .nav-burger {
   visibility: hidden;
 }
+.hamburger-drop-down {
+  display: none;
+}
 
 /* .nav-donate-button-text {
   position: relative;
@@ -235,8 +244,8 @@
 } */
 
 @media screen and (max-width: 426px) {
-  .top-nave {
-    visibility: hidden;
+  .top-nav {
+    display: none;
   }
   .main-nav {
     width: 100vw;
@@ -248,24 +257,60 @@
   .news-nav,
   .get-involved-nav,
   .contact-nav,
-  .donate-nav {
+  .nav-donate-link {
     visibility: hidden;
   }
   #door-logo {
-    width: 75px;
-    height: 38px;
+    width: 70px;
+    height: 35px;
     left: 20px;
   }
   .nav-burger {
     visibility: visible;
-    z-index: 3;
     position: absolute;
-    height: 47px;
-    width: 47px;
     right: 10px;
-    background-color: #1c4d73;
+    height: 13px;
+    width: 47px;
+    color: white;
   }
-
-
-
+  .nav {
+    margin: 0;
+  }
+  .hamburger-drop-down {
+    display: inline-block;
+    position: absolute;
+    top: 47px;
+    width: 80%;
+    z-index: 2;
+    background-color: #1c4d73;
+    text-align: center;
+    right: 0;
+    border-top: 6px solid #f3b143;
+  }
+  .option-burger {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 65px;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 65px;
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid rgba(147, 172, 217, 0.35);
+  }
+  .burger-donate {
+    color: red;
+  }
+  .burger-hidden {
+    display: none;
+  }
+  .burger-visible {
+    display: inline-block;
+  }
+  .nav-burger:active .hamburger-drop-down {
+    display: inline;
+  }
 }
