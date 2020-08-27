@@ -81,7 +81,6 @@ function VolunteerForm({
                   errors.roles = 'Please select a roles choice.'
                 return errors
               }}
-              
               onSubmit={async (value) => {
                 let response
                 if (formStatus === 'edit') {
@@ -90,7 +89,7 @@ function VolunteerForm({
                   response = await createVolunteer(value)
                 }
                 // if Status is NOT OK
-                if (!(response.status >= 200 && response.status <= 300 )) { 
+                if (!(response.status >= 200 && response.status <= 300)) {
                   return setServerErrors(response.data)
                 }
 
@@ -103,19 +102,12 @@ function VolunteerForm({
                   <div className='primary-data-section'>
                     <div className='primary-data-field'>
                       <label htmlFor='firstName'>First Name</label>
-                      <Field name="firstName" type='text'/>
+                      <Field name='firstName' className='text' type='text' />
                     </div>
 
                     <div className='primary-data-field'>
                       <label htmlFor='lastName'>Last Name</label>
-                      <input
-                        type='text'
-                        className='text'
-                        id='lastName'
-                        name='lastName'
-                        onChange={props.handleChange}
-                        value={props.values.lastName}
-                      />
+                      <Field name='lastName' className='text' type='text' />
                     </div>
 
                     <div className='primary-data-field'>
@@ -221,7 +213,13 @@ function VolunteerForm({
                       aria-labelledby='checkbox-group'
                       id='role-input-group'
                     >
-                      <Field name='roles' type='checkbox' value='Volunteer' props={props} as={CheckboxInput} />
+                      <Field
+                        name='roles'
+                        type='checkbox'
+                        value='Volunteer'
+                        props={props}
+                        as={CheckboxInput}
+                      />
                       {/* <CheckboxInput
                         props={props}
                         name='roles'
@@ -268,27 +266,24 @@ function VolunteerForm({
                     </span>
                   </button>
                   {formStatus === 'edit' && (
-              <button
-                className={'form delete-button active'}
-                onClick={() => {
-                  deleteVolunteer(volunteerId)
-                  history.push('/')
-                }}
-              >
-                <span className='button-text'>Nevermind</span>
-              </button>
-            )}
+                    <button
+                      className={'form delete-button active'}
+                      onClick={() => {
+                        deleteVolunteer(volunteerId)
+                        history.push('/')
+                      }}
+                    >
+                      <span className='button-text'>Nevermind</span>
+                    </button>
+                  )}
                 </form>
               )}
             </Formik>
-           
           </div>
-          
-          {Object.keys(serverErrors).length
-            ? <pre>{serverErrors.error}</pre>
-            : null
-          }
-          
+
+          {Object.keys(serverErrors).length ? (
+            <pre>{serverErrors.error}</pre>
+          ) : null}
         </div>
         <StandWith />
       </div>
