@@ -106,3 +106,15 @@
   margin-top: 50px;
 
 }
+
+
+@media screen and (max-width: 426px) {
+  .news-div {
+    
+  height: 750px;
+  position: relative;
+  margin-top: 90px;
+  right: 0;
+  overflow: hidden; 
+  } 
+}

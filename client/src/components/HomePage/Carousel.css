@@ -68,22 +68,25 @@
 }
 
 /* Mobile */
-@media (max-width: 414px) and (max-height: 736px) {
+@media screen and (max-width: 426px) {
   .slides {
     width: 425px;
+    z-index: 3;
   }
 
   .rectangle1,
 .rectangle2,
 .rectangle3,
 .rectangle4 {
-  position: relative;
-  left: 62.46%;
-  right: 12.92%;
-  top: 11.68%;
-  bottom: 29.92%;
+  /* position: absolute; */
+  width: 90%;
+  height: 90%;
+  top: 60%;
+  bottom: 90%;
   z-index: 2;
 }
+
+
 
 .slide {
   padding-right: 0; 
