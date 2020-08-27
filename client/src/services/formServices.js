@@ -3,6 +3,7 @@ import api from './apiConfig'
 export const getVolunteers = async () => {
   try {
     const response = await api.get('/volunteers')
+    // console.log(response)
     return response.data
   } catch (error) {
     throw error
@@ -21,9 +22,12 @@ export const getVolunteer = async (id) => {
 export const createVolunteer = async (volunteer) => {
   try {
     const response = await api.post('/volunteers', volunteer)
-    return response.data
+    
+    return response
   } catch (error) {
-    throw error
+    console.log('I am in createVolunteer service')
+    console.log(error.response)
+    return error.response
   }
 }
 
