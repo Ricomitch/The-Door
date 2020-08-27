@@ -10,9 +10,9 @@ div.HeroGetRectangle143 {
 
 @media screen and (max-width: 426px) {
   .img-wrapper {
-    background-size: cover;
-    height: 80%;
-    background-position-y: 250px;
-    background-position-x: -350px;
+    height: 30px;
+    background-size: contain;
+    background-position-y: 150px;
+    background-position-x: -300px;
   }
 }

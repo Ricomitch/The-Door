@@ -13,7 +13,7 @@ import copyJSON from '../../assets/Homepage/copy.json'
 
 function CarouselSlide() {
   return (
-    <div className='container'>
+    <div className='carousel-container'>
       <Carousel
         className='slides'
         autoPlay
