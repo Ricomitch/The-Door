@@ -1,14 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import InstaIcon from '../../../assets/Nav/insta-nav.jpeg'
 import FacebookIcon from '../../../assets/Nav/fb-nav.jpg'
 import TwitterIcon from '../../../assets/Nav/twitter-nav.jpeg'
 import YoutubeIcon from '../../../assets/Nav/youtube-nav.jpeg'
-import HamburgerMenu from '../../../assets/Nav/hamburger-menu.png'
+import BurgerMenu from '@material-ui/icons/Menu'
 import { Link } from 'react-router-dom'
 import './Nav.css'
 
-
 function Nav() {
+  const burgerStyles = {
+    height: '40px',
+    width: '35px',
+    'align-self': 'center',
+  }
+
+  const [burgerHidden, updateBurgerClass] = useState(true)
+  function burgerClick() {
+    updateBurgerClass(!burgerHidden)
+  }
+  function burgerByeBye() {
+    updateBurgerClass(true)
+  }
+
+
   return (
     <div className='nav'>
       <div className='top-nav'>
@@ -24,23 +38,24 @@ function Nav() {
           </a>
           <a
             href='https://www.youtube.com/channel/UCTI_X7wHcmfmb4_Fec0WYvQ'
-            target='_blank'
-          >
+            target='_blank'>
             <img className='youtube-icon' src={YoutubeIcon} alt='' />
           </a>
         </div>
       </div>
 
       <nav className='main-nav'>
-        <div className='nav-burger' style={{backgroundImage: `url(${HamburgerMenu})`}}></div>
-        <Link to='/'>
+        <BurgerMenu className='nav-burger' style={burgerStyles} onClick={burgerClick}/>
+        <Link to='/' onClick={burgerByeBye}>
           <img
             id='door-logo'
             src='https://door.org/wp-content/uploads/2018/09/img_logo.png'
+            alt='The Door logo'
           />
         </Link>
         <div className='about-the-door-nav-div'>
-          <Link className='about-the-door-nav' to='/'>About the Door
+          <Link className='about-the-door-nav' to='/'>
+            About the Door
           </Link>
           <div className='about-the-door-drop-down'>
             <Link className='option1-1'>COVID-19 Updates</Link>
@@ -112,6 +127,16 @@ function Nav() {
             Donate
           </div>
         </Link>
+        <div className={burgerHidden ? 'hamburger-drop-down burger-hidden' : 'hamburger-drop-down burger-visible'}>
+          <Link className='option-burger' onClick={burgerByeBye}>About the Door</Link>
+          <Link className='option-burger' onClick={burgerByeBye}>Program & Services</Link>
+          <Link className='option-burger' onClick={burgerByeBye}>Membership</Link>
+          <Link className='option-burger' onClick={burgerByeBye}>News</Link>
+          <Link to='/get-involved' className='option-burger' onClick={burgerByeBye} >Get Involved</Link>
+          <Link to='/sign-up' className='option-burger' onClick={burgerByeBye} >Volunteer</Link>
+          <Link className='option-burger' onClick={burgerByeBye}>Contact</Link>
+          <Link className='option-burger burger-donate' onClick={burgerByeBye}>Donate</Link>
+        </div>
       </nav>
     </div>
   )

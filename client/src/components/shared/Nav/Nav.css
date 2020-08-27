@@ -226,7 +226,10 @@
   line-height: 30px;
 }
 .nav-burger {
-  visibility: hidden;
+  display: none
+}
+.hamburger-drop-down {
+  display: none;
 }
 
 /* .nav-donate-button-text {
@@ -235,8 +238,8 @@
 } */
 
 @media screen and (max-width: 426px) {
-  .top-nave {
-    visibility: hidden;
+  .top-nav {
+    display: none;
   }
   .main-nav {
     width: 100vw;
@@ -248,24 +251,60 @@
   .news-nav,
   .get-involved-nav,
   .contact-nav,
-  .donate-nav {
+  .nav-donate-link {
     visibility: hidden;
   }
   #door-logo {
-    width: 75px;
-    height: 38px;
+    width: 70px;
+    height: 35px;
     left: 20px;
   }
   .nav-burger {
-    visibility: visible;
-    z-index: 3;
+    display: inline-block;
     position: absolute;
-    height: 47px;
-    width: 47px;
     right: 10px;
-    background-color: #1c4d73;
+    height: 13px;
+    width: 47px;
+    color: white;
   }
-
-
-
+  .nav {
+    margin: 0;
+  }
+  .hamburger-drop-down {
+    display: inline-block;
+    position: absolute;
+    top: 47px;
+    width: 80%;
+    border: 3px solid red;
+    z-index: 2;
+    background-color: #1c4d73;
+    text-align: center;
+    right: 0;
+  }
+  .option-burger {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 65px;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 65px;
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid rgba(147, 172, 217, 0.35);
+  }
+  .burger-donate {
+    color: red;
+  }
+  .burger-hidden {
+    display: none;
+  }
+  .burger-visible {
+    display: inline-block;
+  }
+  .nav-burger:active .hamburger-drop-down {
+    display: inline;
+  }
 }
