@@ -52,7 +52,7 @@
   font-size: 30px;
   color: white;
 }
-.goal-line {
+/* .goal-line {
   background-image: linear-gradient(to right, black, white);
   width: 630px;
   height: 10px;
@@ -60,7 +60,7 @@
   top: 370px;
   left: 65px;
   border-radius: 5px;
-}
+} */
 .donate-button {
   width: 521px;
   height: 90.2px;
@@ -74,4 +74,7 @@
   position: absolute;
   right: 120px;
   bottom: 55px;
+}
+.donate-button:hover {
+  cursor: pointer;
 }
