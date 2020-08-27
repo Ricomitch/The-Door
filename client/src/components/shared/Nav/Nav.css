@@ -40,8 +40,13 @@
   text-align: center;
 }
 .about-the-door-nav,
-.programs-services-nav {
+.programs-services-nav,
+.get-involved-nav {
   margin: 0;
+}
+
+.get-involved-nav {
+
 }
 
 #door-logo {
@@ -161,6 +166,7 @@
 .get-involved-nav-div {
   height: 86px;
   display: inline-block;
+  text-align: center;
 }
 .get-involved-nav-div:hover .get-involved-drop-down {
   visibility: visible;
