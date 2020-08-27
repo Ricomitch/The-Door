@@ -11,7 +11,7 @@ function Nav() {
   const burgerStyles = {
     height: '40px',
     width: '35px',
-    'align-self': 'center',
+    alignSelf: 'center'
   }
 
   const [burgerHidden, updateBurgerClass] = useState(true)

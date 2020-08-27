@@ -4,16 +4,14 @@
   position: absolute;
   bottom: 55px;
   left: 40px;
-  background-color: #b9c9e0;
+  background-color: #e1e6f1;
   border-radius: 50px;
 }
-
 .filler {
   height: 10px;
   transition: 'width 1s ease-in-out';
-
+  border-radius: 50px;
 }
-
 .labelStyles {
   color: white;
 }

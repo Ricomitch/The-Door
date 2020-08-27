@@ -5,9 +5,10 @@ import Progressbar from './ProgressBar'
 import { useEffect } from 'react'
 
 function Donate() {
-  const [amount, updateAmount] = useState(100000)
+  const [amount, updateAmount] = useState(139650)
   
   let percent
+
   const commaThousands = () => {
     const amountArray = String(amount).split('')
     const start = amountArray.length - 3
@@ -19,10 +20,11 @@ function Donate() {
   
   commaThousands()
     
-    
+  const donateIncrease = () => {
+    updateAmount(prevAmount=>prevAmount+=500)
+  }
   
-  
-  if (percent != undefined) {
+  if (percent !== undefined) {
     return (
       <div className='donate-div'>
         <div className='donate-triangle'></div>
@@ -42,7 +44,7 @@ function Donate() {
         </h2>
         {/* <div className='goal-line'></div> */}
         <Progressbar completed={percent} />
-        <div className='donate-button'>Donate Now</div>
+        <div className='donate-button' onClick={donateIncrease}>Donate Now</div>
       </div>
 
     )
