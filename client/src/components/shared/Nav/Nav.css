@@ -275,11 +275,11 @@
     position: absolute;
     top: 47px;
     width: 80%;
-    border: 3px solid red;
     z-index: 2;
     background-color: #1c4d73;
     text-align: center;
     right: 0;
+    border-top: 6px solid #f3b143;
   }
   .option-burger {
     display: flex;
