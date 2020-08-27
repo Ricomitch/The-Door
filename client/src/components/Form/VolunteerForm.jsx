@@ -26,6 +26,7 @@ function VolunteerForm({
     programs: [],
     roles: [],
   })
+  const [serverErrors, setServerErrors] = useState({})
 
   const history = useHistory()
 
@@ -78,15 +79,19 @@ function VolunteerForm({
                   errors.programs = 'Please select a program choice.'
                 if (values.roles.length === 0)
                   errors.roles = 'Please select a roles choice.'
-
                 return errors
               }}
+              
               onSubmit={async (value) => {
                 let response
                 if (formStatus === 'edit') {
                   response = await updateVolunteer(volunteerId, value)
                 } else {
                   response = await createVolunteer(value)
+                }
+                // if Status is NOT OK
+                if (!(response.status >= 200 && response.status <= 300 )) { 
+                  return setServerErrors(response.data)
                 }
 
                 await setVolunteerId(response._id)
@@ -284,6 +289,12 @@ function VolunteerForm({
             </Formik>
            
           </div>
+          
+          {Object.keys(serverErrors).length
+            ? <pre>{serverErrors.error}</pre>
+            : null
+          }
+          
         </div>
         <StandWith />
       </div>

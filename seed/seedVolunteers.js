@@ -7,9 +7,9 @@ const main = async () => {
   
   const volunteer = new Volunteer(
     {
-      firstName: "a",
+      firstName: "abc",
        lastName: "b",
-       phone: "c",
+       phone: "(111)-111-1111",
        email: "d",
        programs: ['Health Service', 'Creative Arts'],
        roles: ['Volunteer', 'Mentor']
