@@ -92,8 +92,8 @@ function VolunteerForm({
                 if (!(response.status >= 200 && response.status <= 300)) {
                   return setServerErrors(response.data)
                 }
-
-                await setVolunteerId(response._id)
+                // implied "else" ...
+                await setVolunteerId(response.data._id)
                 setFormStatus('submitted')
               }}
             >
@@ -112,26 +112,12 @@ function VolunteerForm({
 
                     <div className='primary-data-field'>
                       <label htmlFor='phone'>Phone</label>
-                      <input
-                        type='text'
-                        className='text'
-                        id='phone'
-                        name='phone'
-                        onChange={props.handleChange}
-                        value={props.values.phone}
-                      />
+                      <Field name='phone' className='text' type='text' />
                     </div>
 
                     <div className='primary-data-field'>
                       <label htmlFor='email'>Email</label>
-                      <input
-                        type='text'
-                        className='text'
-                        id='email'
-                        name='email'
-                        onChange={props.handleChange}
-                        value={props.values.email}
-                      />
+                      <Field name='email' className='text' type='text' />
                     </div>
                   </div>
 
@@ -213,18 +199,11 @@ function VolunteerForm({
                       aria-labelledby='checkbox-group'
                       id='role-input-group'
                     >
-                      <Field
-                        name='roles'
-                        type='checkbox'
-                        value='Volunteer'
+                      <CheckboxInput
                         props={props}
-                        as={CheckboxInput}
+                        name='roles'
+                        value='Volunteer'
                       />
-                      {/* <CheckboxInput
-                        props={props}
-                        name='roles'
-                        value='Volunteer'
-                      /> */}
                       <CheckboxInput
                         props={props}
                         name='roles'
