@@ -81,8 +81,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Varela'),
-    url(./assets/Varela-Regular.ttf) format('truetype');
+  src: local('Varela'), url(./assets/Varela-Regular.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -93,15 +92,15 @@ body {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Allerta Regular'), local('Allerta-Regular'), url(./assets/Allerta-Regular.ttf) format('truetype');
+
+  src: local('Allerta Regular'), local('Allerta-Regular'),
+    url(./assets/Allerta-Regular.ttf) format('truetype');
 }
 
-/* Mobile */
-@media (max-width: 414px) and (max-height: 736px) {
-
-  body {
+@media screen and (max-width: 426px) {
+  .root,
+  .app {
     width: 100vw;
   }
- 
 
 }
