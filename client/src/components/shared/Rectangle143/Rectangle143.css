@@ -73,3 +73,28 @@
 .no-button {
   display: none;
 }
+
+@media (max-width: 414px) and (max-height: 736px) {
+  .rectangle143 {
+    width: 326px;
+    height: 267px; 
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    padding-right: 40px;
+  }
+
+.rectangle-header {
+  font-size: 15px;
+  width: 305px;
+
+}
+
+  .rectangle-content {
+    font-size: 10px;
+    width: 286px;
+
+  }
+
+
+}
