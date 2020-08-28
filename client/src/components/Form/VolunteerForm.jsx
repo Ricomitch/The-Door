@@ -86,15 +86,16 @@ function VolunteerForm({
                 let response
                 if (formStatus === 'edit') {
                   response = await updateVolunteer(volunteerId, value)
+                  
                 } else {
                   response = await createVolunteer(value)
+                  await setVolunteerId(response.data._id)
                 }
                 // if Status is NOT OK
                 if (!(response.status >= 200 && response.status <= 300)) {
                   return setServerErrors(response.data)
                 }
                 // implied "else" ...
-                await setVolunteerId(response.data._id)
                 setFormStatus('submitted')
               }}
             >
