@@ -7,13 +7,17 @@ import Grad from '../../assets/Homepage/Graduate.jpg'
 import './MissionNewsPage.css'
 import Flower1 from '../../assets/Homepage/flower1.svg'
 import DoubleArrowIcon from '@material-ui/icons/DoubleArrow'
-
+import Flower5 from '../../assets/mobile/flower5.svg'
 
 
  
 const MissionNewsPage = (card) => {
   return (
     <div className='news-div'>
+      <div
+      className='flower5'
+        style={{ backgroundImage: `url(${Flower5})` }}>
+      </div>
       <div
         className='flower1'
         style={{ backgroundImage: `url(${Flower1})` }}></div>

@@ -161,7 +161,9 @@ function Nav() {
             Contact
           </div>
           <div className='option-burger burger-donate' onClick={burgerByeBye}>
-            Donate
+          
+              Donate
+              
           </div>
         </div>
       </nav>
