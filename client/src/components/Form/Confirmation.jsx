@@ -31,7 +31,8 @@ function Confirmation({ setFormStatus, volunteerId, setModalOpen }) {
               width: '100%',
               height: '100%',
               backgroundPositionY: '20%',
-            }}>
+            }}
+          >
             <div className='confirmation-content'>
               <h2 className='confirmation-title'>Confirmation</h2>
               <div className='confirmation-section'>
@@ -65,13 +66,15 @@ function Confirmation({ setFormStatus, volunteerId, setModalOpen }) {
               <div className='conf-page-buttons'>
                 <button
                   className='conf-screen-button form active'
-                  onClick={() => setModalOpen((prev) => !prev)}>
-                  <span className="button-text">Confirm</span>
+                  onClick={() => setModalOpen((prev) => !prev)}
+                >
+                  <span className='button-text'>Confirm</span>
                 </button>
                 <button
                   className='conf-screen-button form active'
-                  onClick={() => setFormStatus('edit')}>
-                  <span className="button-text">Edit</span>
+                  onClick={() => setFormStatus('edit')}
+                >
+                  <span className='button-text'>Edit</span>
                 </button>
               </div>
             </div>

@@ -11,7 +11,7 @@ function Nav() {
   const burgerStyles = {
     height: '40px',
     width: '35px',
-    alignSelf: 'center'
+    alignSelf: 'center',
   }
 
   const [burgerHidden, updateBurgerClass] = useState(true)
@@ -37,8 +37,7 @@ function Nav() {
           </a>
           <a
             href='https://www.youtube.com/channel/UCTI_X7wHcmfmb4_Fec0WYvQ'
-            target='_blank'
-          >
+            target='_blank'>
             <img className='youtube-icon' src={YoutubeIcon} alt='' />
           </a>
         </div>
@@ -133,8 +132,7 @@ function Nav() {
             burgerHidden
               ? 'hamburger-drop-down burger-hidden'
               : 'hamburger-drop-down burger-visible'
-          }
-        >
+          }>
           <div className='option-burger' onClick={burgerByeBye}>
             About the Door
           </div>
@@ -150,8 +148,7 @@ function Nav() {
           <Link
             to='/get-involved'
             className='option-burger'
-            onClick={burgerByeBye}
-          >
+            onClick={burgerByeBye}>
             Get Involved
           </Link>
           <Link to='/sign-up' className='option-burger' onClick={burgerByeBye}>
@@ -161,9 +158,7 @@ function Nav() {
             Contact
           </div>
           <div className='option-burger burger-donate' onClick={burgerByeBye}>
-          
-              Donate
-              
+            Donate
           </div>
         </div>
       </nav>
