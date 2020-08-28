@@ -51,8 +51,50 @@
   height: 39px;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.8);
-    line-height: 39px;
+  line-height: 39px;
   font-family: Cabin;
   font-size: 18px;
   color: #4a688d;
+}
+
+@media screen and (max-width: 426px) {
+  .impact-card {
+    height: 80px;
+    width: 100%;
+  }
+  .impact-container {
+    padding-top: 2%;
+    height: inherit;
+    width: inherit;
+    flex-direction: row;
+  }
+  .impact-image-container {
+    height: 85%;
+    width: 50px;
+  }
+  .impact-card-image {
+    width: 100%;
+  }
+  .impact-text-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .impact-card-header {
+    padding-left: 2%;
+    font-size: 4.2vw;
+  }
+  .impact-card-content {
+    display: none;
+  }
+  .impact-button {
+    height: 5vw;
+    width: 21vw;
+    font-size: 2.8vw;
+    line-height: 5vw;
+    align-self: flex-end;
+    border-radius: 7px;
+  }
+  .mobile-hidden {
+    display: none;
+  }
 }

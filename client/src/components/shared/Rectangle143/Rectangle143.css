@@ -25,7 +25,7 @@
 }
 .rectangle-subheading {
   font-family: Montserrat-SemiBold;
-  font-size: 22px;
+  font-size: 21px;
   color: white;
 }
 .rectangle-content {
@@ -70,7 +70,7 @@
 .subheader-heading {
   width: 277.7px;
   height: 42.6px;
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 30px;
   font-weight: bolder;
   color: #f3b143;
@@ -89,7 +89,7 @@
   }
   .rectangle-header {
     width: 90%;
-    font-size: 18px;
+    font-size: 4.5vw;
     margin: 0;
   }
   .get-involved-heading {
@@ -98,7 +98,7 @@
   }
   .rectangle-subheading {
     font-family: Montserrat-SemiBold;
-    font-size: 12px;
+    font-size: 3.2vw;
     color: white;
   }
   .rectangle-content {
