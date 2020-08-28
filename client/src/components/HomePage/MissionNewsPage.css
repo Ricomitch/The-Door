@@ -188,7 +188,27 @@
     background-position: -265px -90px;
   
 }
+}
 
+@media screen and (max-width: 375px) { 
+
+  .home-mission {
+    text-align: left;
+    width: 80%;
+    height: 30%;
+    font-size: 109%;
+    letter-spacing: 1px;
+    margin-left: 10% ; 
+    
+  }
+
+  .empower, .youth {
+    font-size: 160%;
+    color:#f3b143;
+    font-family: Cabin-BoldItalic;
+  }
+
+ 
 
 
   
