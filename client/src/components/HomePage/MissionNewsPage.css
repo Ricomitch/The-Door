@@ -2,7 +2,6 @@
   background-color: #1c4d73;
   height: 750px;
   position: relative;
-  margin-top: 0px;
   right: 0;
   overflow: hidden;
 }
@@ -108,12 +107,50 @@
 
 
 @media screen and (max-width: 426px) {
-  .news-div {
+
+  .home-mission {
+    text-align: left;
+    width: 80%;
+    height: 30%;
+    font-size: 120%;
+    letter-spacing: 1px;
+    margin-left: 10% ; 
     
-  height: 750px;
-  position: relative;
-  margin-top: 90px;
-  right: 0;
-  overflow: hidden; 
-  } 
+  }
+
+  .empower, .youth {
+    font-size: 160%;
+    color:#f3b143;
+    font-family: Cabin-BoldItalic;
+  }
+
+  .line {
+    width: 80%;
+    height: 2px;
+  }
+
+  .Rectangle1 {
+
+    width: 45%;
+  height: 8%;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+.news-text {
+  width: 50%;
+  font-size: 150%;
+}
+
+.news-items{
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+  
+
+  
 }
