@@ -56,3 +56,23 @@ const Volunteer = new Schema(
   roles: {}
 }
 ```
+
+### Screenshots
+
+![Homepage Desktop](https://i.imgur.com/cLyQoJm.png)
+
+![Homepage Mobile](https://i.imgur.com/ciQJDcs.png)
+
+### Tech Stack
+
+React, React Router, Express, Mongoose, MongoDB, JavaScript, HTML, CSS
+
+### Highlights
+
+- 3 MVPs complete
+- Utilizing css:hover on one object to manipulate a different object
+- Use of Formik and Carousel
+- Form button's three states
+- Working as a team
+- Working in conjunction with a second team
+- Ironing out Git issues
