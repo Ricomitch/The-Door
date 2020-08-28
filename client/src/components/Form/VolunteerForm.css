@@ -109,21 +109,15 @@ button.form.active:hover span {
 @media screen and (max-width: 426px) {
   div.form-body {
     width: 100%;
-    background-color: #1c4d73;
-    color: white;
     height: auto;
   }
   div.shim-1 {
     display: none;
   }
-  /* .shim-2 {
-    background-color: #1c4d73;
-    height: 50vw;
-  } */
   div.flower-4 {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
+    background-image: url('../../assets/Form/flower-6.svg') !important;
+    background-position-x: 75%;
+    background-size: cover !important;
   }
 
   h1.volunteer-title {
@@ -152,18 +146,9 @@ button.form.active:hover span {
     width: 95%;
   }
 
-  div.primary-data-field label {
-    font-family: Cabin, Georgia;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-
   input.text {
     width: 85%;
     height: 10vw;
-    border: solid 1px rgba(0, 0, 0, 0.28);
-    background-color: #f2f2f2;
   }
 
   div.checkbox-group {
@@ -177,16 +162,14 @@ button.form.active:hover span {
     justify-content: space-between;
   }
 
-  div.checkbox-group h2 {
-    font-family: Cabin, Georgia;
-    font-size: 24px;
-    font-weight: bold;
-  }
-
   div.checkbox-input-group {
     display: flex;
     flex-flow: row wrap;
     height: 100%;
+  }
+  
+  div.checkbox-input-area {
+    flex: 0 1 50vw;
   }
 
   #role-selection {
