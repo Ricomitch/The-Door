@@ -62,7 +62,7 @@ const updateVolunteer = async (req, res) => {
       if (!volunteer) {
         return res.status(404).send('Volunteer not found!')
       }
-      res.status(200).json(volunteer)
+      res.status(202).json({ ...volunteer, status: 202 })
     }
   )
 }
