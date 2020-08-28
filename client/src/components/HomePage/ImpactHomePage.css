@@ -41,11 +41,11 @@ div.img-wrapper {
 @media screen and (max-width: 426px) {
   div.impact-home-div {
     width: 100vw;
-    height: 600px;
+    height: 800px;
     display: grid;
     grid-template-rows: 10% 50% 20% 20%;
     grid-template-columns: 6% 3% 85% 6% ;
-    margin-top: 15%;
+    margin: 15% 0;
     z-index: -1;
   }
 
@@ -74,7 +74,7 @@ div.img-wrapper {
       rgba(240, 199, 189, 1) 90%,
       rgba(255, 255, 255, 1) 100%
     );
-    overflow: visible;
+    ;
   
   }
 
