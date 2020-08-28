@@ -22,9 +22,17 @@
 @media screen and (max-width: 426px) {
   .stand-with-box {
     width: 87%;
-    background: #6f8ca4;
     margin-top: -80px !important ;
     height: 80px !important;
+  }
+  
+  .sw-involved {
+    width: 87%;
+  }
+
+  .sw-volunteer {
+    width: 100%;
+    margin-top: initial !important;
   }
 
   .stand-with-text {
