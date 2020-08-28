@@ -8,3 +8,16 @@ div.heroFormRectangle143 {
   right: 25px;
   z-index: 1;
 }
+
+@media screen and (max-width: 426px) {
+  div.img-wrapper {
+    height: 500px !important;
+    width: 100% !important;
+    margin-bottom: 120px !important;
+    background-position-x: 35%;
+  }
+  div.heroFormRectangle143 {
+    left: 5%;
+    top: 65% !important;
+  }
+}
