@@ -155,6 +155,11 @@ button.form.active:hover span {
   div.checkbox-group {
     margin: 10vw 0;
     height: 175vw;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 0 250vw;
+    justify-content: space-between;
+    margin: 20px 0;
   }
 
   div.checkbox-groups-flexbox {
@@ -167,14 +172,15 @@ button.form.active:hover span {
     display: flex;
     flex-flow: row wrap;
     height: 100%;
+    align-content: space-between;
   }
   
   div.checkbox-input-area {
-    flex: 0 1 50vw;
+    flex: 0 1 75vw;
   }
 
   #role-selection {
-    height: 90vw;
+    flex: 1 1 125vw;
   }
 
   div.button-area {
@@ -182,6 +188,6 @@ button.form.active:hover span {
   }
 
   button.form {
-    margin: 30vw auto;
+    margin: 20vw auto;
   }
 }
