@@ -73,13 +73,13 @@
     width: 100%;
   }
   .slide {
-    height: 70vh;
+    height: 140vw;
   }
   .control-dots {
     position: absolute;
-    top: 94%;
-    right: 3%;
+    top: 125vw;
     margin: 0 !important;
+    padding-bottom: 10px;
   }
   .dot {
     margin: 3px !important;
@@ -89,35 +89,31 @@
   .rectangle3,
   .rectangle4 {
     position: absolute;
-    height: 40vh;
+    /* height: 40vh; */
     width: 85vw;
-    left: 28px;
-    top: 49.53%;
-    bottom: 20px;
+    left: 7.5vw;
   }
-  
+  .rectangle1,
   .rectangle2,
   .rectangle3,
   .rectangle4 {
-    top: 42%;
+    top: 54vw;
   }
-  .rectangle1{
-    top:55%;
-  }
+ 
 
   .studying,
   .writing {
     height: 95%;
-    object-position: 0px -10px;
+    object-position: 0px -30px;
     object-fit: cover;
   }
   .friends {
-    object-fit: fill;
-    object-position: 0px -150px;
+    object-fit: cover;
+    object-position: 0px -200px;
   }
   .art {
-    object-fit: fill;
-    object-position: 0px -130px;
+    object-position: -80px -150px;
+    height: 120vw;
   }
   .slide1,
   .slide2 {

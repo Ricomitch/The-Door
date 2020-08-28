@@ -77,12 +77,14 @@
 @media screen and (max-width: 426px) {
   .rectangle143 {
     width: 100%;
-    height: 100%;
-    padding-top: 0%;
+    height: 77vw;
+    padding: 5vw;
+    justify-content: center;
   }
   .rectangle-header {
     width: 90%;
     font-size: 18px;
+    margin: 0;
   }
   .rectangle-subheading {
     font-family: Montserrat-SemiBold;
@@ -92,13 +94,15 @@
   .rectangle-content {
     /* padding-top: 0%; */
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
+    height: unset;
     font-family: Montserrat;
-    font-size: 12px;
+    font-size: 3.5vw;
     line-height: 1.75;
     color: white;
-    margin: 0;
+    margin: 2vh 0;
   }
+  .rectangle-volunteer-button,
   .rectangle-button {
     /* width: 99px; */
     padding: 6px 9px;
@@ -112,8 +116,8 @@
     font-size: 12px;
     line-height: 12px;
   }
-  .rectangle-volunteer-button{
+  /* .rectangle-volunteer-button{
     margin-top:15px;
-    /* width: 100px; */
-  }
+    width: 100px; 
+  } */
 }
