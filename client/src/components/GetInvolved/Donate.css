@@ -52,15 +52,6 @@
   font-size: 30px;
   color: white;
 }
-/* .goal-line {
-  background-image: linear-gradient(to right, black, white);
-  width: 630px;
-  height: 10px;
-  position: absolute;
-  top: 370px;
-  left: 65px;
-  border-radius: 5px;
-} */
 .donate-button {
   width: 521px;
   height: 90.2px;
@@ -77,4 +68,46 @@
 }
 .donate-button:hover {
   cursor: pointer;
+}
+@media screen and (max-width: 426px) {
+  .donate-div {
+    width: 100%;
+    text-align: center;
+  }
+  .donate-graphic {
+    display: none;
+  }
+  .donate-heading {
+    font-size: 35px;
+    margin: 0 auto;
+    margin-top: 65px;
+  }
+  .amt-toward {
+    position: absolute;
+    bottom: 50% !important;
+    margin-left: -200px;
+    font-size: 45px;
+  }
+  .amt-of {
+    font-size: 25px;
+    position: absolute;
+    bottom: 30%;
+  }
+  .progress-bar-container {
+    width: 90% !important;
+    margin-left: -19px;
+    margin-bottom: 100px;
+  }
+  .donate-button {
+    margin: 0 5%;
+    right: unset;
+    width: 90%;
+    height: 50px;
+    font-size: 25px;
+    line-height: 50px;
+  }
+  .donate-button-text {
+    margin-top: 20px;
+    line-height: 50px;
+  }
 }

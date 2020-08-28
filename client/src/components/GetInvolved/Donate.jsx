@@ -44,7 +44,7 @@ function Donate() {
         </h2>
         {/* <div className='goal-line'></div> */}
         <Progressbar completed={percent} />
-        <div className='donate-button' onClick={donateIncrease}>Donate Now</div>
+        <div className='donate-button' onClick={donateIncrease}><span className='donate-button-text'>Donate Now</span></div>
       </div>
 
     )
