@@ -89,7 +89,6 @@
   .rectangle3,
   .rectangle4 {
     position: absolute;
-    /* height: 40vh; */
     width: 85vw;
     left: 7.5vw;
   }

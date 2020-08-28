@@ -144,8 +144,6 @@
     line-height: 35px;
   }
   .faces-left-side {
-    /* padding: 105px 20px 20px 38px;
-    width: 735px; */
     padding: 0;
     width: 100%;
     position: absolute;
@@ -160,9 +158,6 @@
     height: 56vw;
   }
   .faces-right-side {
-    /* padding: 20px;
-    width: 735px;
-    padding-top: 80px; */
     padding: 0;
     width: 100%;
     position: absolute;
@@ -172,9 +167,6 @@
     width: 79vw;
     height: 56vw;
     background-color: #1c4d7391;
-    /* position: absolute;
-    top: 205px;
-    right: 45px; */
     position: relative;
     margin: 52% 5.25% 0 25%;
   }
@@ -182,12 +174,8 @@
     width: 79vw;
     height: 56vw;
     background-color: #1c4d73;
-    /* position: absolute; */
-    /* top: 250px;
-    right: 80px; */
     left: 0;
     font-family: Cabin-Bold;
-    /* font-size: 1.2em; */
     font-size: 4.25vw;
     color: white;
     text-align: center;
@@ -197,21 +185,17 @@
     align-items: center;
   }
   .elevenK {
-    /* font-size: 1.4em; */
     font-size: 6vw;
     color: #f3b143;
   }
   .young-people {
-    /* font-size: 1.4em; */
     font-size: 6vw;
     color: #f3b143;
   }
   .discover-and-achieve {
-    /* font-size: 1.5em; */
     font-size: 6.8vw;
   }
   .greatest-potential {
-    /* font-size: 1.3em; */
     font-size: 6.5vw;
     color: #f3b143;
   }

@@ -8,10 +8,12 @@ function Faces() {
     <div className='faces-div'>
       <div
         className='mobile-flower'
-        style={{ backgroundImage: `url(${MobileFlower})` }}></div>
+        style={{ backgroundImage: `url(${MobileFlower})` }}
+      ></div>
       <div
         className='flower2'
-        style={{ backgroundImage: `url(${Flower2})` }}></div>
+        style={{ backgroundImage: `url(${Flower2})` }}
+      ></div>
       <div className='faces-triangle'></div>
       <main className='faces-main'>
         <div className='faces-left-side'>
@@ -23,7 +25,8 @@ function Faces() {
             height='442.9'
             title='Meet-Our-Participants'
             src='https://www.youtube.com/embed/5xdstOwJfUk'
-            className='video'></iframe>
+            className='video'
+          ></iframe>
         </div>
         <div className='faces-right-side'>
           <div className='faces-back-rectangle'></div>
@@ -46,7 +49,5 @@ function Faces() {
     </div>
   )
 }
-
-// <iframe width="560" height="315" src="https://www.youtube.com/embed/5xdstOwJfUk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 export default Faces

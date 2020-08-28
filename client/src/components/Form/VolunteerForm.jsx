@@ -86,7 +86,6 @@ function VolunteerForm({
                 let response
                 if (formStatus === 'edit') {
                   response = await updateVolunteer(volunteerId, value)
-                  
                 } else {
                   response = await createVolunteer(value)
                   await setVolunteerId(response.data._id)
@@ -235,7 +234,7 @@ function VolunteerForm({
                     </div>
                   </div>
 
-                  <div className="button-area">
+                  <div className='button-area'>
                     <button
                       className={`form submit-button ${
                         props.isValid && (props.dirty || formStatus === 'edit')
@@ -258,9 +257,8 @@ function VolunteerForm({
                       >
                         <span className='button-text'>Nevermind</span>
                       </button>
-                  
                     )}
-                    </div>
+                  </div>
                 </form>
               )}
             </Formik>
@@ -270,7 +268,7 @@ function VolunteerForm({
             <pre>{serverErrors.error}</pre>
           ) : null}
         </div>
-        <StandWith/>
+        <StandWith />
       </div>
     </>
   )
