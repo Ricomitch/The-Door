@@ -258,9 +258,9 @@ function VolunteerForm({
             </Formik>
           </div>
 
-          {Object.keys(serverErrors).length ? (
+          {/* {Object.keys(serverErrors).length ? (
             <pre>{serverErrors.error}</pre>
-          ) : null}
+          ) : null} */}
         </div>
         <StandWith />
       </div>
