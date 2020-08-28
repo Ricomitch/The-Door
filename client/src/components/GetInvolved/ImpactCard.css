@@ -61,19 +61,27 @@
   .impact-card {
     height: 80px;
     width: 100%;
+    /* margin-right: 30vw; */
+    display: flex;
+    align-content: center;
   }
   .impact-container {
-    padding-top: 2%;
+    padding: 0;
     height: inherit;
     width: inherit;
     flex-direction: row;
+    /* margin-right: 20vw; */
   }
   .impact-image-container {
-    height: 85%;
-    width: 50px;
+    height: 95%;
+    width: 17%;
+    text-align: center;
   }
   .impact-card-image {
     width: 100%;
+  }
+  .emergency {
+    object-position: 0 0;
   }
   .impact-text-container {
     display: flex;
@@ -81,6 +89,7 @@
   }
   .impact-card-header {
     padding-left: 2%;
+    padding-top: 2%;
     font-size: 4.2vw;
   }
   .impact-card-content {
@@ -93,6 +102,7 @@
     line-height: 5vw;
     align-self: flex-end;
     border-radius: 7px;
+    margin: 0;
   }
   .mobile-hidden {
     display: none;
