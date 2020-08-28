@@ -1,8 +1,8 @@
 # The-Door
 
-### Frontend deployed at: https://the-door-nyc.netlify.app/
+## Frontend deployed at: https://the-door-nyc.netlify.app/
 
-### Backend deployed at: https://murder-hornets-the-door.herokuapp.com
+## Backend deployed at: https://murder-hornets-the-door.herokuapp.com
 
 ### Overview
 
@@ -62,8 +62,10 @@ const Volunteer = new Schema(
 
 ### Screenshots
 
+## Homepage Desktop
 ![Homepage Desktop](https://i.imgur.com/cLyQoJm.png)
 
+## Homepage Mobile
 ![Homepage Mobile](https://i.imgur.com/ciQJDcs.png)
 
 ### Tech Stack
