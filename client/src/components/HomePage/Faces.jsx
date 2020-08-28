@@ -6,7 +6,7 @@ import MobileFlower from '../../assets/mobile/flower3-screenshot.png'
 function Faces() {
   return (
     <div className='faces-div'>
-      <img className='mobile-flower' src={MobileFlower} alt='floral background'></img>
+      <img className='mobile-flower' src={MobileFlower} alt='floral background' />
       <div
         className='flower2'
         style={{ backgroundImage: `url(${Flower2})` }}></div>

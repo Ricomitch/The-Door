@@ -108,6 +108,7 @@
     height: 800px;
     margin-top: 20px;
     background-color: #c2cbd6;
+    position: relative;
   }
   .faces-main {
     display: flex;
@@ -120,6 +121,8 @@
   }
   .mobile-flower {
     visibility: visible;
+    position: absolute;
+    top: -60px;
   }
   .Rectangle178 {
     width: 50%;
