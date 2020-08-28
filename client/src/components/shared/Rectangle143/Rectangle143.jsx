@@ -11,10 +11,14 @@ function Rectangle143({ copy }) {
   if (typeof copy.buttonValue === 'string') {
     volunteerButton = copy.buttonValue.includes('Volunteer')
   }
+  let getInvolvedHeading
+  if (copy.content.includes('blessed')) {
+    getInvolvedHeading = 'get-involved-heading'
+  }
 
   return (
     <div className={`rectangle143 ${addlClass}`}>
-      <h2 className={`rectangle-header ${addlHeadingClass}`}>{copy.header}</h2>
+      <h2 className={`rectangle-header ${addlHeadingClass} ${getInvolvedHeading}`}>{copy.header}</h2>
       {copy.subheader && (
         <h3 className='rectangle-subheading'>{copy.subheader}</h3>
       )}

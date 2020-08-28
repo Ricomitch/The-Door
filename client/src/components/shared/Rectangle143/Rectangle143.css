@@ -9,6 +9,7 @@
   padding: 30px;
   padding-right: 40px;
   text-align: left;
+  justify-content: center;
 }
 .rectangle-header {
   width: 475px;
@@ -18,6 +19,9 @@
   font-weight: bolder;
   color: #f3b143;
   word-wrap: break-word;
+}
+.get-involved-heading {
+  margin: 5px;
 }
 .rectangle-subheading {
   font-family: Montserrat-SemiBold;
