@@ -43,3 +43,48 @@ h1.see-your-impact {
   grid-column: 9;
   grid-row: -4;
 }
+
+/* Mobile */
+@media screen and (max-width: 426px) {
+  
+  div.getInvolved-impact-section {
+    all: unset;
+    display: grid;
+    grid-template-columns: 6% 6% 76% 6% 6%;
+    grid-template-rows: 15vw 12vw 18vw 22.5vw;
+    height: 90vw;
+    width: 100vw;
+  }
+  
+  div.gradient-block-get-involved {
+    all: unset;
+  }
+  
+  h1.see-your-impact {
+    all: unset;
+  }
+  
+  .getInvolved-impact-card1 {
+    all: unset;
+    grid-column: 2 / -2;
+    grid-row: 3 / span 2;
+  }
+  
+  
+
+  
+  
+  .getInvolved-impact-card2 {
+    all: unset;
+    visibility: hidden;
+  }
+  
+  .left-arrow-getInvolved {
+    all: unset;
+    visibility: hidden;
+  }
+  
+  .right-arrow-getInvolved {
+    all: unset;
+  }
+}

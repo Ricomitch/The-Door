@@ -15,10 +15,10 @@ function ImpactGetInvolved() {
         <DoubleArrowIcon style={{ color: '#1C4D73', transform: 'scaleX(-1)' }} />
       </div>
       <div className='getInvolved-impact-card1'>
-        <ImpactCard image={impactCardImage1} text={impactTexts.ImpactCard1} />
+        <ImpactCard image={impactCardImage1} text={impactTexts.ImpactCard1} mobileClass='mobile-visible'/>
       </div>
       <div className='getInvolved-impact-card2'>
-        <ImpactCard image={impactCardImage2} text={impactTexts.ImpactCard2} />
+        <ImpactCard image={impactCardImage2} text={impactTexts.ImpactCard2} mobileClass='mobile-hidden'/>
       </div>
       <div className='right-arrow-getInvolved'>
         <DoubleArrowIcon style={{ color: '#1C4D73'}}/>
