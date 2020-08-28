@@ -2,7 +2,7 @@
 
 #### Frontend deployed at: https://the-door-nyc.netlify.app/
 
-#### Backend deployed at: https://murder-hornets-the-door.herokuapp.com
+#### Backend deployed at: https://murder-hornets-the-door.herokuapp.com/api/volunteers
 
 ### Overview
 
