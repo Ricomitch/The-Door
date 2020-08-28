@@ -1,10 +1,12 @@
 import React from 'react'
 import './Faces.css'
 import Flower2 from '../../assets/Homepage/flower2.svg'
+import MobileFlower from '../../assets/mobile/flower3-screenshot.png'
 
 function Faces() {
   return (
     <div className='faces-div'>
+      <img className='mobile-flower' src={MobileFlower} alt='floral background'></img>
       <div
         className='flower2'
         style={{ backgroundImage: `url(${Flower2})` }}></div>
