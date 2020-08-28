@@ -10,7 +10,6 @@ import newsletter from '../../assets/GetInvolved/photo-1579332190845-76263130d82
 
 import actionText from '../../assets/GetInvolved/actionCardCopy.json'
 
-
 function ActionSection() {
   return (
     <div className='involved-hero2'>
@@ -26,11 +25,7 @@ function ActionSection() {
           card='way-to-give'
           text={actionText.wayToGive}
         />
-        <ActionCard
-          image={calendar}
-          card='events'
-          text={actionText.events}
-        />
+        <ActionCard image={calendar} card='events' text={actionText.events} />
         <ActionCard
           image={newsletter}
           card='newsletter'

@@ -42,7 +42,6 @@ function Donate() {
           <span className='amt-toward'>{`${commaThousands()}`} /</span>
           <span className='amt-of'> $200,000</span>
         </h2>
-        {/* <div className='goal-line'></div> */}
         <Progressbar completed={percent} />
         <div className='donate-button' onClick={donateIncrease}>
           <span className='donate-button-text'>Donate Now</span>

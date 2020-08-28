@@ -53,8 +53,7 @@ function VolunteerForm({
             width: '100%',
             height: '100%',
             backgroundPositionY: '20%',
-          }}
-        >
+          }}>
           <div className='form-content'>
             <h1 className='volunteer-title'>Sign up to Volunteer</h1>
 
@@ -86,7 +85,6 @@ function VolunteerForm({
                 let response
                 if (formStatus === 'edit') {
                   response = await updateVolunteer(volunteerId, value)
-                  
                 } else {
                   response = await createVolunteer(value)
                   await setVolunteerId(response.data._id)
@@ -97,8 +95,7 @@ function VolunteerForm({
                 }
                 // implied "else" ...
                 setFormStatus('submitted')
-              }}
-            >
+              }}>
               {(props) => (
                 <form onSubmit={props.handleSubmit}>
                   <div className='primary-data-section'>
@@ -129,8 +126,7 @@ function VolunteerForm({
                         role='group'
                         className='checkbox-input-group'
                         aria-labelledby='checkbox-group'
-                        id='program-input-group'
-                      >
+                        id='program-input-group'>
                         <CheckboxInput
                           props={props}
                           name='programs'
@@ -199,8 +195,7 @@ function VolunteerForm({
                         role='group'
                         className='checkbox-input-group'
                         aria-labelledby='checkbox-group'
-                        id='role-input-group'
-                      >
+                        id='role-input-group'>
                         <CheckboxInput
                           props={props}
                           name='roles'
@@ -235,15 +230,14 @@ function VolunteerForm({
                     </div>
                   </div>
 
-                  <div className="button-area">
+                  <div className='button-area'>
                     <button
                       className={`form submit-button ${
                         props.isValid && (props.dirty || formStatus === 'edit')
                           ? 'active'
                           : null
                       }`}
-                      type='submit'
-                    >
+                      type='submit'>
                       <span className='button-text'>
                         {formStatus === 'edit' ? 'Update' : 'Submit'}
                       </span>
@@ -254,13 +248,11 @@ function VolunteerForm({
                         onClick={() => {
                           deleteVolunteer(volunteerId)
                           history.push('/')
-                        }}
-                      >
+                        }}>
                         <span className='button-text'>Nevermind</span>
                       </button>
-                  
                     )}
-                    </div>
+                  </div>
                 </form>
               )}
             </Formik>
@@ -270,7 +262,7 @@ function VolunteerForm({
             <pre>{serverErrors.error}</pre>
           ) : null}
         </div>
-        <StandWith/>
+        <StandWith />
       </div>
     </>
   )

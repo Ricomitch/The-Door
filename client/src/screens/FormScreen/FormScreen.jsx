@@ -24,12 +24,14 @@ function FormScreen() {
     return (
       <div className='form-screen'>
         <Modal show={modalOpen} />
-        
-          <HeroForm />
-            <Confirmation volunteerId={volunteerId} setFormStatus={setFormStatus} setModalOpen={setModalOpen} />
-        </div>
+        <HeroForm />
+        <Confirmation
+          volunteerId={volunteerId}
+          setFormStatus={setFormStatus}
+          setModalOpen={setModalOpen}
+        />
+      </div>
     )
-  
   } else if (formStatus === 'edit') {
     return (
       <div className='form-screen'>
