@@ -6,7 +6,9 @@ import MobileFlower from '../../assets/mobile/flower3-screenshot.png'
 function Faces() {
   return (
     <div className='faces-div'>
-      <img className='mobile-flower' src={MobileFlower} alt='floral background' />
+      <div
+        className='mobile-flower'
+        style={{ backgroundImage: `url(${MobileFlower})` }}></div>
       <div
         className='flower2'
         style={{ backgroundImage: `url(${Flower2})` }}></div>
@@ -28,8 +30,9 @@ function Faces() {
           <div className='faces-front-rectangle'>
             <p className='faces-front-box-text'>
               Helping nearly <span className='elevenK'>11,000</span>{' '}
-              <span className='young-people'>young people</span> from<br/>all over
-              New York City{' '}
+              <span className='young-people'>young people</span> from
+              <br />
+              all over New York City{' '}
               <span className='discover-and-achieve'>
                 {' '}
                 discover and achieve

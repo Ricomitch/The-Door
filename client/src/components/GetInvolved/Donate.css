@@ -22,7 +22,7 @@
   width: 350px;
   height: 100px;
   font-family: Allerta;
-  font-size: 40px;
+  font-size: 44px;
   color: #1c4d73;
   letter-spacing: 1px;
   font-weight: 600;
@@ -42,7 +42,7 @@
 .numbers {
   position: absolute;
   top: 220px;
-  left: 230px;
+  left: 210px;
 }
 .amt-toward {
   font-size: 50px;
@@ -69,10 +69,15 @@
 .donate-button:hover {
   cursor: pointer;
 }
+
+
+
 @media screen and (max-width: 426px) {
   .donate-div {
     width: 100%;
     text-align: center;
+    position: relative;
+    flex-direction: column;
   }
   .donate-graphic {
     display: none;
@@ -81,17 +86,24 @@
     font-size: 35px;
     margin: 0 auto;
     margin-top: 65px;
+    width: 70vw;
   }
   .amt-toward {
-    position: absolute;
+    /* position: absolute; */
     bottom: 50% !important;
-    margin-left: -200px;
     font-size: 45px;
   }
   .amt-of {
     font-size: 25px;
-    position: absolute;
+    /* position: absolute; */
     bottom: 30%;
+  }
+  .numbers {
+    width: 100vw;
+    margin-left: 0;
+    position: relative;
+    top: 0;
+    left: 0;
   }
   .progress-bar-container {
     width: 90% !important;

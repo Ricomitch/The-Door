@@ -6,7 +6,7 @@ import { useEffect } from 'react'
 
 function Donate() {
   const [amount, updateAmount] = useState(139650)
-  
+
   let percent
 
   const commaThousands = () => {
@@ -17,38 +17,38 @@ function Donate() {
   }
 
   percent = (amount / 200000) * 100
-  
+
   commaThousands()
-    
+
   const donateIncrease = () => {
-    updateAmount(prevAmount=>prevAmount+=500)
+    updateAmount((prevAmount) => (prevAmount += 500))
   }
-  
+
   if (percent !== undefined) {
     return (
       <div className='donate-div'>
         <div className='donate-triangle'></div>
         <h2 className='donate-heading'>
           LET<span className='apostrophe'>'</span>S HIT THIS
-        <br />
-        MONTH<span className='apostrophe'>'</span>S GOAL
-      </h2>
+          <br />
+          MONTH<span className='apostrophe'>'</span>S GOAL
+        </h2>
         <img
           src={handWorld}
           className='donate-graphic'
           alt='a hand holding the world'
         />
         <h2 className='numbers'>
-          <span className='amt-toward'>{`${commaThousands()}`}/</span>
-          <span className='amt-of'>$200,000</span>
+          <span className='amt-toward'>{`${commaThousands()}`} /</span>
+          <span className='amt-of'> $200,000</span>
         </h2>
         {/* <div className='goal-line'></div> */}
         <Progressbar completed={percent} />
-        <div className='donate-button' onClick={donateIncrease}><span className='donate-button-text'>Donate Now</span></div>
+        <div className='donate-button' onClick={donateIncrease}>
+          <span className='donate-button-text'>Donate Now</span>
+        </div>
       </div>
-
     )
-  }
-  else return <h1>loading</h1>
+  } else return <h1>loading</h1>
 }
 export default Donate
