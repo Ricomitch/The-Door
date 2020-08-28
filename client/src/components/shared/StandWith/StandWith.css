@@ -12,7 +12,7 @@
 }
 .sw-involved {
   width: 1318px;
-  background-color: #c2cbd680;
+  background-color: #6f8ca4;
 }
 .sw-volunteer {
   width: 1440px;
@@ -37,6 +37,6 @@
 
   .stand-with-text {
     font-size: 25px;
-    line-height: 90px;
+    line-height: 80px;
   }
 }
