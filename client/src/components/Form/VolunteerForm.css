@@ -112,23 +112,19 @@ button.form.active:hover span {
   }
   div.shim {
     display: block;
-    height: 35px;
-    background-color: #1c4d73;
+    height: 60vw;
+    background-color: white;
   }
   h1.volunteer-title {
-    margin: 0 0 1.5rem;
     width: 80%;
     height: auto;
-    font-family: Cabin;
-    font-size: 6.25vw;
-    font-weight: bold;
-    color: white;
+    font-size: 8vw; 
   }
   
   div.form-content {
-    width: 947px;
-    height: 1050px;
-    padding: 0 60px 0;
+    width: 100%;
+    height: auto;
+    padding: 10vw 3.5vw 0;
   }
   
   div.primary-data-section {
