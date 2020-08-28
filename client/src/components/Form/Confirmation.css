@@ -51,3 +51,18 @@
 .conf-page-buttons {
   padding-left: 20px;
 }
+
+@media screen and (max-width: 426px) {
+.confirmation-body {
+  width: 100vw;
+}
+  .confirmation-content {
+    width: 100vw;
+  }
+  
+  .confirmation-title {
+    width: auto;
+  }
+  
+ }
+ 
