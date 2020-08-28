@@ -21,7 +21,7 @@
   word-wrap: break-word;
 }
 .get-involved-heading {
-  margin: 5px;
+  margin: 5px 0;
 }
 .rectangle-subheading {
   font-family: Montserrat-SemiBold;
@@ -92,6 +92,10 @@
     font-size: 18px;
     margin: 0;
   }
+  .get-involved-heading {
+    margin: 10px 0;
+    padding-left: 5px;
+  }
   .rectangle-subheading {
     font-family: Montserrat-SemiBold;
     font-size: 12px;
@@ -107,6 +111,10 @@
     line-height: 1.75;
     color: white;
     margin: 2vh 0;
+  }
+  .get-involved-content {
+    margin: 0;
+    padding: 5px;
   }
   .rectangle-volunteer-button,
   .rectangle-button {
