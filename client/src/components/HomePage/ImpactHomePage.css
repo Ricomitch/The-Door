@@ -43,7 +43,7 @@ div.img-wrapper {
     width: 100vw;
     height: 800px;
     display: grid;
-    grid-template-rows: 10% 50% 20% 20%;
+    grid-template-rows: 10% 46% 20% 20%;
     grid-template-columns: 6% 3% 85% 6% ;
     margin: 15% 0;
     z-index: -1;
