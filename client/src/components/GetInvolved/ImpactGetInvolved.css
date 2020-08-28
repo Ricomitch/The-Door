@@ -72,6 +72,7 @@ h1.see-your-impact {
     all: unset;
     grid-column: 2 / -2;
     grid-row: 3 / span 2;
+    margin-left: -15px;
   }
 
   .getInvolved-impact-card2 {
@@ -123,6 +124,7 @@ h1.see-your-impact {
   .getInvolved-impact-section {
     position: relative !important;
     margin-top: -150px !important;
+    
   }
   .right-arrow-getInvolved {
     position: absolute;
