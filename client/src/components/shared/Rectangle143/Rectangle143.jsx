@@ -21,16 +21,16 @@ function Rectangle143({ copy }) {
       <p className='rectangle-content'>{copy.content}</p>
       {volunteerButton ? (
         <Link to='/sign-up' className='rectangle-link'>
-          <button
-            className={`rectangle-button rectangle-volunteer-button ${addlButtonClass} ${noButtonClass}`}>
+          <div
+            className={`rectangle-button  ${addlButtonClass} ${noButtonClass}`}>
             <span className='button-words'>{copy.buttonValue}</span>
-          </button>
+          </div>
         </Link>
       ) : (
-        <button
+        <div
           className={`rectangle-button ${addlButtonClass} ${noButtonClass}`}>
           <span className='button-words'>{copy.buttonValue}</span>
-        </button>
+        </div>
       )}
     </div>
   )
