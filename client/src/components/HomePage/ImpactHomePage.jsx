@@ -7,19 +7,13 @@ import copyJSON from '../../assets/Homepage/copy.json'
 function ImpactHomePage() {
   return (
     <div className='impact-home-div'>
-      
-        <div className="homePageImpactRectangle143">
-          <Rectangle143 copy={copyJSON.HomepageImpactRectangle143} />
-        </div>
-        
-        <div className='gradient-block'>
-        </div> 
-        <div
-            className='img-wrapper'
-            
-      >
-          </div>
-        </div>
+      <div className='homePageImpactRectangle143'>
+        <Rectangle143 copy={copyJSON.HomepageImpactRectangle143} />
+      </div>
+
+      <div className='gradient-block'></div>
+      <div className='img-wrapper'></div>
+    </div>
   )
 }
 

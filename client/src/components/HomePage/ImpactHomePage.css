@@ -31,8 +31,6 @@ div.img-wrapper {
   grid-column: 4 / 6;
   background-image: url('../../assets/Homepage/slack-imgs.png');
   background-size: cover;
-  /* width: 1201px;
-  height: 583px; */
   z-index: 1;
   background-position-y: 50%;
 }
