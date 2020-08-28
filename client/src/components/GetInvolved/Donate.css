@@ -22,7 +22,7 @@
   width: 350px;
   height: 100px;
   font-family: Allerta;
-  font-size: 40px;
+  font-size: 44px;
   color: #1c4d73;
   letter-spacing: 1px;
   font-weight: 600;
@@ -42,7 +42,7 @@
 .numbers {
   position: absolute;
   top: 220px;
-  left: 230px;
+  left: 210px;
 }
 .amt-toward {
   font-size: 50px;
@@ -51,15 +51,6 @@
 .amt-of {
   font-size: 30px;
   color: white;
-}
-.goal-line {
-  background-image: linear-gradient(to right, black, white);
-  width: 630px;
-  height: 10px;
-  position: absolute;
-  top: 370px;
-  left: 65px;
-  border-radius: 5px;
 }
 .donate-button {
   width: 521px;
@@ -74,4 +65,67 @@
   position: absolute;
   right: 120px;
   bottom: 55px;
+}
+.donate-button:hover {
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 426px) {
+  .donate-div {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    flex-direction: column;
+  }
+  .donate-graphic {
+    display: none;
+  }
+  .donate-heading {
+    font-size: 35px;
+    margin: 0 auto;
+    margin-top: 65px;
+    width: 70vw;
+  }
+  .amt-toward {
+    /* position: absolute; */
+    bottom: 50% !important;
+    font-size: 45px;
+  }
+  .amt-of {
+    font-size: 25px;
+    /* position: absolute; */
+    bottom: 30%;
+  }
+  .numbers {
+    width: 100vw;
+    margin-left: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .progress-bar-container {
+    width: 90% !important;
+    margin-left: -19px;
+    margin-bottom: 100px;
+  }
+  .donate-button {
+    margin: 0 5%;
+    right: unset;
+    width: 90%;
+    height: 50px;
+    font-size: 25px;
+    line-height: 50px;
+  }
+  .donate-button:hover {
+    cursor: pointer;
+  }
+  .donate-button-text {
+    margin-top: 20px;
+    line-height: 50px;
+  }
+  .donate-button-text:hover {
+    cursor: pointer;
+  }
 }

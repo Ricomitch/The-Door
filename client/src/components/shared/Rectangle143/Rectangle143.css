@@ -1,27 +1,31 @@
 .rectangle143 {
   background-color: #436389;
-  opacity: .95;
+  opacity: 0.95;
   width: 526px;
   height: 367px;
-  border-radius: 12px;;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
   padding: 30px;
   padding-right: 40px;
   text-align: left;
+  justify-content: center;
 }
 .rectangle-header {
   width: 475px;
-  height: 41px;
+  /* height: 41px; */
   font-family: Montserrat-Bold;
   font-size: 24px;
   font-weight: bolder;
   color: #f3b143;
   word-wrap: break-word;
 }
+.get-involved-heading {
+  margin: 5px 0;
+}
 .rectangle-subheading {
   font-family: Montserrat-SemiBold;
-  font-size: 22px;
+  font-size: 21px;
   color: white;
 }
 .rectangle-content {
@@ -39,11 +43,13 @@
   background-color: rgba(255, 255, 255, 0.8);
   align-self: flex-end;
   padding: 6px;
+  text-align: center;
 }
 .rectangle-link {
-  width: 198px;
+  /* width: 198px; */
   height: 37px;
   align-self: flex-end;
+  text-decoration: none;
 }
 .button-words {
   width: 107px;
@@ -64,7 +70,7 @@
 .subheader-heading {
   width: 277.7px;
   height: 42.6px;
-  font-family: Montserrat;
+  font-family: Montserrat-Bold;
   font-size: 30px;
   font-weight: bolder;
   color: #f3b143;
@@ -74,27 +80,59 @@
   display: none;
 }
 
-@media (max-width: 414px) and (max-height: 736px) {
+@media screen and (max-width: 426px) {
   .rectangle143 {
-    width: 326px;
-    height: 267px; 
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    padding-right: 40px;
+    width: 100%;
+    height: 77vw;
+    padding: 5vw;
+    justify-content: center;
   }
-
-.rectangle-header {
-  font-size: 15px;
-  width: 305px;
-
-}
-
+  .rectangle-header {
+    width: 90%;
+    font-size: 4.5vw;
+    margin: 0;
+  }
+  .get-involved-heading {
+    margin: 10px 0;
+    padding-left: 5px;
+  }
+  .rectangle-subheading {
+    font-family: Montserrat-SemiBold;
+    font-size: 3.2vw;
+    color: white;
+  }
   .rectangle-content {
-    font-size: 10px;
-    width: 286px;
-
+    /* padding-top: 0%; */
+    width: 100%;
+    /* height: 100%; */
+    height: unset;
+    font-family: Montserrat;
+    font-size: 3.5vw;
+    line-height: 1.75;
+    color: white;
+    margin: 2vh 0;
   }
-
+  .get-involved-content {
+    margin: 0;
+    padding: 5px;
+  }
+  .rectangle-volunteer-button,
+  .rectangle-button {
+    /* width: 99px; */
+    width: auto;
+    height: 25px;
+    line-height: 0;
+    
+  }
+  .button-words {
+    font-family: Cabin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.25vw;
+    /* height: 28px; */
+    line-height: 3.25vw;
+    padding: 0 10px;
+   
+  }
 
 }

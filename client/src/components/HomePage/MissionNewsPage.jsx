@@ -7,13 +7,17 @@ import Grad from '../../assets/Homepage/Graduate.jpg'
 import './MissionNewsPage.css'
 import Flower1 from '../../assets/Homepage/flower1.svg'
 import DoubleArrowIcon from '@material-ui/icons/DoubleArrow'
+import Flower5 from '../../assets/mobile/flower5.svg'
 
 
-
-
+ 
 const MissionNewsPage = (card) => {
   return (
     <div className='news-div'>
+      <div
+      className='flower5'
+        style={{ backgroundImage: `url(${Flower5})` }}>
+      </div>
       <div
         className='flower1'
         style={{ backgroundImage: `url(${Flower1})` }}></div>
@@ -28,15 +32,15 @@ const MissionNewsPage = (card) => {
       <div className='news-items'>
       <div className='left-arrow'><DoubleArrowIcon style={{ color: "white", transform: "scaleX(-1)" }} /></div>
       <NewsItem image = { Pride } card = {copyJSON.NewsItem1} />
-      <NewsItem card={copyJSON.NewsItem2} image={Cook} />
-        <NewsItem card={copyJSON.NewsItem3} image={Grad} />
+      <div className='news-card2'><NewsItem card={copyJSON.NewsItem2} image={Cook} /></div>
+        <div className='news-card3'><NewsItem card={copyJSON.NewsItem3} image={Grad} /></div>
       <div className='right-arrow'><DoubleArrowIcon style={{ color: "white" }} /></div>
 
 
-      </div>
       
       <div className='triangle'></div>
       
+      </div>
       </div>
   )
 }

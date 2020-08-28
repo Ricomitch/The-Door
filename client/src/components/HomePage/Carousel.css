@@ -68,38 +68,64 @@
 }
 
 /* Mobile */
-@media (max-width: 414px) and (max-height: 736px) {
+@media screen and (max-width: 426px) {
   .slides {
-    width: 425px;
+    width: 100%;
   }
-
+  .slide {
+    height: 140vw;
+  }
+  .control-dots {
+    position: absolute;
+    top: 125vw;
+    margin: 0 !important;
+    padding-bottom: 10px;
+  }
+  .dot {
+    margin: 3px !important;
+  }
   .rectangle1,
-.rectangle2,
-.rectangle3,
-.rectangle4 {
-  position: relative;
-  left: 62.46%;
-  right: 12.92%;
-  top: 11.68%;
-  bottom: 29.92%;
-  z-index: 2;
-}
-
-.slide {
-  padding-right: 0; 
-}
-
-.slide3 {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-
-  
+  .rectangle2,
+  .rectangle3,
+  .rectangle4 {
+    position: absolute;
+    /* height: 40vh; */
+    width: 85vw;
+    left: 7.5vw;
+  }
+  .rectangle1,
+  .rectangle2,
+  .rectangle3,
+  .rectangle4 {
+    top: 54vw;
+  }
  
 
+  .studying,
+  .writing {
+    height: 95%;
+    object-position: 0px -30px;
+    object-fit: cover;
+  }
+  .friends {
+    object-fit: cover;
+    object-position: 0px -200px;
+  }
+  .art {
+    object-position: -80px -150px;
+    height: 120vw;
+  }
+  .slide1,
+  .slide2 {
+    height: 400px;
+  }
+
+  .slide {
+    padding-right: 0;
+  }
+
+  .slide3 {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
-
-
-
-/* Tablet */

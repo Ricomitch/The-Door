@@ -58,3 +58,11 @@ button.modal-return-home:hover {
 }
 
 
+@media screen and (max-width: 426px) {
+  .modal {
+    width: 100vw;
+    height: 85vw;
+    left: unset;
+  }
+
+   }

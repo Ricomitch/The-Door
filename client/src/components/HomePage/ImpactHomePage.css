@@ -1,30 +1,92 @@
+div.impact-home-div {
+  width: 100%;
+  height: 807px;
+  display: grid;
+  grid-template-rows: 62px 70px 216px 366px 20px 74px;
+  grid-template-columns: 36px 29px 142px 209px 1fr 32px;
+}
 
- div.impact-home-div {
-   width: 100%;
-   height: 807px;
-   padding: 20px;
-   display: grid;
-   grid-template-rows: 62px 70px 216px 359px 20px 80px;
-   grid-template-columns: 36px 29px 142px 209px 1fr 36px;
- }
- 
- div.homePageImpactRectangle143 {
+div.homePageImpactRectangle143 {
   grid-row-start: 4;
   grid-column-start: 2;
   z-index: 2;
- }
+}
 
-div.gradient-block{
+div.gradient-block {
   grid-row-start: 2;
   grid-column-start: 3;
   width: 1153px;
   height: 617px;
-  
-  background: linear-gradient(90deg, rgba(241,195,144,1) 0%, rgba(240,199,189,1) 60%, rgba(255,255,255,1) 100%); ;
+
+  background: linear-gradient(
+    90deg,
+    rgba(241, 195, 144, 1) 0%,
+    rgba(240, 199, 189, 1) 60%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 div.img-wrapper {
-  grid-row-start: 3;
-  grid-column-start: 4;
+  grid-row: 3 / 5;
+  grid-column: 4 / 6;
+  background-image: url('../../assets/Homepage/slack-imgs.png');
+  background-size: cover;
+  /* width: 1201px;
+  height: 583px; */
+  z-index: 1;
+  background-position-y: 50%;
 }
 
+/* Mobile */
+@media screen and (max-width: 426px) {
+  div.impact-home-div {
+    width: 100vw;
+    height: 800px;
+    display: grid;
+    grid-template-rows: 10% 46% 20% 24%;
+    grid-template-columns: 6% 3% 85% 6% ;
+    margin: 15% 0;
+    z-index: -1;
+  }
+
+  div.homePageImpactRectangle143 {
+    grid-row-start: 3;
+    grid-row-end: -1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    height: auto;
+    z-index: 2;
+    font-size: 5%;
+  }
+
+  div.gradient-block {
+    grid-row-start: 1;
+    grid-row-end: -1;
+    grid-column-start: 3;
+    grid-column-end: -1;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    background: rgb(241, 195, 144);
+    background: linear-gradient(
+      180deg,
+      rgba(241, 195, 144, 1) 0%,
+      rgba(240, 199, 189, 1) 90%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    ;
+  
+  }
+
+  div.img-wrapper {
+    grid-row: 2 / 4;
+    grid-column: 1 / 6;
+    background-image: url('../../assets/Homepage/slack-imgs.png');
+    background-size: cover;
+    width: auto;
+    height: 100vw;
+    z-index: 1;
+    background-position-y: 50%;
+    background-position-x: 100%;
+  }
+}

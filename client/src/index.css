@@ -5,6 +5,7 @@ html, body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
@@ -14,6 +15,6 @@ code {
 
 @media screen and (max-width: 426px) {
   html, body {
-    width: 100vw;
+    width: 100vw !important;
   }
 }

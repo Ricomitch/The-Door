@@ -1,0 +1,18 @@
+.progress-bar-container {
+  height: 10px;
+  width: 655px;
+  position: absolute;
+  bottom: 55px;
+  left: 40px;
+  background-color: #e1e6f1;
+  border-radius: 50px;
+}
+.filler {
+  height: 10px;
+  transition: 'width 1s ease-in-out';
+  border-radius: 50px;
+}
+.labelStyles {
+  color: white;
+}
+

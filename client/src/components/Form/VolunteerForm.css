@@ -21,7 +21,8 @@ h1.volunteer-title {
 div.form-content {
   width: 947px;
   height: 1050px;
-  padding: 0 60px 0;
+  padding: 60px;
+  margin-bottom: 50px;
 }
 
 div.primary-data-section {
@@ -72,7 +73,7 @@ div.checkbox-input-group {
   height: 150px;
 }
 
-  button.form {
+button.form {
   width: 130px;
   height: 54px;
   border-radius: 10px;
@@ -97,15 +98,90 @@ button.form.active:hover {
 }
 
 button.form.active span {
-  color: #e00b00 ;
+  color: #e00b00;
 }
 
 button.form.active:hover span {
-  color: white ;
+  color: white;
 }
 
+/* MOBILE */
 
+@media screen and (max-width: 426px) {
+  div.form-body {
+    width: 100%;
+    height: auto;
+  }
+  div.shim-1 {
+    display: none;
+  }
+  div.flower-4 {
+    background-image: url('../../assets/Form/flower-6.svg') !important;
+    background-position-x: 75%;
+    background-size: cover !important;
+  }
 
+  h1.volunteer-title {
+    width: 80%;
+    height: auto;
+    font-size: 8vw;
+  }
 
+  div.form-content {
+    width: 100%;
+    padding: 10vw 3.5vw 0;
+    height: 100%;
+  }
 
+  div.primary-data-section {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
 
+  div.primary-data-field {
+    display: flex;
+    flex-flow: column;
+    margin-top: 1rem;
+    width: 95%;
+  }
+
+  input.text {
+    width: 85%;
+    height: 10vw;
+  }
+
+  div.checkbox-group {
+    margin: 10vw 0;
+    height: 175vw;
+  }
+
+  div.checkbox-groups-flexbox {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+
+  div.checkbox-input-group {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+  }
+  
+  div.checkbox-input-area {
+    flex: 0 1 50vw;
+  }
+
+  #role-selection {
+    height: 90vw;
+  }
+
+  div.button-area {
+    display: flex;
+  }
+
+  button.form {
+    margin: 30vw auto;
+  }
+}

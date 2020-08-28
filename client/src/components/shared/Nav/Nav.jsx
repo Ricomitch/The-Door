@@ -11,7 +11,7 @@ function Nav() {
   const burgerStyles = {
     height: '40px',
     width: '35px',
-    'align-self': 'center',
+    alignSelf: 'center'
   }
 
   const [burgerHidden, updateBurgerClass] = useState(true)
@@ -21,7 +21,6 @@ function Nav() {
   function burgerByeBye() {
     updateBurgerClass(true)
   }
-
 
   return (
     <div className='nav'>
@@ -38,14 +37,19 @@ function Nav() {
           </a>
           <a
             href='https://www.youtube.com/channel/UCTI_X7wHcmfmb4_Fec0WYvQ'
-            target='_blank'>
+            target='_blank'
+          >
             <img className='youtube-icon' src={YoutubeIcon} alt='' />
           </a>
         </div>
       </div>
 
       <nav className='main-nav'>
-        <BurgerMenu className='nav-burger' style={burgerStyles} onClick={burgerClick}/>
+        <BurgerMenu
+          className='nav-burger'
+          style={burgerStyles}
+          onClick={burgerClick}
+        />
         <Link to='/' onClick={burgerByeBye}>
           <img
             id='door-logo'
@@ -58,16 +62,16 @@ function Nav() {
             About the Door
           </Link>
           <div className='about-the-door-drop-down'>
-            <Link className='option1-1'>COVID-19 Updates</Link>
-            <Link className='option1'>Our Mission</Link>
-            <Link className='option1'>What We Do</Link>
-            <Link className='option1'>Our History</Link>
-            <Link className='option1'>Staff & Board</Link>
-            <Link className='option1'>Annual Report & Financials</Link>
-            <Link className='option1'>Our Family of Organizations</Link>
-            <Link className='option1'>Employment</Link>
-            <Link className='option1'>Staff Alumni</Link>
-            <Link className='option1'>Visit & Outreach</Link>
+            <div className='option1-1'>COVID-19 Updates</div>
+            <div className='option1'>Our Mission</div>
+            <div className='option1'>What We Do</div>
+            <div className='option1'>Our History</div>
+            <div className='option1'>Staff & Board</div>
+            <div className='option1'>Annual Report & Financials</div>
+            <div className='option1'>Our Family of Organizations</div>
+            <div className='option1'>Employment</div>
+            <div className='option1'>Staff Alumni</div>
+            <div className='option1'>Visit & Outreach</div>
           </div>
         </div>
         <div className='programs-services-nav-div'>
@@ -75,20 +79,20 @@ function Nav() {
             Programs & Services
           </Link>
           <div className='programs-services-drop-down'>
-            <Link className='option11-11'>Daily Activity Schedule</Link>
-            <Link className='option11'>Bronx Youth Center</Link>
-            <Link className='option11'>College Advisment & Tutoring</Link>
-            <Link className='option11'>Counseling</Link>
-            <Link className='option11'>Food & Nutrition Services</Link>
-            <Link className='option11'>Foster Care</Link>
-            <Link className='option11'>HSE (High School Equivalency)</Link>
-            <Link className='option11'>Health Services</Link>
-            <Link className='option11'>Jobs & Internships</Link>
-            <Link className='option11'>Leadership</Link>
-            <Link className='option11'>Legal & Immigration Services</Link>
-            <Link className='option11'>LGBTQ</Link>
-            <Link className='option11'>Recreation</Link>
-            <Link className='option11'>Runaway & Homless Youth</Link>
+            <div className='option11-11'>Daily Activity Schedule</div>
+            <div className='option11'>Bronx Youth Center</div>
+            <div className='option11'>College Advisment & Tutoring</div>
+            <div className='option11'>Counseling</div>
+            <div className='option11'>Food & Nutrition Services</div>
+            <div className='option11'>Foster Care</div>
+            <div className='option11'>HSE (High School Equivalency)</div>
+            <div className='option11'>Health Services</div>
+            <div className='option11'>Jobs & Internships</div>
+            <div className='option11'>Leadership</div>
+            <div className='option11'>Legal & Immigration Services</div>
+            <div className='option11'>LGBTQ</div>
+            <div className='option11'>Recreation</div>
+            <div className='option11'>Runaway & Homless Youth</div>
           </div>
         </div>
         <Link className='membership-nav' to='/'>
@@ -122,20 +126,45 @@ function Nav() {
         </Link>
 
         <Link className='nav-donate-link' to='/'>
-          <div className='donate-nav'>
-            {/* <span className='nav-donate-button-text'>Donate</span> */}
-            Donate
-          </div>
+          <div className='donate-nav'>Donate</div>
         </Link>
-        <div className={burgerHidden ? 'hamburger-drop-down burger-hidden' : 'hamburger-drop-down burger-visible'}>
-          <Link className='option-burger' onClick={burgerByeBye}>About the Door</Link>
-          <Link className='option-burger' onClick={burgerByeBye}>Program & Services</Link>
-          <Link className='option-burger' onClick={burgerByeBye}>Membership</Link>
-          <Link className='option-burger' onClick={burgerByeBye}>News</Link>
-          <Link to='/get-involved' className='option-burger' onClick={burgerByeBye} >Get Involved</Link>
-          <Link to='/sign-up' className='option-burger' onClick={burgerByeBye} >Volunteer</Link>
-          <Link className='option-burger' onClick={burgerByeBye}>Contact</Link>
-          <Link className='option-burger burger-donate' onClick={burgerByeBye}>Donate</Link>
+        <div
+          className={
+            burgerHidden
+              ? 'hamburger-drop-down burger-hidden'
+              : 'hamburger-drop-down burger-visible'
+          }
+        >
+          <div className='option-burger' onClick={burgerByeBye}>
+            About the Door
+          </div>
+          <div className='option-burger' onClick={burgerByeBye}>
+            Program & Services
+          </div>
+          <div className='option-burger' onClick={burgerByeBye}>
+            Membership
+          </div>
+          <div className='option-burger' onClick={burgerByeBye}>
+            News
+          </div>
+          <Link
+            to='/get-involved'
+            className='option-burger'
+            onClick={burgerByeBye}
+          >
+            Get Involved
+          </Link>
+          <Link to='/sign-up' className='option-burger' onClick={burgerByeBye}>
+            Volunteer
+          </Link>
+          <div className='option-burger' onClick={burgerByeBye}>
+            Contact
+          </div>
+          <div className='option-burger burger-donate' onClick={burgerByeBye}>
+          
+              Donate
+              
+          </div>
         </div>
       </nav>
     </div>

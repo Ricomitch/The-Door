@@ -16,14 +16,7 @@ function ImpactHomePage() {
         </div> 
         <div
             className='img-wrapper'
-            style={{
-              backgroundImage: `url(${ImpactImage})`,
-              backgroundSize: 'cover',
-              width: '1201px',
-              height: '583px',
-              zIndex: '1',
-              backgroundPositionY: '50%'
-            }}
+            
       >
           </div>
         </div>

@@ -6,7 +6,7 @@ import {
   getVolunteer,
   deleteVolunteer,
 } from '../../services/formServices.js'
-import { Formik } from 'formik'
+import { Formik, Field } from 'formik'
 import CheckboxInput from './CheckboxInput'
 import flower4 from '../../assets/Form/flower4.svg'
 import StandWith from '../../components/shared/StandWith/StandWith'
@@ -26,6 +26,7 @@ function VolunteerForm({
     programs: [],
     roles: [],
   })
+  const [serverErrors, setServerErrors] = useState({})
 
   const history = useHistory()
 
@@ -41,8 +42,9 @@ function VolunteerForm({
 
   return (
     <>
-      <div className='shim'></div>
+      <div className='shim-1'></div>
       <div className='form-body'>
+        <div className='shim-2'></div>
         <div
           className='flower-4'
           style={{
@@ -78,18 +80,22 @@ function VolunteerForm({
                   errors.programs = 'Please select a program choice.'
                 if (values.roles.length === 0)
                   errors.roles = 'Please select a roles choice.'
-
                 return errors
               }}
               onSubmit={async (value) => {
                 let response
                 if (formStatus === 'edit') {
                   response = await updateVolunteer(volunteerId, value)
+                  
                 } else {
                   response = await createVolunteer(value)
+                  await setVolunteerId(response.data._id)
                 }
-
-                await setVolunteerId(response._id)
+                // if Status is NOT OK
+                if (!(response.status >= 200 && response.status <= 300)) {
+                  return setServerErrors(response.data)
+                }
+                // implied "else" ...
                 setFormStatus('submitted')
               }}
             >
@@ -98,194 +104,173 @@ function VolunteerForm({
                   <div className='primary-data-section'>
                     <div className='primary-data-field'>
                       <label htmlFor='firstName'>First Name</label>
-                      <input
-                        type='text'
-                        className='text'
-                        id='firstName'
-                        name='firstName'
-                        onChange={props.handleChange}
-                        value={props.values.firstName}
-                      />
+                      <Field name='firstName' className='text' type='text' />
                     </div>
 
                     <div className='primary-data-field'>
                       <label htmlFor='lastName'>Last Name</label>
-                      <input
-                        type='text'
-                        className='text'
-                        id='lastName'
-                        name='lastName'
-                        onChange={props.handleChange}
-                        value={props.values.lastName}
-                      />
+                      <Field name='lastName' className='text' type='text' />
                     </div>
 
                     <div className='primary-data-field'>
                       <label htmlFor='phone'>Phone</label>
-                      <input
-                        type='text'
-                        className='text'
-                        id='phone'
-                        name='phone'
-                        onChange={props.handleChange}
-                        value={props.values.phone}
-                      />
+                      <Field name='phone' className='text' type='text' />
                     </div>
 
                     <div className='primary-data-field'>
                       <label htmlFor='email'>Email</label>
-                      <input
-                        type='text'
-                        className='text'
-                        id='email'
-                        name='email'
-                        onChange={props.handleChange}
-                        value={props.values.email}
-                      />
+                      <Field name='email' className='text' type='text' />
+                    </div>
+                  </div>
+                  <div className='checkbox-groups-flexbox'>
+                    <div className='checkbox-group' id='program-selection'>
+                      <h2>Which programs would you like to assist with?</h2>
+                      <div
+                        role='group'
+                        className='checkbox-input-group'
+                        aria-labelledby='checkbox-group'
+                        id='program-input-group'
+                      >
+                        <CheckboxInput
+                          props={props}
+                          name='programs'
+                          value='Health Services'
+                        />
+                        <CheckboxInput
+                          props={props}
+                          name='programs'
+                          value='College and Academic Supports'
+                        />
+                        <CheckboxInput
+                          props={props}
+                          name='programs'
+                          value='Creative Arts'
+                        />
+                        <CheckboxInput
+                          props={props}
+                          name='programs'
+                          value={
+                            "Broome Street Academy \n(The Door's charter high school)"
+                          }
+                        />
+                        <CheckboxInput
+                          props={props}
+                          name='programs'
+                          value='Career Services'
+                        />
+                        <CheckboxInput
+                          props={props}
+                          name='programs'
+                          value='Runaway and Homeless Youth'
+                        />
+                        <CheckboxInput
+                          props={props}
+                          name='programs'
+                          value='High School Equivalency (or GED)'
+                        />
+                        <CheckboxInput
+                          props={props}
+                          name='programs'
+                          value='Mental Health'
+                        />
+                        <CheckboxInput
+                          props={props}
+                          name='programs'
+                          value='LGBTQ'
+                        />
+
+                        <CheckboxInput
+                          props={props}
+                          name='programs'
+                          value='Legal Services'
+                        />
+                        <CheckboxInput
+                          props={props}
+                          name='programs'
+                          value={"Hmmm I'm not sure yet.."}
+                        />
+                      </div>
+                    </div>
+
+                    <div className='checkbox-group' id='role-selection'>
+                      <h2>What roles are you interested in?</h2>
+
+                      <div
+                        role='group'
+                        className='checkbox-input-group'
+                        aria-labelledby='checkbox-group'
+                        id='role-input-group'
+                      >
+                        <CheckboxInput
+                          props={props}
+                          name='roles'
+                          value='Volunteer'
+                        />
+                        <CheckboxInput
+                          props={props}
+                          name='roles'
+                          value='Advocate'
+                        />
+                        <CheckboxInput
+                          props={props}
+                          name='roles'
+                          value='Mentor'
+                        />
+                        <CheckboxInput
+                          props={props}
+                          name='roles'
+                          value='Fundraiser'
+                        />
+                        <CheckboxInput
+                          props={props}
+                          name='roles'
+                          value='Teach Class'
+                        />
+                        <CheckboxInput
+                          props={props}
+                          name='roles'
+                          value={"Hmmm I'm not sure yet.."}
+                        />
+                      </div>
                     </div>
                   </div>
 
-                  <div className='checkbox-group' id='program-selection'>
-                    <h2>Which programs would you like to assist with?</h2>
-                    <div
-                      role='group'
-                      className='checkbox-input-group'
-                      aria-labelledby='checkbox-group'
-                      id='program-input-group'
+                  <div className="button-area">
+                    <button
+                      className={`form submit-button ${
+                        props.isValid && (props.dirty || formStatus === 'edit')
+                          ? 'active'
+                          : null
+                      }`}
+                      type='submit'
                     >
-                      <CheckboxInput
-                        props={props}
-                        name='programs'
-                        value='Health Services'
-                      />
-                      <CheckboxInput
-                        props={props}
-                        name='programs'
-                        value='College and Academic Supports'
-                      />
-                      <CheckboxInput
-                        props={props}
-                        name='programs'
-                        value='Creative Arts'
-                      />
-                      <CheckboxInput
-                        props={props}
-                        name='programs'
-                        value={
-                          "Broome Street Academy \n(The Door's charter high school)"
-                        }
-                      />
-                      <CheckboxInput
-                        props={props}
-                        name='programs'
-                        value='Career Services'
-                      />
-                      <CheckboxInput
-                        props={props}
-                        name='programs'
-                        value='Runaway and Homeless Youth'
-                      />
-                      <CheckboxInput
-                        props={props}
-                        name='programs'
-                        value='High School Equivalency (or GED)'
-                      />
-                      <CheckboxInput
-                        props={props}
-                        name='programs'
-                        value='Mental Health'
-                      />
-                      <CheckboxInput
-                        props={props}
-                        name='programs'
-                        value='LGBTQ'
-                      />
-
-                      <CheckboxInput
-                        props={props}
-                        name='programs'
-                        value='Legal Services'
-                      />
-                      <CheckboxInput
-                        props={props}
-                        name='programs'
-                        value={"Hmmm I'm not sure yet.."}
-                      />
+                      <span className='button-text'>
+                        {formStatus === 'edit' ? 'Update' : 'Submit'}
+                      </span>
+                    </button>
+                    {formStatus === 'edit' && (
+                      <button
+                        className={'form delete-button active'}
+                        onClick={() => {
+                          deleteVolunteer(volunteerId)
+                          history.push('/')
+                        }}
+                      >
+                        <span className='button-text'>Nevermind</span>
+                      </button>
+                  
+                    )}
                     </div>
-                  </div>
-
-                  <div className='checkbox-group' id='role-selection'>
-                    <h2>What roles are you interested in?</h2>
-
-                    <div
-                      role='group'
-                      className='checkbox-input-group'
-                      aria-labelledby='checkbox-group'
-                      id='role-input-group'
-                    >
-                      <CheckboxInput
-                        props={props}
-                        name='roles'
-                        value='Volunteer'
-                      />
-                      <CheckboxInput
-                        props={props}
-                        name='roles'
-                        value='Advocate'
-                      />
-                      <CheckboxInput
-                        props={props}
-                        name='roles'
-                        value='Mentor'
-                      />
-                      <CheckboxInput
-                        props={props}
-                        name='roles'
-                        value='Fundraiser'
-                      />
-                      <CheckboxInput
-                        props={props}
-                        name='roles'
-                        value='Teach Class'
-                      />
-                      <CheckboxInput
-                        props={props}
-                        name='roles'
-                        value={"Hmmm I'm not sure yet.."}
-                      />
-                    </div>
-                  </div>
-
-                  <button
-                    className={`form submit-button ${
-                      props.isValid && (props.dirty || formStatus === 'edit')
-                        ? 'active'
-                        : null
-                    }`}
-                    type='submit'
-                  >
-                    <span className='button-text'>
-                      {formStatus === 'edit' ? 'Update' : 'Submit'}
-                    </span>
-                  </button>
-                  {formStatus === 'edit' && (
-              <button
-                className={'form delete-button active'}
-                onClick={() => {
-                  deleteVolunteer(volunteerId)
-                  history.push('/')
-                }}
-              >
-                <span className='button-text'>Nevermind</span>
-              </button>
-            )}
                 </form>
               )}
             </Formik>
-           
           </div>
+
+          {Object.keys(serverErrors).length ? (
+            <pre>{serverErrors.error}</pre>
+          ) : null}
         </div>
-        <StandWith />
+        <StandWith/>
       </div>
     </>
   )

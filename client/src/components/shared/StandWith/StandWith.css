@@ -12,9 +12,31 @@
 }
 .sw-involved {
   width: 1318px;
-  background-color: #c2cbd680;
+  background-color: #6f8ca4;
 }
 .sw-volunteer {
   width: 1440px;
-  background-color: #f3b143b8;
+  background-color: hsla(38, 89%, 71%, 0.9);
+}
+
+@media screen and (max-width: 426px) {
+  .stand-with-box {
+    width: 87%;
+    margin-top: -80px !important ;
+    height: 80px !important;
+  }
+  
+  .sw-involved {
+    width: 87%;
+  }
+
+  .sw-volunteer {
+    width: 100%;
+    margin-top: initial !important;
+  }
+
+  .stand-with-text {
+    font-size: 25px;
+    line-height: 80px;
+  }
 }

@@ -9,19 +9,29 @@ import DoubleArrowIcon from '@material-ui/icons/DoubleArrow'
 function ImpactGetInvolved() {
   return (
     <div className='getInvolved-impact-section'>
-      <div className='gradient-block-get-involved'></div>
+      <div className='k-get-involved'></div>
       <h1 className='see-your-impact'>See Your Impact</h1>
       <div className='left-arrow-getInvolved'>
-        <DoubleArrowIcon style={{ color: '#1C4D73', transform: 'scaleX(-1)' }} />
+        <DoubleArrowIcon
+          style={{ color: '#1C4D73', transform: 'scaleX(-1)' }}
+        />
       </div>
       <div className='getInvolved-impact-card1'>
-        <ImpactCard image={impactCardImage1} text={impactTexts.ImpactCard1} />
+        <ImpactCard
+          image={impactCardImage1}
+          text={impactTexts.ImpactCard1}
+          mobileClass='mobile-visible'
+        />
       </div>
       <div className='getInvolved-impact-card2'>
-        <ImpactCard image={impactCardImage2} text={impactTexts.ImpactCard2} />
+        <ImpactCard
+          image={impactCardImage2}
+          text={impactTexts.ImpactCard2}
+          mobileClass='mobile-hidden'
+        />
       </div>
       <div className='right-arrow-getInvolved'>
-        <DoubleArrowIcon style={{ color: '#1C4D73'}}/>
+        <DoubleArrowIcon style={{ color: '#1C4D73' }} />
       </div>
     </div>
   )
