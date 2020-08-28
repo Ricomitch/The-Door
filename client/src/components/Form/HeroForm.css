@@ -10,14 +10,20 @@ div.heroFormRectangle143 {
 }
 
 @media screen and (max-width: 426px) {
-  div.img-wrapper {
-    height: 500px !important;
+
+ div.img-wrapper-2 {
+  height: 400px !important;
     width: 100% !important;
-    margin-bottom: 120px !important;
-    background-position-x: 35%;
-  }
+    margin-bottom: 190px !important;
+ }
+  
   div.heroFormRectangle143 {
-    left: 5%;
-    top: 65% !important;
+    display: flex;
+    margin-bottom: 100%;
+    padding-left: 6%;
+    top: 60%;
+    
+    
+    
   }
 }
