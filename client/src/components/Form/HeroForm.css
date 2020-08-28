@@ -12,14 +12,16 @@ div.heroFormRectangle143 {
 @media screen and (max-width: 426px) {
 
  div.img-wrapper-2 {
-  background-position-y: 100%;
+  height: 400px !important;
+    width: 100% !important;
+    margin-bottom: 190px !important;
  }
   
   div.heroFormRectangle143 {
     display: flex;
     margin-bottom: 100%;
     padding-left: 6%;
-    top: 80%;
+    top: 60%;
     
     
     
