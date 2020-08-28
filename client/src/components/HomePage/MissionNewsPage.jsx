@@ -28,15 +28,15 @@ const MissionNewsPage = (card) => {
       <div className='news-items'>
       <div className='left-arrow'><DoubleArrowIcon style={{ color: "white", transform: "scaleX(-1)" }} /></div>
       <NewsItem image = { Pride } card = {copyJSON.NewsItem1} />
-      <NewsItem card={copyJSON.NewsItem2} image={Cook} />
-        <NewsItem card={copyJSON.NewsItem3} image={Grad} />
+      <div className='news-card2'><NewsItem card={copyJSON.NewsItem2} image={Cook} /></div>
+        <div className='news-card3'><NewsItem card={copyJSON.NewsItem3} image={Grad} /></div>
       <div className='right-arrow'><DoubleArrowIcon style={{ color: "white" }} /></div>
 
 
-      </div>
       
       <div className='triangle'></div>
       
+      </div>
       </div>
   )
 }
