@@ -103,10 +103,8 @@ h1.see-your-impact {
     margin-left: 50px;
   }
   .see-your-impact {
-    /* position: absolute !important;
-    bottom: 2% !important; */
     font-size: 20px !important;
-    /* position: absolute !important; */
+
     width: 252px !important;
     margin-top: 75px !important ;
     margin-left: 60px !important;
@@ -124,14 +122,12 @@ h1.see-your-impact {
   }
   .getInvolved-impact-section {
     position: relative !important;
+    margin-top: -150px !important;
   }
   .right-arrow-getInvolved {
     position: absolute;
     top: 50%;
     right: 2px;
     font-size: 5px !important;
-
-
   }
- 
 }
