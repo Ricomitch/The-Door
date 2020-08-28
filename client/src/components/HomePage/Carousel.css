@@ -95,10 +95,14 @@
     top: 49.53%;
     bottom: 20px;
   }
+  
   .rectangle2,
   .rectangle3,
   .rectangle4 {
     top: 42%;
+  }
+  .rectangle1{
+    top:55%;
   }
 
   .studying,

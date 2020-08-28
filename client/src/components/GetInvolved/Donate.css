@@ -78,3 +78,56 @@
 .donate-button:hover {
   cursor: pointer;
 }
+@media screen and (max-width: 426px) {
+  .donate-div {
+    width: 100%;
+    text-align: center;
+  }
+  .donate-graphic {
+    display: none;
+  }
+  .donate-heading {
+    /* margin-left: 75px; */
+    font-size: 35px;
+    margin: 0 auto;
+    margin-top: 65px;
+  }
+  .amt-toward {
+    position: absolute;
+    bottom: 50% !important;
+    margin-left: -200px;
+    font-size: 45px;
+  }
+  .amt-of {
+    font-size: 25px;
+    position: absolute;
+    bottom: 30%;
+  }
+  .filler {
+    /* width: 90%;
+    margin-left: -30px;
+    margin-top: -100px; */
+  }
+  .progress-bar-container {
+    width: 90% !important;
+    margin-left: -19px;
+    margin-bottom: 100px;
+  }
+  .donate-button {
+    /* margin-right: -100px;
+    margin-bottom: -20px; */
+    margin: 0 5%;
+    right: unset;
+    /* padding-bottom: 50px; */
+
+    /* text-align: center; */
+    width: 90%;
+    height: 50px;
+    font-size: 25px;
+    line-height: 50px;
+  }
+  .donate-button-text {
+    margin-top: 20px;
+    line-height: 50px;
+  }
+}
