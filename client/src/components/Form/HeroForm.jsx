@@ -11,7 +11,7 @@ function HeroForm() {
         <Rectangle143 copy={copyJSON.FormHeroRectangle143} />
         </div>
       <div
-            className='img-wrapper'
+            className='img-wrapper-2'
             style={{
               backgroundImage: `url(${HeroFormPhoto})`,
               backgroundSize: 'cover',
