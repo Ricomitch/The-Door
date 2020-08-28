@@ -108,6 +108,10 @@
 
 @media screen and (max-width: 426px) {
 
+  .news-div {
+    height: 650px
+  }
+
   .home-mission {
     text-align: left;
     width: 80%;
@@ -131,15 +135,19 @@
 
   .Rectangle1 {
 
-    width: 45%;
-  height: 8%;
-  margin-top: 10%;
-  margin-left: 5%;
+    width: 37%;
+    height: 35px;
+    border-radius: 8px;
+    margin-top: 16%;
+    margin-left: 14px;
 }
 
 .news-text {
-  width: 50%;
-  font-size: 150%;
+  width: 90%;
+    height: 35px;
+    font-size: 4.5vw;
+    font-weight: 800;
+    line-height: 35px;
 }
 
 .news-items{
@@ -148,6 +156,20 @@
   padding: 20px;
   margin-top: 20px;
 }
+
+.left-arrow {
+  display: none;
+
+}
+
+.news-card2 {
+  display: none;
+}
+
+.news-card3 {
+  display: none;
+}
+
 
 
   

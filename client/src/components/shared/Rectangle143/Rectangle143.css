@@ -9,6 +9,7 @@
   padding: 30px;
   padding-right: 40px;
   text-align: left;
+  justify-content: center;
 }
 .rectangle-header {
   width: 475px;
@@ -18,6 +19,9 @@
   font-weight: bolder;
   color: #f3b143;
   word-wrap: break-word;
+}
+.get-involved-heading {
+  margin: 5px 0;
 }
 .rectangle-subheading {
   font-family: Montserrat-SemiBold;
@@ -39,11 +43,13 @@
   background-color: rgba(255, 255, 255, 0.8);
   align-self: flex-end;
   padding: 6px;
+  text-align: center;
 }
 .rectangle-link {
   /* width: 198px; */
   height: 37px;
   align-self: flex-end;
+  text-decoration: none;
 }
 .button-words {
   width: 107px;
@@ -77,12 +83,18 @@
 @media screen and (max-width: 426px) {
   .rectangle143 {
     width: 100%;
-    height: 100%;
-    padding-top: 0%;
+    height: 77vw;
+    padding: 5vw;
+    justify-content: center;
   }
   .rectangle-header {
     width: 90%;
     font-size: 18px;
+    margin: 0;
+  }
+  .get-involved-heading {
+    margin: 10px 0;
+    padding-left: 5px;
   }
   .rectangle-subheading {
     font-family: Montserrat-SemiBold;
@@ -92,28 +104,35 @@
   .rectangle-content {
     /* padding-top: 0%; */
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
+    height: unset;
     font-family: Montserrat;
-    font-size: 12px;
+    font-size: 3.5vw;
     line-height: 1.75;
     color: white;
-    margin: 0;
+    margin: 2vh 0;
   }
+  .get-involved-content {
+    margin: 0;
+    padding: 5px;
+  }
+  .rectangle-volunteer-button,
   .rectangle-button {
     /* width: 99px; */
-    padding: 6px 9px;
     width: auto;
-    height: 32px;
+    height: 25px;
+    line-height: 0;
+    
   }
   .button-words {
     font-family: Cabin;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 3.25vw;
+    /* height: 28px; */
+    line-height: 3.25vw;
+    padding: 0 10px;
+   
   }
-  .rectangle-volunteer-button{
-    margin-top:15px;
-    /* width: 100px; */
-  }
+
 }
