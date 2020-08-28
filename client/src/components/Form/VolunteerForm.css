@@ -21,7 +21,8 @@ h1.volunteer-title {
 div.form-content {
   width: 947px;
   height: 1050px;
-  padding: 0 60px 0;
+  padding: 60px;
+  margin-bottom: 50px;
 }
 
 div.primary-data-section {
