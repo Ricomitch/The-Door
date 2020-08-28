@@ -12,8 +12,10 @@ div.HeroGetRectangle143 {
   .img-wrapper {
     height: 500px !important;
     width: 100% !important;
-    margin-bottom: 165px !important;
+    margin-bottom: 215px !important;
+    background-position-x: unset !important;
   }
+
   .HeroGetRectangle143 {
     left: 5%;
     top: 65% !important;
