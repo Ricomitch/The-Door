@@ -61,7 +61,6 @@
   .impact-card {
     height: 80px;
     width: 100%;
-    /* margin-right: 30vw; */
     display: flex;
     align-content: center;
   }
@@ -70,7 +69,6 @@
     height: inherit;
     width: inherit;
     flex-direction: row;
-    /* margin-right: 20vw; */
   }
   .impact-image-container {
     height: 90%;

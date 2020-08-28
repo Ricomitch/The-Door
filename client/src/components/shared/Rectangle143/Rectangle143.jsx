@@ -20,11 +20,16 @@ function Rectangle143({ copy }) {
 
   return (
     <div className={`rectangle143 ${addlClass}`}>
-      <h2 className={`rectangle-header ${addlHeadingClass} ${getInvolvedHeading}`}>{copy.header}</h2>
+      <h2
+        className={`rectangle-header ${addlHeadingClass} ${getInvolvedHeading}`}>
+        {copy.header}
+      </h2>
       {copy.subheader && (
         <h3 className='rectangle-subheading'>{copy.subheader}</h3>
       )}
-      <p className={`rectangle-content ${getInvolvedContent}`}>{copy.content}</p>
+      <p className={`rectangle-content ${getInvolvedContent}`}>
+        {copy.content}
+      </p>
       {volunteerButton ? (
         <Link to='/sign-up' className='rectangle-link'>
           <div
@@ -33,8 +38,7 @@ function Rectangle143({ copy }) {
           </div>
         </Link>
       ) : (
-        <div
-          className={`rectangle-button ${addlButtonClass} ${noButtonClass}`}>
+        <div className={`rectangle-button ${addlButtonClass} ${noButtonClass}`}>
           <span className='button-words'>{copy.buttonValue}</span>
         </div>
       )}

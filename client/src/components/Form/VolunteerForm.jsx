@@ -53,8 +53,7 @@ function VolunteerForm({
             width: '100%',
             height: '100%',
             backgroundPositionY: '20%',
-          }}
-        >
+          }}>
           <div className='form-content'>
             <h1 className='volunteer-title'>Sign up to Volunteer</h1>
 
@@ -96,8 +95,7 @@ function VolunteerForm({
                 }
                 // implied "else" ...
                 setFormStatus('submitted')
-              }}
-            >
+              }}>
               {(props) => (
                 <form onSubmit={props.handleSubmit}>
                   <div className='primary-data-section'>
@@ -128,8 +126,7 @@ function VolunteerForm({
                         role='group'
                         className='checkbox-input-group'
                         aria-labelledby='checkbox-group'
-                        id='program-input-group'
-                      >
+                        id='program-input-group'>
                         <CheckboxInput
                           props={props}
                           name='programs'
@@ -198,8 +195,7 @@ function VolunteerForm({
                         role='group'
                         className='checkbox-input-group'
                         aria-labelledby='checkbox-group'
-                        id='role-input-group'
-                      >
+                        id='role-input-group'>
                         <CheckboxInput
                           props={props}
                           name='roles'
@@ -241,8 +237,7 @@ function VolunteerForm({
                           ? 'active'
                           : null
                       }`}
-                      type='submit'
-                    >
+                      type='submit'>
                       <span className='button-text'>
                         {formStatus === 'edit' ? 'Update' : 'Submit'}
                       </span>
@@ -253,8 +248,7 @@ function VolunteerForm({
                         onClick={() => {
                           deleteVolunteer(volunteerId)
                           history.push('/')
-                        }}
-                      >
+                        }}>
                         <span className='button-text'>Nevermind</span>
                       </button>
                     )}

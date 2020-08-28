@@ -70,8 +70,6 @@
   cursor: pointer;
 }
 
-
-
 @media screen and (max-width: 426px) {
   .donate-div {
     width: 100%;
@@ -88,13 +86,11 @@
     width: 100vw;
   }
   .amt-toward {
-    /* position: absolute; */
     bottom: 50% !important;
     font-size: 45px;
   }
   .amt-of {
     font-size: 25px;
-    /* position: absolute; */
     bottom: 30%;
   }
   .numbers {

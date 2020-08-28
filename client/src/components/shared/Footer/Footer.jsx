@@ -25,8 +25,7 @@ function Footer() {
         </a>
         <a
           href='https://www.youtube.com/channel/UCTI_X7wHcmfmb4_Fec0WYvQ'
-          target='_blank'
-        >
+          target='_blank'>
           <img className='youtube-icon' src={YoutubeIcon} alt='' />
         </a>
       </div>
