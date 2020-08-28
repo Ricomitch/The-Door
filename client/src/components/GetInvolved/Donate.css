@@ -84,9 +84,8 @@
   }
   .donate-heading {
     font-size: 35px;
-    margin: 0 auto;
-    margin-top: 65px;
-    width: 70vw;
+    margin: 65px 0 0 0;
+    width: 100vw;
   }
   .amt-toward {
     /* position: absolute; */
