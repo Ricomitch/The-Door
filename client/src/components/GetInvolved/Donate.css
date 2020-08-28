@@ -118,8 +118,14 @@
     font-size: 25px;
     line-height: 50px;
   }
+  .donate-button:hover {
+    cursor: pointer;
+  }
   .donate-button-text {
     margin-top: 20px;
     line-height: 50px;
+  }
+  .donate-button-text:hover {
+    cursor: pointer;
   }
 }
