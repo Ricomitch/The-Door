@@ -16,5 +16,19 @@
 }
 .sw-volunteer {
   width: 1440px;
-  background-color: hsla(38, 89%, 71%, .9);
+  background-color: hsla(38, 89%, 71%, 0.9);
+}
+
+@media screen and (max-width: 426px) {
+  .stand-with-box {
+    width: 87%;
+    background: #6f8ca4;
+    margin-top: -80px !important ;
+    height: 80px !important;
+  }
+
+  .stand-with-text {
+    font-size: 25px;
+    line-height: 90px;
+  }
 }
