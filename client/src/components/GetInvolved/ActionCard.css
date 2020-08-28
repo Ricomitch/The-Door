@@ -63,22 +63,23 @@
 
 @media screen and (max-width: 426px) {
   .action-section {
-    /* align-content: center !important; */
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 1200px;
+    height: 1400px;
     overflow: visible;
     padding-bottom: 400px !important;
     box-sizing: unset;
+    margin-left: 37px;
   }
   .action-card {
     width: 365px;
-    /* height: 295px; */
+    height: 295px;
+    margin-bottom: 60px;
   }
   .involved-hero2 {
-    height: 800px;
-    margin-bottom: 800px !important;
+    height: 805px;
+    margin-bottom: 600px !important;
   }
   .action-image {
     opacity: 1;
@@ -87,19 +88,25 @@
   .events,
   .way-to-give,
   .action-volunteer {
-    width: 365px;
+    width: 345px;
     height: 295px;
+    object-fit: cover;
     object-position: unset;
-    /* position: absolute; */
     top: 50%;
   }
   .action-card-banner {
-    width: 365px;
-    height: 46.89px;
+    width: 345px;
+    height: 56.89px;
+    top: 130px;
   }
-  /* .newsletter {
-    position: absolute;
-    top: 50% !important;
-  } */
- 
+  .action-text {
+    font-size: 22px !important;
+    line-height: 60px;
+  }
+  .events {
+    margin-top: 20px;
+  }
+  .newsletter {
+    margin-top: 20px;
+  }
 }

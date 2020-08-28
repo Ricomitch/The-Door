@@ -1,12 +1,12 @@
 import React from 'react'
 import './ImpactCard.css'
 
-function ImpactCard({ text, image }) {
+function ImpactCard({ text, image, mobileClass }) {
   
   const impactClass = text.impactClass
   
   return (
-    <div className='impact-card'>
+    <div className={`impact-card ${mobileClass}`}>
       <div className='impact-container'>
         <div className='impact-image-container'>
           <img src={image} className={`impact-card-image ${impactClass}`} alt={text.header} />
