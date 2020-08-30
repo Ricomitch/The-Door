@@ -34,9 +34,9 @@ export const createVolunteer = async (volunteer) => {
 export const updateVolunteer = async (id, volunteer) => {
   try {
     const response = await api.put(`/volunteers/${id}`, volunteer)
-    return response.data
+    return response
   } catch (error) {
-    throw error;
+    return error.response
   }
 }
 
