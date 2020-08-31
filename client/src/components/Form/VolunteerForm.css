@@ -107,6 +107,11 @@ button.form.active:hover span {
   color: white;
 }
 
+pre {
+  margin-left: 260px;
+  min-height: 1rem;
+}
+
 /* MOBILE */
 
 @media screen and (max-width: 426px) {
@@ -122,6 +127,7 @@ button.form.active:hover span {
     background-image: url('../../assets/Form/flower-6.svg') !important;
     background-position-x: 75%;
     background-size: cover !important;
+    height: 1114px;
   }
 
   h1.volunteer-title {
